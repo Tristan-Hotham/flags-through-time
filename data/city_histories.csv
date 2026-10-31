@@ -1,0 +1,481 @@
+city,year,area_name,owner,emblem,emblem_file
+Boston,800,Eastern North American hunter-gatherers,Eastern North American hunter-gatherers,people,
+Beijing,800,Tang Empire,Tang Empire,plain,
+Venice,800,Carolingian Empire,Carolingian Empire,plain,
+Delhi,800,Chauhans,Chauhans,people,
+Istanbul,800,Byzantine Empire,Byzantine Empire,plain,
+Vienna,800,Slavonic tribes,Slavonic tribes,people,
+Moscow,800,Slavonic tribes,Slavonic tribes,people,
+Mexico City,800,Toltec Empire,Toltec Empire,plain,
+Cairo,800,Abbasid Caliphate,Abbasid Caliphate,plain,
+London,800,Essex,Essex,plain,
+Jerusalem,800,Abbasid Caliphate,Abbasid Caliphate,plain,
+Sydney,800,Australian aboriginal hunter-gatherers,Australian aboriginal hunter-gatherers,people,
+Lagos,800,West African cereal farmers,West African cereal farmers,people,
+Lima,800,Huari Empire,Huari Empire,plain,
+Algiers,800,Aghlabid Emirate,Aghlabid Emirate,plain,
+Hanoi,800,Tang Empire,Tang Empire,plain,
+Boston,900,Eastern North American hunter-gatherers,Eastern North American hunter-gatherers,people,
+Beijing,900,Tang Empire,Tang Empire,plain,
+Venice,900,Carolingian Empire,Carolingian Empire,plain,
+Delhi,900,Chauhans,Chauhans,people,
+Istanbul,900,Byzantine Empire,Byzantine Empire,plain,
+Vienna,900,East Francia,East Francia,plain,
+Moscow,900,Kyivan Rus,Kievan Rus,plain,
+Mexico City,900,Toltec Empire,Toltec Empire,plain,
+Cairo,900,Abbasid Caliphate,Abbasid Caliphate,plain,
+London,900,Essex,Essex,plain,
+Jerusalem,900,Abbasid Caliphate,Abbasid Caliphate,plain,
+Sydney,900,Australian aboriginal hunter-gatherers,Australian aboriginal hunter-gatherers,people,
+Lagos,900,Mandes,Mandes,people,
+Lima,900,Huari Empire,Huari Empire,plain,
+Algiers,900,Aghlabid Emirate,Aghlabid Emirate,plain,
+Hanoi,900,Tang Empire,Tang Empire,plain,
+Boston,1000,Eastern North American hunter-gatherers,Eastern North American hunter-gatherers,people,
+Beijing,1000,Liao,Liao,plain,
+Venice,1000,Venice,Venice,plain,
+Delhi,1000,Chauhans,Chauhans,people,
+Istanbul,1000,Byzantine Empire,Byzantine Empire,plain,
+Vienna,1000,Holy Roman Empire,Holy Roman Empire,plain,
+Moscow,1000,Kyivan Rus,Kievan Rus,plain,
+Mexico City,1000,Toltec Empire,Toltec Empire,plain,
+Cairo,1000,Fatimid Caliphate,Fatimid Caliphate,plain,
+London,1000,England,England,plain,
+Jerusalem,1000,Fatimid Caliphate,Fatimid Caliphate,plain,
+Sydney,1000,Australian aboriginal hunter-gatherers,Australian aboriginal hunter-gatherers,people,
+Lagos,1000,West African cereal farmers,West African cereal farmers,people,
+Lima,1000,Huari Empire,Huari Empire,plain,
+Algiers,1000,Fatimid Caliphate,Fatimid Caliphate,plain,
+Hanoi,1000,Annam,Annam,plain,
+Boston,1100,Eastern North American hunter-gatherers,Eastern North American hunter-gatherers,people,
+Beijing,1100,Liao,Liao,plain,
+Venice,1100,Venice,Venice,plain,
+Delhi,1100,Chauhans,Chauhans,people,
+Istanbul,1100,Byzantine Empire,Byzantine Empire,plain,
+Vienna,1100,Holy Roman Empire,Holy Roman Empire,plain,
+Moscow,1100,Kievan Rus,Kievan Rus,plain,
+Mexico City,1100,Toltec Empire,Toltec Empire,plain,
+Cairo,1100,Fatimid Caliphate,Fatimid Caliphate,plain,
+London,1100,England,England,flag,Royal Banner of England.svg
+Jerusalem,1100,Fatimid Caliphate,Fatimid Caliphate,plain,
+Sydney,1100,Australian aboriginal hunter-gatherers,Australian aboriginal hunter-gatherers,people,
+Lagos,1100,West African cereal farmers,West African cereal farmers,people,
+Lima,1100,Huari Empire,Huari Empire,plain,
+Algiers,1100,Fatimid Caliphate,Fatimid Caliphate,plain,
+Hanoi,1100,Đại Việt,Đại Việt,plain,
+Boston,1200,Eastern North American hunter-gatherers,Eastern North American hunter-gatherers,people,
+Beijing,1200,Liao,Liao,plain,
+Venice,1200,Venice,Venice,flag,Flag of the Serene Republic of Venice.svg
+Delhi,1200,Sultanate of Delhi,Sultanate of Delhi,plain,
+Istanbul,1200,Byzantine Empire,Byzantine Empire,plain,
+Vienna,1200,Holy Roman Empire,Holy Roman Empire,flag,Heiliges Römisches Reich - Reichssturmfahne vor 1433 (Nimbierter Adler).svg
+Moscow,1200,Other Rus Principalities,Other Rus Principalities,group,
+Mexico City,1200,Toltec Empire,Toltec Empire,plain,
+Cairo,1200,Fatimid Caliphate,Fatimid Caliphate,plain,
+London,1200,Angevin Empire,Angevin Empire,flag,Royal Banner of England.svg
+Jerusalem,1200,Fatimid Caliphate,Fatimid Caliphate,plain,
+Sydney,1200,Australian aboriginal hunter-gatherers,Australian aboriginal hunter-gatherers,people,
+Lagos,1200,West African cereal farmers,West African cereal farmers,people,
+Lima,1200,Huari Empire,Huari Empire,plain,
+Algiers,1200,Fatimid Caliphate,Fatimid Caliphate,plain,
+Hanoi,1200,Đại Việt,Đại Việt,plain,
+Boston,1279,Eastern North American hunter-gatherers,Eastern North American hunter-gatherers,people,
+Beijing,1279,Great Khanate,Mongol Empire,plain,
+Venice,1279,Venice,Venice,flag,Flag of the Serene Republic of Venice.svg
+Delhi,1279,Sultanate of Delhi,Sultanate of Delhi,plain,
+Istanbul,1279,Byzantine Empire,Byzantine Empire,plain,
+Vienna,1279,Holy Roman Empire,Holy Roman Empire,flag,Heiliges Römisches Reich - Reichssturmfahne vor 1433 (Nimbierter Adler).svg
+Moscow,1279,Ryazan,Mongol Empire,plain,
+Mexico City,1279,,,none,
+Cairo,1279,Mamluke Sultanate,Mamluke Sultanate,plain,
+London,1279,English territory,England,flag,Royal Banner of England.svg
+Jerusalem,1279,Mamluke Sultanate,Mamluke Sultanate,plain,
+Sydney,1279,Australian aboriginal hunter-gatherers,Australian aboriginal hunter-gatherers,people,
+Lagos,1279,West African cereal farmers,West African cereal farmers,people,
+Lima,1279,Chimú Empire,Chimú Empire,plain,
+Algiers,1279,Hafsid Caliphate,Hafsid Caliphate,plain,
+Hanoi,1279,Đại Việt,Đại Việt,plain,
+Boston,1300,Eastern North American hunter-gatherers,Eastern North American hunter-gatherers,people,
+Beijing,1300,Great Khanate,Mongol Empire,plain,
+Venice,1300,Venice,Venice,flag,Flag of the Serene Republic of Venice.svg
+Delhi,1300,Sultanate of Delhi,Sultanate of Delhi,plain,
+Istanbul,1300,Byzantine Empire,Byzantine Empire,plain,
+Vienna,1300,Holy Roman Empire,Holy Roman Empire,flag,Königsbanner 14Jh.svg
+Moscow,1300,Grand Duchy of Moscow,Grand Duchy of Moscow,plain,
+Mexico City,1300,,,none,
+Cairo,1300,Mamluke Sultanate,Mamluke Sultanate,plain,
+London,1300,English territory,English territory,plain,
+Jerusalem,1300,Mamluke Sultanate,Mamluke Sultanate,plain,
+Sydney,1300,Australian aboriginal hunter-gatherers,Australian aboriginal hunter-gatherers,people,
+Lagos,1300,West African cereal farmers,West African cereal farmers,people,
+Lima,1300,Chimú Empire,Chimú Empire,plain,
+Algiers,1300,Hafsid Caliphate,Hafsid Caliphate,plain,
+Hanoi,1300,Đại Việt,Đại Việt,plain,
+Boston,1400,Eastern North American hunter-gatherers,Eastern North American hunter-gatherers,people,
+Beijing,1400,Great Khanate,Mongol Empire,plain,
+Venice,1400,Venice,Venice,flag,Flag of the Serene Republic of Venice.svg
+Delhi,1400,Sultanate of Delhi,Sultanate of Delhi,plain,
+Istanbul,1400,Ottoman Empire,Ottoman Empire,plain,
+Vienna,1400,Holy Roman Empire,Holy Roman Empire,flag,Heiliges Römisches Reich - Reichssturmfahne vor 1433 (Nimbierter Adler).svg
+Moscow,1400,Blue Horde,Mongol Empire,plain,
+Mexico City,1400,,,none,
+Cairo,1400,Mamluke Sultanate,Mamluke Sultanate,plain,
+London,1400,English territory,English territory,plain,
+Jerusalem,1400,Mamluke Sultanate,Mamluke Sultanate,plain,
+Sydney,1400,Australian aboriginal hunter-gatherers,Australian aboriginal hunter-gatherers,people,
+Lagos,1400,West African cereal farmers,West African cereal farmers,people,
+Lima,1400,Chimú Empire,Chimú Empire,plain,
+Algiers,1400,Hafsid Caliphate,Hafsid Caliphate,plain,
+Hanoi,1400,Đại Việt,Đại Việt,plain,
+Boston,1492,Massa-adchu-es-et (Massachusett),Massa-adchu-es-et (Massachusett),people,
+Beijing,1492,Ming Empire,Ming Empire,plain,
+Venice,1492,Venice,Venice,flag,Flag of the Serene Republic of Venice.svg
+Delhi,1492,Sultanate of Delhi,Sultanate of Delhi,plain,
+Istanbul,1492,Ottoman Empire,Ottoman Empire,plain,
+Vienna,1492,Holy Roman Empire,Holy Roman Empire,flag,Banner of the Holy Roman Emperor with haloes (1430-1806).svg
+Moscow,1492,Grand Duchy of Moscow,Grand Duchy of Moscow,plain,
+Mexico City,1492,Mexihcah (Triple Alliance),Mexihcah (Triple Alliance),plain,
+Cairo,1492,Mamluke Sultanate,Mamluke Sultanate,plain,
+London,1492,England,England,flag,Royal Banner of England.svg
+Jerusalem,1492,Mamluke Sultanate,Mamluke Sultanate,plain,
+Sydney,1492,Australian aboriginal hunter-gatherers,Australian aboriginal hunter-gatherers,people,
+Lagos,1492,West African cereal farmers,West African cereal farmers,people,
+Lima,1492,Wari,Wari,people,
+Algiers,1492,Zayyanid Caliphate,Zayyanid Caliphate,plain,
+Hanoi,1492,Đại Việt,Đại Việt,plain,
+Boston,1500,Iroquois,Iroquois,people,
+Beijing,1500,Ming Chinese Empire,Ming Empire,plain,
+Venice,1500,Venice,Venice,flag,Flag of the Serene Republic of Venice.svg
+Delhi,1500,Sultanate of Delhi,Sultanate of Delhi,plain,
+Istanbul,1500,Ottoman Empire,Ottoman Empire,plain,
+Vienna,1500,Holy Roman Empire,Holy Roman Empire,flag,Banner of the Holy Roman Emperor with haloes (1430-1806).svg
+Moscow,1500,Grand Duchy of Moscow,Grand Duchy of Moscow,plain,
+Mexico City,1500,Aztec Empire,Aztec Empire,plain,
+Cairo,1500,Mamluke Sultanate,Mamluke Sultanate,plain,
+London,1500,England,England,flag,Royal Banner of England.svg
+Jerusalem,1500,Mamluke Sultanate,Mamluke Sultanate,plain,
+Sydney,1500,Australian aboriginal hunter-gatherers,Australian aboriginal hunter-gatherers,people,
+Lagos,1500,West African cereal farmers,West African cereal farmers,people,
+Lima,1500,Inca Empire,Inca Empire,flag,Banner of the Inca Empire.svg
+Algiers,1500,Zayyanid Caliphate,Zayyanid Caliphate,plain,
+Hanoi,1500,Đại Việt,Đại Việt,plain,
+Boston,1530,Massachusett,Massachusett,people,
+Beijing,1530,Ming Chinese Empire,Ming Empire,plain,
+Venice,1530,Venice,Venice,flag,Flag of the Serene Republic of Venice.svg
+Delhi,1530,Mughal Empire,Mughal Empire,plain,
+Istanbul,1530,Ottoman Empire,Ottoman Empire,plain,
+Vienna,1530,Holy Roman Empire,Holy Roman Empire,flag,Banner of the Holy Roman Emperor with haloes (1430-1806).svg
+Moscow,1530,Tsardom of Muscovy,Tsardom of Muscovy,plain,
+Mexico City,1530,Viceroyalty of New Spain,Viceroyalty of New Spain,flag,Flag of Cross of Burgundy.svg
+Cairo,1530,Ottoman Empire,Ottoman Empire,plain,
+London,1530,England and Ireland,England and Ireland,flag,Royal Banner of England.svg
+Jerusalem,1530,Ottoman Empire,Ottoman Empire,plain,
+Sydney,1530,Australian aboriginal hunter-gatherers,Australian aboriginal hunter-gatherers,people,
+Lagos,1530,,,none,
+Lima,1530,Inca Empire,Inca Empire,flag,Banner of the Inca Empire.svg
+Algiers,1530,Ottoman Empire,Ottoman Empire,plain,
+Hanoi,1530,Đại Việt,Đại Việt,plain,
+Boston,1600,Massachusett,Massachusett,people,
+Beijing,1600,Ming Chinese Empire,Ming Empire,plain,
+Venice,1600,Venice,Venice,flag,Flag of the Serene Republic of Venice.svg
+Delhi,1600,Mughal Empire,Mughal Empire,plain,
+Istanbul,1600,Ottoman Empire,Ottoman Empire,plain,
+Vienna,1600,Holy Roman Empire,Holy Roman Empire,flag,Banner of the Holy Roman Emperor with haloes (1430-1806).svg
+Moscow,1600,Tsardom of Muscovy,Tsardom of Muscovy,arms,Royal Coat of arms of Russia (17th century).svg
+Mexico City,1600,Viceroyalty of New Spain,Viceroyalty of New Spain,flag,Flag of Cross of Burgundy.svg
+Cairo,1600,Ottoman Empire,Ottoman Empire,plain,
+London,1600,England and Ireland,England and Ireland,flag,Flag of England.svg
+Jerusalem,1600,Ottoman Empire,Ottoman Empire,plain,
+Sydney,1600,Eora,Eora,people,
+Lagos,1600,,,none,
+Lima,1600,Inca Empire,Inca Empire,plain,
+Algiers,1600,Ottoman Empire,Ottoman Empire,plain,
+Hanoi,1600,Đại Việt,Đại Việt,plain,
+Boston,1650,Massachusetts Bay,England,flag,Flag of England.svg
+Beijing,1650,Manchu Empire,Qing Empire,plain,
+Venice,1650,Venice,Venice,flag,Flag of the Serene Republic of Venice.svg
+Delhi,1650,Mughal Empire,Mughal Empire,plain,
+Istanbul,1650,Ottoman Empire,Ottoman Empire,plain,
+Vienna,1650,Holy Roman Empire,Holy Roman Empire,flag,Banner of the Holy Roman Emperor with haloes (1430-1806).svg
+Moscow,1650,Tsardom of Muscovy,Tsardom of Muscovy,arms,Royal Coat of arms of Russia (17th century).svg
+Mexico City,1650,Viceroyalty of New Spain,Spain,flag,Flag of Cross of Burgundy.svg
+Cairo,1650,Ottoman Empire,Ottoman Empire,plain,
+London,1650,England and Ireland,England and Ireland,flag,Flag of England.svg
+Jerusalem,1650,Ottoman Empire,Ottoman Empire,plain,
+Sydney,1650,Eora,Eora,people,
+Lagos,1650,Oyo,Oyo,plain,
+Lima,1650,Viceroyalty of Peru,Spain,flag,Flag of Cross of Burgundy.svg
+Algiers,1650,Ottoman Empire,Ottoman Empire,plain,
+Hanoi,1650,Đại Việt,Đại Việt,plain,
+Boston,1700,Massachusetts Bay,England,flag,Flag of England.svg
+Beijing,1700,Manchu Empire,Qing Empire,plain,
+Venice,1700,Venice,Venice,flag,Flag of the Serene Republic of Venice.svg
+Delhi,1700,Mughal Empire,Mughal Empire,plain,
+Istanbul,1700,Ottoman Empire,Ottoman Empire,plain,
+Vienna,1700,Holy Roman Empire,Holy Roman Empire,flag,Banner of the Holy Roman Emperor with haloes (1430-1806).svg
+Moscow,1700,Tsardom of Muscovy,Tsardom of Muscovy,plain,
+Mexico City,1700,Viceroyalty of New Spain,Spain,flag,Flag of Cross of Burgundy.svg
+Cairo,1700,Ottoman Empire,Ottoman Empire,plain,
+London,1700,England and Ireland,England and Ireland,flag,Flag of England.svg
+Jerusalem,1700,Ottoman Empire,Ottoman Empire,plain,
+Sydney,1700,Eora,Eora,people,
+Lagos,1700,Oyo,Oyo,plain,
+Lima,1700,Viceroyalty of Peru,Spain,flag,Flag of Cross of Burgundy.svg
+Algiers,1700,Ottoman Empire,Ottoman Empire,plain,
+Hanoi,1700,Đại Việt,Đại Việt,plain,
+Boston,1715,British American colonies,United Kingdom,flag,Flag of Great Britain (1707 to 1800).svg
+Beijing,1715,Manchu Empire,Qing Empire,plain,
+Venice,1715,Venice,Venice,flag,Flag of the Serene Republic of Venice.svg
+Delhi,1715,Mughal Empire,Mughal Empire,plain,
+Istanbul,1715,Ottoman Empire,Ottoman Empire,plain,
+Vienna,1715,Austrian Empire,Austrian Empire,plain,
+Moscow,1715,Tsardom of Muscovy,Tsardom of Muscovy,flag,Flag of Oryol ship (variant).svg
+Mexico City,1715,Viceroyalty of New Spain,Spain,flag,Flag of Spain (1701 to 1760).svg
+Cairo,1715,Egypt,Egypt,plain,
+London,1715,United Kingdom,United Kingdom,flag,Flag of Great Britain (1707 to 1800).svg
+Jerusalem,1715,Ottoman Empire,Ottoman Empire,plain,
+Sydney,1715,Eora,Eora,people,
+Lagos,1715,Oyo,Oyo,plain,
+Lima,1715,Viceroyalty of Peru,Spain,flag,Flag of Spain (1701 to 1760).svg
+Algiers,1715,Algiers,Algiers,plain,
+Hanoi,1715,Đại Việt,Đại Việt,plain,
+Boston,1783,United States of America,United States,flag,Flag of the United States (1777 to 1795).svg
+Beijing,1783,Qing Empire,Qing Empire,plain,
+Venice,1783,Venetia,Venetia,plain,
+Delhi,1783,Mahratta states,Mahratta states,group,
+Istanbul,1783,Ottoman Empire,Ottoman Empire,plain,
+Vienna,1783,Austrian Empire,Austrian Empire,plain,
+Moscow,1783,Russian Empire,Russian Empire,flag,Flag of Russia.svg
+Mexico City,1783,Viceroyalty of New Spain,Spain,flag,Flag of Spain (1760 to 1785).svg
+Cairo,1783,Ottoman Empire,Ottoman Empire,plain,
+London,1783,United Kingdom,United Kingdom,flag,Flag of Great Britain (1707 to 1800).svg
+Jerusalem,1783,Ottoman Empire,Ottoman Empire,plain,
+Sydney,1783,Eora,Eora,people,
+Lagos,1783,Dahomey,Dahomey,flag,Dahomey flag 1889.svg
+Lima,1783,Viceroyalty of Peru,Spain,flag,Flag of Spain (1760 to 1785).svg
+Algiers,1783,Algiers,Algiers,plain,
+Hanoi,1783,Đại Việt,Đại Việt,arms,Triều đường chi ấn.svg
+Boston,1800,United States of America,United States,flag,Flag of the United States (1795-1818).svg
+Beijing,1800,Qing Empire,Qing Empire,plain,
+Venice,1800,Venetia,Venetia,plain,
+Delhi,1800,Bundelkhand,Bundelkhand,plain,
+Istanbul,1800,Ottoman Empire,Ottoman Empire,plain,
+Vienna,1800,Austrian Empire,Austrian Empire,plain,
+Moscow,1800,Russian Empire,Russian Empire,flag,Flag of Russia.svg
+Mexico City,1800,Viceroyalty of New Spain,Spain,flag,Flag of Spain (1760 to 1785).svg
+Cairo,1800,Ottoman Empire,Ottoman Empire,plain,
+London,1800,United Kingdom,United Kingdom,flag,Flag of Great Britain (1707 to 1800).svg
+Jerusalem,1800,Ottoman Empire,Ottoman Empire,plain,
+Sydney,1800,Eora,Eora,people,
+Lagos,1800,Dahomey,Dahomey,flag,Dahomey flag 1889.svg
+Lima,1800,Viceroyalty of Peru,Spain,flag,Flag of Spain (1760 to 1785).svg
+Algiers,1800,Algiers,Ottoman Empire,plain,
+Hanoi,1800,Đại Việt,Đại Việt,arms,Triều đường chi ấn.svg
+Boston,1815,United States,United States,flag,Flag of the United States (1795-1818).svg
+Beijing,1815,Manchu Empire,Qing Empire,plain,
+Venice,1815,Venetia,Austrian Empire,flag,Flag of the Habsburg Monarchy.svg
+Delhi,1815,British East India Company,British East India Company,plain,
+Istanbul,1815,Ottoman Empire,Ottoman Empire,plain,
+Vienna,1815,Austrian Empire,Austrian Empire,flag,Flag of the Habsburg Monarchy.svg
+Moscow,1815,Russian Empire,Russian Empire,flag,Flag of Russia.svg
+Mexico City,1815,Viceroyalty of New Spain,Spain,flag,Flag of Spain (1760 to 1785).svg
+Cairo,1815,Egypt,Egypt,plain,
+London,1815,United Kingdom of Great Britain and Ireland,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Jerusalem,1815,Ottoman Empire,Ottoman Empire,plain,
+Sydney,1815,New South Wales,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Lagos,1815,,,none,
+Lima,1815,Viceroyalty of Peru,Spain,flag,Flag of Spain (1760 to 1785).svg
+Algiers,1815,Algiers,Algiers,plain,
+Hanoi,1815,Annam,Annam,plain,
+Boston,1878,United States of America,United States,flag,Flag of the United States (1877 to 1890).svg
+Beijing,1878,Manchu Empire,Qing Empire,flag,Flag of China (1862 to 1889).svg
+Venice,1878,Italy,Italy,flag,Flag of Italy (1861 to 1946).svg
+Delhi,1878,British Raj,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Istanbul,1878,Ottoman Empire,Ottoman Empire,flag,Flag of the Ottoman Empire (1844 to 1922).svg
+Vienna,1878,Austria Hungary,Austria-Hungary,arms,Imperial Coat of Arms of the Empire of Austria.svg
+Moscow,1878,Russian Empire,Russian Empire,flag,Flag of Russia (1858 to 1896).svg
+Mexico City,1878,Mexico,Mexico,flag,Bandera Histórica de la República Mexicana (1824-1918).svg
+Cairo,1878,Egypt,Ottoman Empire,flag,Flag of the Ottoman Empire (1844 to 1922).svg
+London,1878,United Kingdom of Great Britain and Ireland,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Jerusalem,1878,Ottoman Empire,Ottoman Empire,flag,Flag of the Ottoman Empire (1844 to 1922).svg
+Sydney,1878,New South Wales (UK),United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Lagos,1878,Lagos,Lagos,plain,
+Lima,1878,Peru,Peru,plain,
+Algiers,1878,Algeria (FR),France,flag,Flag of France.svg
+Hanoi,1878,Annam,Annam,plain,
+Boston,1880,United States of America,United States,flag,Flag of the United States (1877 to 1890).svg
+Beijing,1880,Manchu Empire,Qing Empire,flag,Flag of China (1862 to 1889).svg
+Venice,1880,Italy,Italy,flag,Flag of Italy (1861 to 1946).svg
+Delhi,1880,British Raj,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Istanbul,1880,Ottoman Empire,Ottoman Empire,flag,Flag of the Ottoman Empire (1844 to 1922).svg
+Vienna,1880,Austria Hungary,Austria-Hungary,arms,Imperial Coat of Arms of the Empire of Austria.svg
+Moscow,1880,Russian Empire,Russian Empire,flag,Flag of Russia (1858 to 1896).svg
+Mexico City,1880,Mexico,Mexico,flag,Bandera Histórica de la República Mexicana (1824-1918).svg
+Cairo,1880,Egypt,Ottoman Empire,flag,Flag of the Ottoman Empire (1844 to 1922).svg
+London,1880,United Kingdom of Great Britain and Ireland,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Jerusalem,1880,Ottoman Empire,Ottoman Empire,flag,Flag of the Ottoman Empire (1844 to 1922).svg
+Sydney,1880,New South Wales (UK),United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Lagos,1880,Lagos,Lagos,plain,
+Lima,1880,Peru,Peru,plain,
+Algiers,1880,Algeria (FR),France,flag,Flag of France.svg
+Hanoi,1880,Annam,Annam,plain,
+Boston,1900,United States of America,United States,flag,Flag of the United States (1896 to 1908).svg
+Beijing,1900,Manchu Empire,Qing Empire,flag,Flag of China (1889 to 1912).svg
+Venice,1900,Italy,Italy,flag,Flag of Italy (1861 to 1946).svg
+Delhi,1900,British Raj,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Istanbul,1900,Ottoman Empire,Ottoman Empire,flag,Flag of the Ottoman Empire (1844 to 1922).svg
+Vienna,1900,Austria Hungary,Austria-Hungary,arms,Imperial Coat of Arms of the Empire of Austria.svg
+Moscow,1900,Russian Empire,Russian Empire,flag,Flag of Russia.svg
+Mexico City,1900,Mexico,Mexico,flag,Flag of Mexico (1893 to 1916).svg
+Cairo,1900,Egypt,Egypt,flag,Flag of Egypt (1882 to 1922).svg
+London,1900,United Kingdom of Great Britain and Ireland,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Jerusalem,1900,Ottoman Empire,Ottoman Empire,flag,Flag of the Ottoman Empire (1844 to 1922).svg
+Sydney,1900,New South Wales (UK),United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Lagos,1900,Lagos,Lagos,plain,
+Lima,1900,Peru,Peru,flag,Flag of Peru.svg
+Algiers,1900,Algeria,Algeria,plain,
+Hanoi,1900,French Indochina,France,flag,Flag of France.svg
+Boston,1914,United States,United States,flag,Flag of the United States (1912-1959).svg
+Beijing,1914,Manchu Empire,Qing Empire,plain,
+Venice,1914,Kingdom of Italy,Italy,flag,Flag of Italy (1861 to 1946).svg
+Delhi,1914,British Raj,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Istanbul,1914,Bulgaria,Bulgaria,flag,Flag of Bulgaria.svg
+Vienna,1914,Austro-Hungarian Empire,Austria-Hungary,arms,Coat of arms of Austria-Hungary (1914).svg
+Moscow,1914,Russian Empire,Russia,flag,Flag of Russia.svg
+Mexico City,1914,Mexico,Mexico,flag,Flag of Mexico (1893 to 1916).svg
+Cairo,1914,Egypt,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+London,1914,United Kingdom of Great Britain and Ireland,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Jerusalem,1914,Ottoman Empire,Ottoman Empire,flag,Flag of the Ottoman Empire (1844 to 1922).svg
+Sydney,1914,Australia,Australia,flag,Flag of Australia (converted).svg
+Lagos,1914,Nigeria,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Lima,1914,Peru,Peru,flag,Flag of Peru.svg
+Algiers,1914,Algeria,France,flag,Flag of France.svg
+Hanoi,1914,French Indochina,France,flag,Flag of France.svg
+Boston,1920,United States,United States,flag,Flag of the United States (1912-1959).svg
+Beijing,1920,Chinese Warlords,Chinese Warlords,group,
+Venice,1920,Italy,Italy,flag,Flag of Italy (1861 to 1946).svg
+Delhi,1920,British Raj,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Istanbul,1920,,,none,
+Vienna,1920,Austria,Austria,flag,Flag of Austria.svg
+Moscow,1920,USSR,USSR,plain,
+Mexico City,1920,Mexico,Mexico,plain,
+Cairo,1920,Egypt,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+London,1920,United Kingdom of Great Britain and Ireland,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Jerusalem,1920,Mandatory Palestine (GB),United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Sydney,1920,Australia,Australia,flag,Flag of Australia (converted).svg
+Lagos,1920,Nigeria,Nigeria,plain,
+Lima,1920,Peru,Peru,flag,Flag of Peru.svg
+Algiers,1920,Algeria,Algeria,plain,
+Hanoi,1920,Annam,Annam,plain,
+Boston,1930,United States,United States,flag,Flag of the United States (1912-1959).svg
+Beijing,1930,Chinese Warlords,Chinese Warlords,group,
+Venice,1930,Italy,Italy,flag,Flag of Italy (1861 to 1946).svg
+Delhi,1930,British Raj,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Istanbul,1930,Republic of Turkey,Republic of Turkey,flag,Flag of Turkey.svg
+Vienna,1930,Austria,Austria,flag,Flag of Austria.svg
+Moscow,1930,USSR,USSR,flag,Flag of the Soviet Union (1924 to 1936).svg
+Mexico City,1930,Mexico,Mexico,plain,
+Cairo,1930,Egypt,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+London,1930,United Kingdom of Great Britain and Ireland,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Jerusalem,1930,Mandatory Palestine (GB),United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Sydney,1930,Australia,Australia,flag,Flag of Australia (converted).svg
+Lagos,1930,Nigeria,Nigeria,plain,
+Lima,1930,Peru,Peru,flag,Flag of Peru.svg
+Algiers,1930,Algeria,Algeria,plain,
+Hanoi,1930,Annam,Annam,plain,
+Boston,1938,United States,United States,flag,Flag of the United States (1912-1959).svg
+Beijing,1938,Chinese warlords,Chinese Warlords,group,
+Venice,1938,Italy,Italy,flag,Flag of Italy (1861 to 1946).svg
+Delhi,1938,British Raj,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Istanbul,1938,Turkey,Turkey,flag,Flag of Turkey.svg
+Vienna,1938,Germany,Germany,flag,Flag of Germany (1935 to 1945).svg
+Moscow,1938,USSR,USSR,flag,Flag of the Soviet Union (1936 to 1955).svg
+Mexico City,1938,Mexico,Mexico,flag,Flag of Mexico (1934-1968).svg
+Cairo,1938,Egypt,Egypt,flag,Flag of Egypt (1922-1958).svg
+London,1938,United Kingdom,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Jerusalem,1938,Israel,Israel,plain,
+Sydney,1938,Australia,Australia,flag,Flag of Australia (converted).svg
+Lagos,1938,Nigeria,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Lima,1938,Peru,Peru,flag,Flag of Peru.svg
+Algiers,1938,Algeria (France),France,flag,Flag of France.svg
+Hanoi,1938,French Indo-China,France,flag,Flag of France.svg
+Boston,1945,United States,United States,flag,Flag of the United States (1912-1959).svg
+Beijing,1945,China,China,flag,Flag of the Republic of China.svg
+Venice,1945,Italy,Italy,flag,Flag of Italy (1861 to 1946).svg
+Delhi,1945,India,India,flag,British Raj Red Ensign.svg
+Istanbul,1945,Turkey,Turkey,flag,Flag of Turkey.svg
+Vienna,1945,Austria,Austria,flag,Flag of Austria.svg
+Moscow,1945,USSR,USSR,flag,Flag of the Soviet Union (1936 to 1955).svg
+Mexico City,1945,Mexico,Mexico,flag,Flag of Mexico (1934-1968).svg
+Cairo,1945,Egypt,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+London,1945,United Kingdom,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Jerusalem,1945,Israel,Israel,plain,
+Sydney,1945,Australia,Australia,flag,Flag of Australia (converted).svg
+Lagos,1945,Nigeria,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Lima,1945,Peru,Peru,flag,Flag of Peru.svg
+Algiers,1945,Algeria,France,flag,Flag of France.svg
+Hanoi,1945,Tonkin,France,flag,Flag of France.svg
+Boston,1960,United States,United States,flag,Flag of the United States (DDD-F-416E specifications).svg
+Beijing,1960,China,China,flag,Flag of the People's Republic of China.svg
+Venice,1960,Italy,Italy,flag,Flag of Italy (1946 to 2003).svg
+Delhi,1960,India,India,flag,Flag of India.svg
+Istanbul,1960,Turkey,Turkey,flag,Flag of Turkey.svg
+Vienna,1960,Austria,Austria,flag,Flag of Austria.svg
+Moscow,1960,USSR,USSR,flag,Flag of the Soviet Union (dark version).svg
+Mexico City,1960,Mexico,Mexico,flag,Flag of Mexico (1934-1968).svg
+Cairo,1960,Egypt,Egypt,flag,"Flag of the United Arab Republic (1958 to 1971), Flag of Syria (1980 to 2024).svg"
+London,1960,United Kingdom,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Jerusalem,1960,Israel,Israel,flag,Flag of Israel.svg
+Sydney,1960,Australia,Australia,flag,Flag of Australia (converted).svg
+Lagos,1960,Nigeria,Nigeria,flag,Flag of Nigeria.svg
+Lima,1960,Peru,Peru,flag,Flag of Peru.svg
+Algiers,1960,Algeria,Algeria,plain,
+Hanoi,1960,Vietnam,Vietnam,flag,Flag of Vietnam.svg
+Boston,1994,United States,United States,flag,Flag of the United States (DDD-F-416E specifications).svg
+Beijing,1994,China,China,flag,Flag of the People's Republic of China.svg
+Venice,1994,Italy,Italy,flag,Flag of Italy (1946 to 2003).svg
+Delhi,1994,India,India,flag,Flag of India.svg
+Istanbul,1994,Turkey,Turkey,flag,Flag of Turkey.svg
+Vienna,1994,Austria,Austria,flag,Flag of Austria.svg
+Moscow,1994,Russia,Russia,flag,Flag of Russia.svg
+Mexico City,1994,Mexico,Mexico,flag,Flag of Mexico.svg
+Cairo,1994,Egypt,Egypt,flag,Flag of Egypt.svg
+London,1994,United Kingdom,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Jerusalem,1994,Israel,Israel,flag,Flag of Israel.svg
+Sydney,1994,Australia,Australia,flag,Flag of Australia (converted).svg
+Lagos,1994,Nigeria,Nigeria,flag,Flag of Nigeria.svg
+Lima,1994,Peru,Peru,flag,Flag of Peru.svg
+Algiers,1994,Algeria,Algeria,flag,Flag of Algeria.svg
+Hanoi,1994,Vietnam,Vietnam,flag,Flag of Vietnam.svg
+Boston,2000,United States,United States,flag,Flag of the United States (DDD-F-416E specifications).svg
+Beijing,2000,China,China,flag,Flag of the People's Republic of China.svg
+Venice,2000,Italy,Italy,flag,Flag of Italy (1946 to 2003).svg
+Delhi,2000,India,India,flag,Flag of India.svg
+Istanbul,2000,Turkey,Turkey,flag,Flag of Turkey.svg
+Vienna,2000,Austria,Austria,flag,Flag of Austria.svg
+Moscow,2000,Russia,Russia,flag,Flag of Russia.svg
+Mexico City,2000,Mexico,Mexico,flag,Flag of Mexico.svg
+Cairo,2000,Egypt,Egypt,flag,Flag of Egypt.svg
+London,2000,United Kingdom,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Jerusalem,2000,Israel,Israel,flag,Flag of Israel.svg
+Sydney,2000,Australia,Australia,flag,Flag of Australia (converted).svg
+Lagos,2000,Nigeria,Nigeria,flag,Flag of Nigeria.svg
+Lima,2000,Peru,Peru,flag,Flag of Peru.svg
+Algiers,2000,Algeria,Algeria,flag,Flag of Algeria.svg
+Hanoi,2000,Vietnam,Vietnam,flag,Flag of Vietnam.svg
+Boston,2010,United States,United States,flag,Flag of the United States (DDD-F-416E specifications).svg
+Beijing,2010,China,China,flag,Flag of the People's Republic of China.svg
+Venice,2010,Italy,Italy,flag,Flag of Italy.svg
+Delhi,2010,India,India,flag,Flag of India.svg
+Istanbul,2010,Turkey,Turkey,flag,Flag of Turkey.svg
+Vienna,2010,Austria,Austria,flag,Flag of Austria.svg
+Moscow,2010,Russia,Russia,flag,Flag of Russia.svg
+Mexico City,2010,Mexico,Mexico,flag,Flag of Mexico.svg
+Cairo,2010,Egypt,Egypt,flag,Flag of Egypt.svg
+London,2010,United Kingdom,United Kingdom,flag,Flag of the United Kingdom (3-5).svg
+Jerusalem,2010,Israel,Israel,flag,Flag of Israel.svg
+Sydney,2010,Australia,Australia,flag,Flag of Australia (converted).svg
+Lagos,2010,Nigeria,Nigeria,flag,Flag of Nigeria.svg
+Lima,2010,Peru,Peru,flag,Flag of Peru.svg
+Algiers,2010,Algeria,Algeria,flag,Flag of Algeria.svg
+Hanoi,2010,Vietnam,Vietnam,flag,Flag of Vietnam.svg

@@ -1,0 +1,195 @@
+country,iso_a3,wikidata,in_data,current_flag,adopted
+Afghanistan,AFG,Q889,True,Flag of the Taliban.svg,2021
+Albania,ALB,Q222,True,Flag of Albania.svg,1992
+Algeria,DZA,Q262,True,,
+Andorra,AND,Q228,True,,
+Angola,AGO,Q916,True,,
+Antigua and Barbuda,ATG,Q781,True,Flag of Antigua and Barbuda.svg,1967
+Argentina,ARG,Q414,True,Flag of Argentina.svg,1985
+Armenia,ARM,Q399,True,,
+Australia,AUS,Q408,True,Flag of Australia (converted).svg,1908
+Austria,AUT,Q40,True,Flag of Austria.svg,1945
+Azerbaijan,AZE,Q227,True,Flag of Azerbaijan.svg,2013
+Bahrain,BHR,Q398,False,,
+Bangladesh,BGD,Q902,True,Flag of Bangladesh.svg,1972
+Barbados,BRB,Q244,True,Flag of Barbados.svg,1966
+Belarus,BLR,Q184,True,Flag of Belarus.svg,2012
+Belgium,BEL,Q31,True,Flag of Belgium.svg,1831
+Belize,BLZ,Q242,True,,
+Benin,BEN,Q962,True,,
+Bhutan,BTN,Q917,True,,
+Bolivia,BOL,Q750,True,Bandera de Bolivia (Estado).svg,1851
+Bosnia and Herzegovina,BIH,Q225,True,Flag of Bosnia and Herzegovina.svg,1998
+Botswana,BWA,Q963,True,,
+Brazil,BRA,Q155,True,Flag of Brazil.svg,1992
+Brunei,BRN,Q921,True,Flag of Brunei.svg,1959
+Bulgaria,BGR,Q219,True,Flag of Bulgaria.svg,1990
+Burkina Faso,BFA,Q965,True,,
+Burundi,BDI,Q967,True,,
+Cabo Verde,CPV,Q1011,False,,
+Cambodia,KHM,Q424,True,Flag of Cambodia.svg,1993
+Cameroon,CMR,Q1009,True,,
+Canada,CAN,Q16,True,Flag of Canada (Pantone).svg,1965
+Central African Republic,CAF,Q929,True,,
+Chad,TCD,Q657,True,,
+Chile,CHL,Q298,True,,
+China,CHN,Q148,False,,
+Colombia,COL,Q739,True,,
+Comoros,COM,Q970,False,,
+Costa Rica,CRI,Q800,True,Flag of Costa Rica (state).svg,1998
+Croatia,HRV,Q224,True,Flag of Croatia.svg,1990
+Cyprus,CYP,Q229,True,Flag of Cyprus.svg,2006
+Czechia,CZE,Q213,True,Flag of the Czech Republic.svg,1920
+Democratic Republic of the Congo,COD,Q974,False,,
+Denmark,DNK,Q35,True,,
+Djibouti,DJI,Q977,True,,
+Dominica,DMA,Q784,True,Flag of Dominica.svg,1990
+Dominican Republic,DOM,Q786,True,,
+East Timor,TLS,Q574,False,,
+Ecuador,ECU,Q736,True,Flag of Ecuador.svg,2009
+Egypt,EGY,Q79,True,Flag of Egypt.svg,1983
+El Salvador,SLV,Q792,True,Flag of El Salvador.svg,1922
+Equatorial Guinea,GNQ,Q983,True,Flag of Equatorial Guinea.svg,1979
+Eritrea,ERI,Q986,True,,
+Estonia,EST,Q191,True,,
+Ethiopia,ETH,Q115,True,Flag of Ethiopia.svg,1996
+Federated States of Micronesia,FSM,Q702,False,,
+Fiji,FJI,Q712,True,,
+Finland,FIN,Q33,True,Flag of Finland.svg,1918
+France,FRA,Q142,True,Flag of France.svg,2020
+Gabon,GAB,Q1000,True,Flag of Gabon.svg,1960
+Gambia,GMB,Q1005,True,,
+Georgia,GEO,Q230,True,Flag of Georgia.svg,2004
+Germany,DEU,Q183,True,Flag of Germany.svg,1949
+Ghana,GHA,Q117,True,Flag of Ghana.svg,1966
+Greece,GRC,Q41,True,Flag of Greece.svg,1978
+Grenada,GRD,Q769,True,Flag of Grenada.svg,1974
+Guatemala,GTM,Q774,True,,
+Guinea,GIN,Q1006,True,,
+Guinea-Bissau,GNB,Q1007,True,,
+Guyana,GUY,Q734,True,,
+Haiti,HTI,Q790,True,Flag of Haiti.svg,1986
+Honduras,HND,Q783,True,"Flag of Honduras (1949 to 2022, 2026-present).svg",2026
+Hungary,HUN,Q28,True,Flag of Hungary.svg,1957
+Iceland,ISL,Q189,True,Flag of Iceland.svg,1944
+India,IND,Q668,True,Flag of India.svg,1946
+Indonesia,IDN,Q252,True,,
+Iran,IRN,Q794,True,Flag of Iran.svg,1980
+Iraq,IRQ,Q796,True,Flag of Iraq.svg,2008
+Ireland,IRL,Q27,True,Flag of Ireland.svg,1937
+Italy,ITA,Q38,True,Flag of Italy.svg,2006
+Ivory Coast,CIV,Q1008,True,,
+Jamaica,JAM,Q766,True,,
+Japan,JPN,Q17,True,Flag of Japan.svg,1999
+Jordan,JOR,Q810,True,,
+Kenya,KEN,Q114,True,,
+Kiribati,KIR,Q710,False,,
+Kuwait,KWT,Q817,True,Flag of Kuwait.svg,1961
+Kyrgyzstan,KGZ,Q813,True,Flag of Kyrgyzstan.svg,2023
+Laos,LAO,Q819,True,,
+Latvia,LVA,Q211,True,,
+Lebanon,LBN,Q822,True,,
+Lesotho,LSO,Q1013,True,Flag of Lesotho.svg,2006
+Liberia,LBR,Q1014,True,,
+Libya,LBY,Q1016,True,Flag of Libya.svg,2011
+Liechtenstein,LIE,Q347,True,,
+Lithuania,LTU,Q37,True,Flag of Lithuania.svg,2004
+Luxembourg,LUX,Q32,True,,
+Madagascar,MDG,Q1019,True,,
+Malawi,MWI,Q1020,True,Flag of Malawi.svg,2012
+Malaysia,MYS,Q833,True,Flag of Malaysia.svg,1963
+Maldives,MDV,Q826,False,,
+Mali,MLI,Q912,True,,
+Malta,MLT,Q233,True,,
+Marshall Islands,MHL,Q709,False,,
+Mauritania,MRT,Q1025,True,Flag of Mauritania.svg,2017
+Mauritius,MUS,Q1027,False,,
+Mexico,MEX,Q96,True,Flag of Mexico.svg,1968
+Moldova,MDA,Q217,True,,
+Monaco,MCO,Q235,False,,
+Mongolia,MNG,Q711,True,Flag of Mongolia.svg,2011
+Montenegro,MNE,Q236,True,Flag of Montenegro.svg,2004
+Morocco,MAR,Q1028,True,,
+Mozambique,MOZ,Q1029,True,Flag of Mozambique.svg,1983
+Myanmar,MMR,Q836,False,,
+Namibia,NAM,Q1030,True,,
+Nauru,NRU,Q697,False,,
+Nepal,NPL,Q837,True,,
+Netherlands,NLD,Q55,True,Flag of the Netherlands.svg,1806
+New Zealand,NZL,Q664,True,,
+Nicaragua,NIC,Q811,True,Flag of Nicaragua.svg,1971
+Niger,NER,Q1032,True,,
+Nigeria,NGA,Q1033,True,Flag of Nigeria.svg,1960
+North Korea,PRK,Q423,False,,
+North Macedonia,MKD,Q221,True,Flag of North Macedonia.svg,1995
+Northern Cyprus,CYN,Q23681,False,,
+Norway,NOR,Q20,True,Flag of Norway.svg,1821
+Oman,OMN,Q842,True,,
+Pakistan,PAK,Q843,True,,
+Palau,PLW,Q695,False,,
+Panama,PAN,Q804,True,,
+Papua New Guinea,PNG,Q691,True,,
+Paraguay,PRY,Q733,True,Flag of Paraguay (reverse).svg,2013
+Peru,PER,Q419,True,,
+Philippines,PHL,Q928,True,Flag of the Philippines.svg,1998
+Poland,POL,Q36,True,Flag of Poland.svg,1980
+Portugal,PRT,Q45,True,Flag of Portugal (official).svg,1911
+Qatar,QAT,Q846,True,,
+Republic of Serbia,SRB,Q403,True,Flag of Serbia.svg,2010
+Republic of the Congo,COG,Q971,True,,
+Romania,ROU,Q218,True,Flag of Romania.svg,1989
+Russia,RUS,Q159,True,Flag of Russia.svg,1993
+Rwanda,RWA,Q1037,True,Flag of Rwanda.svg,2001
+Saint Kitts and Nevis,KNA,Q763,True,,
+Saint Lucia,LCA,Q760,True,Flag of Saint Lucia.svg,2002
+Saint Vincent and the Grenadines,VCT,Q757,True,,
+Samoa,WSM,Q683,True,,
+San Marino,SMR,Q238,True,Flag of San Marino.svg,2011
+Saudi Arabia,SAU,Q851,True,Flag of Saudi Arabia.svg,1973
+Senegal,SEN,Q1041,True,,
+Seychelles,SYC,Q1042,False,,
+Sierra Leone,SLE,Q1044,True,,
+Singapore,SGP,Q334,False,,
+Slovakia,SVK,Q214,True,Flag of Slovakia.svg,1992
+Slovenia,SVN,Q215,True,,
+Solomon Islands,SLB,Q685,False,,
+Somalia,SOM,Q1045,True,,
+Somaliland,SOL,Q34754,False,,
+South Africa,ZAF,Q258,True,Flag of South Africa.svg,1994
+South Korea,KOR,Q884,True,Flag of South Korea.svg,2011
+South Sudan,SSD,Q958,False,,
+Spain,ESP,Q29,True,Flag of Spain.svg,1981
+Sri Lanka,LKA,Q854,True,,
+Sudan,SDN,Q1049,True,Flag of Sudan.svg,1970
+Suriname,SUR,Q730,True,,
+Sweden,SWE,Q34,True,,
+Switzerland,CHE,Q39,True,Flag of Switzerland.svg,1889
+Syria,SYR,Q858,True,Flag of Syria (2025-).svg,2024
+São Tomé and Principe,STP,Q1039,False,,
+Taiwan,TWN,Q865,True,Flag of the Republic of China.svg,1928
+Tajikistan,TJK,Q863,True,,
+Thailand,THA,Q869,True,,
+The Bahamas,BHS,Q778,True,Flag of the Bahamas.svg,1973
+Togo,TGO,Q945,True,Flag of Togo (3-2).svg,1960
+Tonga,TON,Q678,True,,
+Trinidad and Tobago,TTO,Q754,False,,
+Tunisia,TUN,Q948,True,Flag of Tunisia.svg,1999
+Turkey,TUR,Q43,True,,
+Turkmenistan,TKM,Q874,True,Flag of Turkmenistan.svg,2001
+Tuvalu,TUV,Q672,False,,
+Uganda,UGA,Q1036,True,Flag of Uganda.svg,1962
+Ukraine,UKR,Q212,True,Flag of Ukraine.svg,1992
+United Arab Emirates,ARE,Q878,True,,
+United Kingdom,GBR,Q145,True,Flag of the United Kingdom (3-5).svg,1801
+United Republic of Tanzania,TZA,Q924,True,,
+United States of America,USA,Q30,True,Flag of the United States (DDD-F-416E specifications).svg,1960
+Uruguay,URY,Q77,True,,
+Uzbekistan,UZB,Q265,True,,
+Vanuatu,VUT,Q686,False,,
+Vatican,VAT,Q237,False,,
+Venezuela,VEN,Q717,True,Flag of Venezuela.svg,2006
+Vietnam,VNM,Q881,True,,
+Yemen,YEM,Q805,True,,
+Zambia,ZMB,Q953,True,Flag of Zambia.svg,1996
+Zimbabwe,ZWE,Q954,True,Flag of Zimbabwe.svg,1979
+eSwatini,SWZ,Q1050,True,,

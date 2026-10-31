@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Who Held the Map?</title>
+<meta name="description" content="An interactive history of the world map in flags, from 800 to 2010: {{n_snapshots|int}} snapshots of who held each piece of land, each area filled with the flag, banner or arms of the entity that held it, with honest gaps where no flag was flown.">
+<meta property="og:title" content="Who held the map? Twelve centuries of the world in flags">
+<meta property="og:description" content="Watch the world map fill with flags, from 800 to 2010. In 1500 {{flag_share_1500|f1}}% of the world's land can be shown with a flag in use at the time; by 2010, {{flag_share_2010|pc}}.">
+<meta property="og:image" content="https://maps.tristanhotham.com/flags-through-time/header.png">
+<meta property="og:url" content="https://maps.tristanhotham.com/flags-through-time/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+/* Flag locker: bunting paper, ensign red, navy, gold. Kind colours are set in the script. */
+:root{
+  --bg:#F7F3EA; --panel:#EEE8DA; --fg:#1E2430; --muted:#646875; --rule:#E2DACA; --card:#FFFCF5; --border:#D0C6B3;
+  --hot:#B3261E; --cool:#23408E; --gold:#C99A06; --land:#E9E2D2; --sea:#F2EFE8; --hatch:#B9A783;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#151820; --panel:#1F232C; --fg:#ECE8E0; --muted:#A3A6B1; --rule:#343944; --card:#1B1F27; --border:#454B57;
+  --hot:#E26A61; --cool:#8EA6E6; --gold:#F0C24B; --land:#2A2E37; --sea:#181B22; --hatch:#6E6450; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#151820; --panel:#1F232C; --fg:#ECE8E0; --muted:#A3A6B1; --rule:#343944; --card:#1B1F27; --border:#454B57;
+  --hot:#E26A61; --cool:#8EA6E6; --gold:#F0C24B; --land:#2A2E37; --sea:#181B22; --hatch:#6E6450; color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 18px/1.62 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));overflow-x:hidden}
+.wrap{max-width:700px;margin:0 auto;padding-block:28px 64px}
+.wrap .bleed{width:min(1180px,calc(100vw - 32px));margin-left:calc((100% - min(1180px,100vw - 32px))/2);margin-right:0}
+a{color:inherit;text-decoration-color:var(--hot);text-underline-offset:3px}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.kicker b{background:var(--hot);color:#fff;padding:5px 8px;font-weight:500}
+header.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 24px;align-items:end;border-bottom:6px double var(--fg);padding-bottom:22px;margin-top:18px}
+h1{font:900 clamp(44px,11vw,96px)/.9 var(--display);letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1 .a{color:var(--hot)} h1 .b{color:var(--cool)}
+.mark{width:clamp(84px,17vw,140px);height:auto;display:block;color:var(--fg)}
+.dek{grid-column:1/-1;font-size:21px;line-height:1.42;margin:8px 0 0;max-width:56ch}
+.byline{font:400 13px/1.4 var(--mono);color:var(--muted);margin-top:14px}
+h2{font:800 34px/1.04 var(--display);letter-spacing:-.01em;margin:54px 0 10px;text-wrap:balance}
+h2 .n{font:500 13px/1 var(--mono);color:var(--hot);display:block;letter-spacing:.1em;margin-bottom:10px}
+h3{font:600 20px/1.25 var(--display);margin:28px 0 6px}
+p{margin:0 0 16px}
+.lede::first-letter{font:900 72px/.8 var(--display);float:left;margin:6px 10px 0 0;color:var(--hot)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:26px 0 8px}
+.stats div{background:var(--card);padding:14px 12px}
+.stats b{display:block;font:900 clamp(22px,4.4vw,32px)/1 var(--display);letter-spacing:-.01em}
+.stats b.h{color:var(--hot)} .stats b.c{color:var(--cool)} .stats b.g{color:var(--gold)}
+.stats span{font:400 12px/1.35 var(--mono);color:var(--muted);display:block;margin-top:6px}
+@media (max-width:600px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.figure{margin:26px 0 30px}
+.fig-h{font:600 19px/1.25 var(--display);margin:0 0 4px}
+.fig-sub{font:400 13px/1.45 var(--mono);color:var(--muted);margin:0 0 12px}
+.src{font:400 12px/1.45 var(--mono);color:var(--muted);margin-top:10px}
+.chart{width:100%;position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:var(--mono);fill:var(--fg)}
+.lab{font-size:12px}.lab.m{fill:var(--muted)}.lab.b{font-weight:500}.lab.s{font-size:11px}.lab.t{font-size:10px}
+.tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);font:400 12px/1.45 var(--mono);padding:8px 10px;border-radius:3px;max-width:290px;z-index:100001;transform:translate(-50%,calc(-100% - 12px));display:none}
+.tip b{font-weight:500}
+.tip img{display:block;height:28px;margin:2px 0 4px;border:1px solid rgba(255,255,255,.3)}
+.controls{display:flex;gap:8px;align-items:center;margin:0 0 10px;flex-wrap:wrap}
+.scrollrow{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;padding-bottom:2px;max-width:100%}
+.scrollrow .btn{flex:0 0 auto;white-space:nowrap}
+.ctl-l{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:2px;flex:0 0 auto;align-self:center}
+.btn{font:500 12px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:8px 10px;cursor:pointer;min-height:36px}
+.btn[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn:focus-visible,input:focus-visible,summary:focus-visible,select:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
+.btn.play{min-width:84px;background:var(--hot);border-color:var(--hot);color:#fff}
+.searchbox{position:relative;flex:1 1 260px;min-width:0}
+input[type=search]{font:400 15px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:10px 11px;min-height:40px;width:100%}
+.suggest{position:absolute;left:0;right:0;top:100%;margin:2px 0 0;padding:0;list-style:none;background:var(--card);border:1px solid var(--border);z-index:1001;font:400 13px/1.3 var(--mono);display:none;max-height:340px;overflow:auto}
+.suggest li{padding:8px 10px;cursor:pointer;border-bottom:1px solid var(--rule)}
+.suggest li span{color:var(--muted)}
+.suggest li[aria-selected="true"],.suggest li:hover{background:var(--panel)}
+.timeline{display:flex;gap:10px;align-items:center;margin:4px 0 12px}
+.timeline input[type=range]{flex:1;accent-color:var(--hot);min-width:0;height:28px}
+.yearbig{font:900 30px/1 var(--display);min-width:3.4ch;text-align:right;letter-spacing:-.01em}
+.ticks{position:relative;height:16px;font:400 10px/1 var(--mono);color:var(--muted);margin:-8px 0 8px}
+.ticks span{position:absolute;transform:translateX(-50%);white-space:nowrap}
+.mapgrid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:14px;align-items:start}
+@media (max-width:900px){.mapgrid{grid-template-columns:1fr}}
+.side{background:var(--card);border:1px solid var(--border);padding:12px 12px 10px;font:400 13px/1.45 var(--mono);max-height:680px;overflow:auto}
+@media (max-width:900px){.side{max-height:none}}
+.side h4{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:14px 0 8px}
+.side h4:first-child{margin-top:2px}
+.side .big{font:800 25px/1.1 var(--display);margin:2px 0 4px}
+.side .sub{color:var(--muted);font-size:12px;margin:0 0 8px}
+.side .flagimg{display:block;max-width:100%;max-height:120px;border:1px solid var(--border);margin:6px 0 8px;background:var(--panel)}
+.side table{width:100%;border-collapse:collapse;margin:4px 0 6px}
+.side td{padding:4px 4px 4px 0;border-bottom:1px solid var(--rule);vertical-align:middle}
+.side td.num{text-align:right;white-space:nowrap}
+.side td img{height:16px;display:block;border:1px solid var(--border)}
+.side .why{background:var(--panel);border-left:4px solid var(--gold);padding:7px 9px;margin:8px 0;font-size:12px}
+.chips{display:flex;flex-wrap:wrap;gap:4px;margin:4px 0 8px}
+.chips button{font:400 11px/1 var(--mono);background:var(--bg);color:var(--fg);border:1px solid var(--border);border-radius:999px;padding:5px 7px;cursor:pointer}
+.chips button[aria-current="true"]{background:var(--fg);color:var(--bg)}
+.go{cursor:pointer;text-decoration:underline;text-decoration-color:var(--border);text-underline-offset:3px}
+.back{font:400 12px var(--mono);background:none;border:0;color:var(--muted);padding:0;cursor:pointer;text-decoration:underline;margin-bottom:6px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px;border:1px solid rgba(0,0,0,.18)}
+.lmap{height:640px;border:1px solid var(--border);background:var(--sea);border-radius:2px}
+@media (max-width:600px){.lmap{height:min(62vh,470px)}}
+.leaflet-container{font:400 12px/1.4 var(--mono);background:var(--sea)}
+.yearlab{font:900 44px/1 var(--display);color:var(--fg);opacity:.85;text-shadow:0 0 6px var(--bg),0 0 3px var(--bg);pointer-events:none;letter-spacing:-.02em}
+@media (max-width:600px){.yearlab{display:none}}
+.lyrBtn{background:var(--card,var(--bg));color:var(--fg);border:1px solid var(--border);border-radius:3px;font:600 12px/1 var(--mono);padding:8px 10px;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.lyrBtn[aria-expanded="true"]{background:var(--fg);color:var(--bg)}
+.lyrPanel{background:var(--card,var(--bg));color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:10px 12px 8px;margin-top:6px;width:250px;box-shadow:0 2px 10px rgba(0,0,0,.15);font:400 12px/1.3 var(--mono);max-height:min(70vh,520px);overflow:auto}
+.lyrPanel[hidden]{display:none}
+.lyrPanel .row{margin:0 0 9px}
+.lyrPanel label{display:flex;gap:6px;align-items:center;cursor:pointer;font-weight:600}
+.lyrPanel input[type=range]{width:100%;accent-color:var(--fg)}
+.lyrPanel select{font:400 12px var(--mono);background:var(--bg);color:var(--fg);border:1px solid var(--border);border-radius:2px;padding:2px 4px;width:100%;min-height:0}
+.lyrPanel .sub{display:flex;gap:6px;align-items:center;color:var(--muted);font-size:11px;margin-top:3px}
+.lyrPanel .sub span{flex:0 0 58px}
+.lyrPanel .hd{font:500 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:10px 0 7px;border-top:1px solid var(--rule);padding-top:9px}
+.lyrPanel .reset{font:400 11px var(--mono);color:var(--muted);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+.cityL{font:500 11px/1 var(--mono);color:var(--fg);white-space:nowrap;text-shadow:0 0 3px var(--bg),0 0 3px var(--bg),0 0 2px var(--bg);pointer-events:none}
+.cityL i{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--fg);margin-right:4px;vertical-align:1px}
+.cityL.s{font-size:10px;font-weight:400}
+.areaL{font:600 10.5px/1.1 var(--mono);color:#1E2430;white-space:nowrap;pointer-events:none;text-align:center;text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 2px #fff}
+.areaL small{display:block;font-weight:400;color:#4A4E59}
+.flagIco{pointer-events:none}
+.flagIco img{display:block;width:100%;height:100%;border:1px solid rgba(0,0,0,.35);box-shadow:0 1px 3px rgba(0,0,0,.3)}
+.mapnote{background:color-mix(in srgb,var(--card) 92%,transparent);border:1px solid var(--border);border-radius:3px;padding:6px 9px;font:400 12px/1.35 var(--mono);max-width:min(300px,62vw);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.mapnote:empty{display:none}
+.leaflet-bar a,.leaflet-bar a:hover{background:var(--card);color:var(--fg);border-bottom-color:var(--border)}
+.leaflet-control-attribution{background:color-mix(in srgb,var(--card) 85%,transparent)!important;color:var(--muted)}
+.leaflet-control-attribution a{color:var(--fg)}
+.legend{display:flex;gap:6px 14px;flex-wrap:wrap;font:400 12px/1.3 var(--mono);color:var(--muted);margin-top:8px}
+.legend span{display:inline-flex;align-items:center}
+.legend i{display:inline-block;width:18px;height:13px;margin-right:6px;border-radius:2px;border:1px solid rgba(0,0,0,.2);background-size:cover}
+.pull{font:600 26px/1.25 var(--display);border-left:6px solid var(--hot);padding:4px 0 4px 18px;margin:30px 0}
+.note{background:var(--panel);border:1px solid var(--rule);padding:14px 16px;font-size:16px;margin:22px 0}
+.note h3{margin-top:0}
+details{margin:14px 0}
+summary{font:500 13px/1.4 var(--mono);cursor:pointer;color:var(--fg);padding:8px 0}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.cta a{font:500 13px/1 var(--mono);text-decoration:none;border:1px solid var(--fg);padding:11px 14px;border-radius:3px}
+.cta a.p{background:var(--hot);border-color:var(--hot);color:#fff}
+.cityscroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+footer{border-top:6px double var(--fg);margin-top:56px;padding-top:16px;font:400 13px/1.55 var(--mono);color:var(--muted)}
+footer p{margin:0 0 10px}
+.theme{position:fixed;right:12px;bottom:12px;z-index:1002}
+@media print{.theme,.controls{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="kicker"><b>Data study</b><span>History</span><span>World, 800 to 2010</span></div>
+<header class="hero">
+  <h1>Who held <span class="a">the</span> <span class="b">map?</span></h1>
+  <svg class="mark" viewBox="0 0 150 112" aria-hidden="true"><g id="heroMark"></g></svg>
+  <p class="dek">Twelve centuries of the world map, area by area, each piece of land filled with the flag of whoever held it at the time: the Holy Roman Empire's eagle, the Venetian lion, the Qing dragon, the Union Flag of 1801. And, just as telling, the places and centuries where there was no flag to show.</p>
+</header>
+<div class="byline">Dr Tristan Hotham · Independent researcher · 2026 · Data: historical-basemaps (Ourednik and contributors); Wikidata; Wikimedia Commons; Natural Earth</div>
+
+<div class="stats">
+  <div><b class="h">{{flag_share_2010|pc}}</b><span>of the world's land shown with a flag in 2010, against {{flag_share_1500|f1}}% in 1500</span></div>
+  <div><b class="c">{{largest_ever.pct|f1}}%</b><span>of the world's land held by the {{largest_ever.n|raw}} in {{largest_ever.y|yr}}, the largest single entry in the basemap; the British Empire with its dominions held {{uk_dom_peak.pct|f1}}% in {{uk_dom_peak.y|yr}}</span></div>
+  <div><b class="g">{{euro_peak.all|f1}}%</b><span>of the world's land held by European states and their empires in {{euro_peak.y|yr}}, Russia included</span></div>
+  <div><b>{{images.n|int}}</b><span>flags, banners and coats of arms from Wikimedia Commons, every one credited</span></div>
+</div>
+
+<p class="lede">Every so often a map goes round the internet that shows the world as a patchwork of flags, each country filled with its own. It is a lovely thing, and it made me wonder what the same map would look like a century ago, or ten. Who held the land where Boston now stands in 1650? Whose flag flew over Beijing in 1880, or Venice in 1500? So I built one: a world map that starts in the year 800 and steps forward through {{n_snapshots|int}} snapshots to 2010, with every piece of land filled with the flag of the state that held it at that date.</p>
+<p>The borders come from Aleš Ourednik's historical-basemaps project, an open set of world maps for {{n_snapshots|int}} dates in this period (and many earlier), which names each area and the power that controlled it. The flags come from Wikidata, which records many states' flags with the years each was in use, and from Wikimedia Commons, which holds the images. The hardest part, and the most interesting, was deciding when <i>not</i> to show a flag: before about 1700 most states flew no national flag at all, and many of the areas on the old maps are peoples and cultural regions rather than states. Press play, or drag the slider.</p>
+
+<h2><span class="n">01 · The map</span>The world in flags, 800 to 2010</h2>
+<div class="bleed" id="atlas">
+<div class="timeline">
+  <button class="btn play" id="play" aria-label="Play through the years">▶ Play</button>
+  <button class="btn" id="prev" aria-label="Previous snapshot">◀</button>
+  <input type="range" id="yr" min="0" max="29" step="1" value="0" aria-label="Snapshot year">
+  <button class="btn" id="next" aria-label="Next snapshot">▶</button>
+  <div class="yearbig" id="yrlab">800</div>
+</div>
+<div class="controls">
+  <div class="scrollrow" id="fillRow"><span class="ctl-l">Fill</span><button class="btn" data-f="auto" aria-pressed="true">Auto</button><button class="btn" data-f="flags" aria-pressed="false">Flags</button><button class="btn" data-f="colours" aria-pressed="false">Colours</button></div>
+  <div class="scrollrow" id="jumpRow"><span class="ctl-l">Jump to</span></div>
+</div>
+<div class="controls">
+  <div class="searchbox"><input type="search" id="q" placeholder="Search a state, empire, people or place" aria-label="Search a state, empire, people or place" autocomplete="off"><ul class="suggest" id="sug" role="listbox"></ul></div>
+</div>
+<div class="mapgrid">
+  <div><div id="map" class="lmap" role="application" aria-label="World map of who held the land, in flags"></div>
+    <div class="legend" id="legend"></div></div>
+  <div class="side" id="side" aria-live="polite"></div>
+</div>
+<p class="src">Borders: historical-basemaps by Aleš Ourednik and contributors (GPL-3.0), simplified; borders are approximate, especially before 1500, and many were contested. Flags: Wikidata and Wikimedia Commons, <a href="data/flag_credits.csv">credits for every image</a>. Snapshots are shown as drawn: borders are not interpolated between dates.</p>
+</div>
+
+<h2><span class="n">02 · Filling with flags</span>A map that grows its colours</h2>
+<p>For most of the period there was simply no flag to draw. In the year 1000 not one area can honestly be filled with a flag in use at the time: the snapshot holds {{states_1000|int}} states but heraldry had not yet emerged, and {{people_share_1000|pc}} of the land belonged to peoples and cultural regions rather than states. From the 12th century, as heraldry spread, royal banners and city flags begin to fill the map: the Holy Roman eagle and the lion of Venice are on it by 1200. Even in {{euro_1492.y|yr}} only {{cover.8.flag|f1}}% of the land can be shown with one.</p>
+<div class="figure"><p class="fig-h">Share of the world's land, by what the map can show</p><p class="fig-sub">Each snapshot's land (Antarctica excluded), by the emblem shown for whoever held it. Hover for values.</p><div class="chart" id="coverChart"></div></div>
+<p>The great change comes in the 18th and 19th centuries. National flags spread from ships to states, and the European empires carried theirs across the world. The share of land that can be filled with a flag in use passes half for the first time in the {{first_flag_half|yr}} snapshot, reaches {{flag_share_1900|f1}}% in 1900 and {{flag_share_2010|f1}}% in 2010. The dip in 1920 is the young Soviet state, whose first flag in Wikidata dates from 1922, so in 1920 it is shown plain.</p>
+
+<h2><span class="n">03 · The biggest</span>Who held the most land?</h2>
+<p>The largest single entry in the basemap at any date is the {{largest_ever.n|raw}} in {{largest_ever.y|yr}}: {{largest_ever.a|m1}} million square kilometres, {{largest_ever.pct|f1}}% of the world's land, from the Pacific coast to eastern Europe, the largest contiguous land empire on the map. Counting only the United Kingdom and its self-governing dominions, the British Empire in {{uk_dom_peak.y|yr}} was larger still, at {{uk_dom_peak.pct|f1}}% (more below). From the 17th century the largest single entry in every snapshot is Russia, as Muscovy, the Russian Empire and then the Soviet Union, which held {{russia_peak.a|m1}} million square kilometres at its widest ({{russia_peak.y|yr}}). The Qing Empire at its greatest ({{qing_peak.y|yr}}) held {{qing_peak.pct|f1}}% of the world's land.</p>
+<div class="figure"><p class="fig-h">The largest holder of land in each snapshot</p><p class="fig-sub">Land held by each entity (all its areas, colonies included), as a share of the world's land. Hover for the next two.</p><div class="chart" id="bigChart"></div></div>
+<p>The British Empire is harder to measure than its reputation suggests. The basemap lists the dominions (Canada, Australia, New Zealand and South Africa) under their own names, so land it assigns to the United Kingdom itself peaks at {{uk_peak.pct|f1}}% of the world in {{uk_peak.y|yr}}. Add the dominions back and the peak is {{uk_dom_peak.pct|f1}}% ({{uk_dom_peak.y|yr}}). The map simply follows the basemap's own judgement of who held what.</p>
+
+<h2><span class="n">04 · European empires</span>From 1492 to 2010</h2>
+<p>In {{euro_1492.y|yr}}, European states held {{euro_1492.all|f1}}% of the world's land, almost all of it in Europe. By {{euro_peak.y|yr}} the figure was {{euro_peak.all|f1}}%: {{euro_peak.overseas|f1}}% overseas, {{euro_peak.russia|f1}}% in Russia's empire, and only {{euro_peak.home|f1}}% in Europe itself. Leave Russia out and the peak is still {{euro_peak_ex_russia.v|f1}}%, in {{euro_peak_ex_russia.y|yr}}.</p>
+<div class="figure"><p class="fig-h">Share of the world's land held by European states</p><p class="fig-sub">Other European states' land in Europe and outside it, and Muscovy, the Russian Empire and the Soviet Union (all their land). Hover for values.</p><div class="chart" id="euroChart"></div></div>
+<p>Two things to read with care. The fall between 1815 and 1878 is real: most of Spanish and Portuguese America became independent in those decades. The fall by 1960 is partly an artefact: that snapshot draws almost every colony as its own country, including Portuguese Angola and Mozambique, which became independent only in 1975. In 1920 and 1930, areas the basemap places under a European power in both 1914 and 1938 but under their own name in between add up to {{euro_label_gap.1920|f1}}% of the world's land.</p>
+
+<h2><span class="n">05 · One place, many flags</span>What flew over the city?</h2>
+<p>Follow a single point through time and the map becomes a biography. The land where Boston stands is shown until 1400 as the country of eastern North American hunter-gatherers, then as the land of the Massachusett and the Iroquois, then under England from 1650, Great Britain in 1715, and from 1783 the United States. Beijing passes from the Tang to the Liao, the Mongols, the Ming, the Qing, the warlords, the Republic of China and the People's Republic. {{most_owners_city.c|raw}} has the most holders of the cities here: {{most_owners_city.n_owners|int}}.</p>
+<div class="figure"><p class="fig-h">Who held these cities, snapshot by snapshot</p><p class="fig-sub">The area containing each city in each snapshot, shown by its holder's emblem. Hatched: a people or cultural region. Plain: no flag recorded for that year. Hover or tap a cell.</p><div class="cityscroll"><div class="chart" id="cityChart"></div></div></div>
+
+<h2><span class="n">06 · How many states?</span>Counting the pieces</h2>
+<p>The number of states in a snapshot depends as much on how finely the map was drawn as on history. The 1492 map, for example, names {{entities.8.people|int}} peoples and cultural regions, {{people_1492_americas|int}} of them nations of the Americas drawn one by one, while the 1914 map draws Africa in colonial blocks. With that warning, the snapshot with the fewest states is {{states_min.y|yr}} ({{states_min.states|int}}) and the most is {{states_max.y|yr}} ({{states_max.states|int}}), after the break-up of the Soviet Union.</p>
+<div class="figure"><p class="fig-h">States and peoples named in each snapshot</p><p class="fig-sub">Distinct holders of land in each snapshot, split into states and into peoples or cultural regions. Hover for values.</p><div class="chart" id="statesChart"></div></div>
+
+<h2><span class="n">07 · Flag ages</span>How old are today's flags?</h2>
+<p>Charts of "when every country adopted its flag" are popular, and most hide their sources. Here is an honest version from Wikidata. For {{flag_age.n_dated|int}} of {{flag_age.n_countries|int}} present-day countries ({{flag_age.coverage_pct|pc}}), Wikidata gives a start date for the current flag. The rest have no date, so they are left out, not guessed.</p>
+<div class="figure"><p class="fig-h">When the current version of each flag began, by 20-year period</p><p class="fig-sub">{{flag_age.n_dated|int}} present-day countries whose current flag has a start date in Wikidata. Hover for the countries.</p><div class="chart" id="ageChart"></div></div>
+<p>The busiest period is {{flag_age.top_bin.b|yr}} to {{flag_age.top_bin.e|yr}} ({{flag_age.top_bin.n|int}} countries), and the median start year is {{flag_age.median|yr}}. That is younger than most flags feel, and partly for a good reason: Wikidata often dates the current <i>version</i>, not the design. Japan's flag is dated from the 1999 law, Italy's from a change of shade in 2006, France's from a darker blue in 2020. The oldest dated flags are the United Kingdom's ({{flag_age.oldest.0.adopted|yr}}), the Netherlands' ({{flag_age.oldest.1.adopted|yr}}) and Norway's ({{flag_age.oldest.2.adopted|yr}}). Denmark's Dannebrog, often called the oldest of all, has no date in Wikidata and so is not in the chart.</p>
+<p class="pull">In the year 1000, not one piece of land can honestly be filled with a flag. By 2010, {{flag_share_2010|pc}} can.</p>
+
+<h2><span class="n">08 · How I did this</span>Methods and caveats</h2>
+<p><b>Borders.</b> historical-basemaps gives one world map per date, with each area's name (NAME), the power controlling it (SUBJECTO) and a border precision from 1 (approximate) to 3 (set by international law). I used the {{n_snapshots|int}} dates from 800 to 2010, simplified the shapes for the web, and measured land on an equal-area grid, counting overlapping areas once and leaving out Antarctica. I corrected {{fixes|int}} labelling errors in the 1930 map, where the Soviet Union is labelled White Russia and the Far Eastern Republic still appears eight years after it joined Soviet Russia. Where a name ends in a colonial tag such as "(UK)" or "(France)", the area is given to that power. Nothing is interpolated between snapshots.</p>
+<p><b>Matching to Wikidata.</b> Each holder's name was matched to Wikidata items with the same English label or alias. Names are ambiguous (there are many Georgias and Kongos), so for each snapshot year I chose the item whose founding and end dates cover that year, preferring items with more Wikipedia articles, and I set the items by hand for {{match.n_overrides|int}} important holders: the United Kingdom, France's kingdom and republics, Spain, the Qing, the Republic of China and the People's Republic, the Holy Roman Empire, Venice, the Ottomans and others. Of {{match.n_state|int}} states, {{match.n_state_matched|int}} ({{match.rate|f1}}%) matched an item, covering {{match.rate_area|f1}}% of the land they held.</p>
+<p><b>Choosing an emblem.</b> A flag is shown only when Wikidata records it for that holder and it plausibly flew in that year. First choice is a flag whose start and end dates (or dates in the image's file name) cover the year. Next is a flag with no dates, for a state that no longer exists, within its lifetime and not before 1150; present-day flags with no dates are shown only from 1900, except Denmark's and Sweden's, whose early use is well documented. Next is a coat of arms or royal banner, for states of the heraldic age. Otherwise the area gets a plain colour and its name. Flags Wikidata marks as fictitious, conjectural or unofficial are never used. In total {{emblems.flag_pct|pc}} of state-years get a flag, and {{emblems.undated_pct_of_flags|pc}} of those rest on a flag with no recorded dates, so some may be a few years early. Two present-day flags missing from the downloaded image set (China and North Korea) were filled from the open flag-icons project.</p>
+<p><b>Peoples and cultural regions.</b> Many areas on the older maps are peoples or ways of life rather than states: "Australian aboriginal hunter-gatherers", "Bantu peoples", the Massachusett, the Sámi, the Thule. Many of these societies governed themselves without states, and none used a national flag of the European kind; some have flags today, but those are modern and would be wrong on a map of 1500. So they are shown hatched, with their own name, as the basemap gives it. I have kept the basemap's names, some of which are broad labels from outside; they are not my judgement of anyone's sovereignty.</p>
+<p><b>What this is not.</b> It is not an atlas of record. The basemaps are simplified and in places disputed, borders before 1500 are guesses at frontiers that were often zones, and a single "holder" hides vassals, tribute, shared rule and resistance. The flags are those Wikidata knows: well-documented states are rich in them, others have none. Treat a flag on a medieval map as "this state's emblem as recorded", not as proof that the banner flew there that year.</p>
+<details><summary>Sources and licences</summary>
+<ul>
+<li>historical-basemaps, Aleš Ourednik and contributors, https://github.com/aourednik/historical-basemaps. GPL-3.0. The simplified maps in data/maps/ and the area tables are derived from it and are released under GPL-3.0 too.</li>
+<li>Wikidata (flags P41 with start and end times, coats of arms P94, inception and dissolution dates, sitelinks), via QLever, retrieved {{retrieved|raw}}. CC0.</li>
+<li>Flag and coat of arms images: Wikimedia Commons, 160 pixel thumbnails. {{images.pd|int}} are public domain or CC0, {{images.by_sa|int}} are CC BY-SA and {{images.other|int}} have other free licences. <a href="data/flag_credits.csv">Every image with its source page and licence</a>.</li>
+<li>Two present-day flags drawn from flag-icons by Panayiotis Lipiridis, https://github.com/lipis/flag-icons, MIT licence.</li>
+<li>Natural Earth countries and populated places (public domain): present-day borders, city names and the flag-age chart.</li>
+<li>Base map tiles © Esri.</li>
+</ul></details>
+
+<div class="cta"><a class="p" href="{{DOI_URL}}">Read the paper</a><a href="https://github.com/Tristan-Hotham/flags-through-time">Data and code</a><a href="{{BLOG_URL}}">Blog post</a><a href="data/flag_credits.csv">Flag credits</a></div>
+
+<footer>
+<p>Dr Tristan Hotham, Independent researcher. ORCID <a href="https://orcid.org/0000-0003-4931-9349">0000-0003-4931-9349</a>.</p>
+<p>Cite as: Hotham, T. (2026) Who held the map? Twelve centuries of the world in flags, from historical basemaps and Wikidata. Zenodo. <a href="{{DOI_URL}}">{{DOI}}</a></p>
+<p>Flag images: Wikimedia Commons contributors, each credited in <a href="data/flag_credits.csv">data/flag_credits.csv</a> with its licence (public domain, CC0, CC BY and CC BY-SA). Borders: historical-basemaps, © Aleš Ourednik and contributors, GPL-3.0. Licence: code MIT; derived boundary data GPL-3.0; text, figures and other data CC BY-SA 4.0 (because some flag images are CC BY-SA).</p>
+<p>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</p>
+</footer>
+</div>
+<button class="btn theme" id="theme" aria-label="Switch light or dark">◐</button>
+<div class="tip" id="tip"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script>
+const R = /*RESULTS*/;
+const CITIES = /*CITIES*/;
+const fmt = n => n == null || n === "" ? "n/a" : Math.round(n).toLocaleString("en-GB");
+const f1 = n => (+n).toFixed(1);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const tip = document.getElementById("tip");
+function showTip(h, x, y) { tip.innerHTML = h; tip.style.display = "block"; const w = tip.offsetWidth; x = Math.max(w / 2 + 8, Math.min(innerWidth - w / 2 - 8, x)); tip.style.left = x + scrollX + "px"; tip.style.top = y + scrollY + "px"; }
+function hideTip() { tip.style.display = "none"; }
+document.addEventListener("click", e => { if (!e.target.closest("svg")) hideTip(); });
+const NS = "http://www.w3.org/2000/svg";
+const el = (t, a, p) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; };
+const lbl = (svg, x, y, s, cls = "lab", anchor = "start") => { const t = el("text", { x, y, class: cls, "text-anchor": anchor }, svg); t.textContent = s; return t; };
+const redraws = [];
+function resp(box, render) { let last = 0; const go = force => { const w = Math.max(280, Math.round(box.clientWidth)); if (!force && Math.abs(w - last) < 4) return; last = w; box.innerHTML = ""; render(w, w < 560); }; new ResizeObserver(() => go()).observe(box); go(); redraws.push(() => go(true)); }
+const isDark = () => { const r = document.documentElement; return r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; };
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const small = () => innerWidth < 900;
+const tipAt = (e, h) => { const t = e.touches ? e.touches[0] : e; showTip(h, t.clientX, t.clientY); };
+const KC = { f: ["Flag in use", "#B3261E"], a: ["Coat of arms or royal banner", "#C99A06"], c: ["State, no flag recorded", "#8E9AAE"], g: ["Group of small states", "#BFAF92"], h: ["People or cultural region", "#A8936A"], n: ["No holder named", "#DCD3C0"] };
+const KEYS = { flag: "f", arms: "a", plain: "c", group: "g", people: "h", none: "n" };
+const YEARS = R.years;
+const S = { yi: 0, fill: "auto", sel: null, playing: false };
+let SITE = null;
+const IMG = {};
+const flagSrc = id => `data/flags/${id}.png`;
+function img(id) { if (!IMG[id]) { const i = new Image(); i.onload = () => scheduleRedraw(); i.src = flagSrc(id); IMG[id] = i; } return IMG[id]; }
+function mix(a, b, t) { const p = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16)); const A = p(a), B = p(b); return "#" + A.map((x, i) => Math.round(x + (B[i] - x) * t).toString(16).padStart(2, "0")).join(""); }
+
+/* hero mark: a flag whose stripes show, snapshot by snapshot, the share of land under a flag */
+(function () {
+  const g = document.getElementById("heroMark"), C = R.cover, w = 132 / C.length;
+  el("rect", { x: 6, y: 4, width: 2.5, height: 106, fill: "currentColor" }, g);
+  C.forEach((c, i) => { const v = (c.flag + c.arms) / 100; const yy = 8 + 4 * Math.sin(i / 4);
+    el("rect", { x: 10 + i * w, y: yy, width: w + .3, height: 70, fill: mix("#E9E2D2", "#B3261E", Math.min(1, v * 1.05)) }, g); });
+  el("rect", { x: 10, y: 8, width: 132, height: 74, fill: "none", stroke: "currentColor", "stroke-width": 0 }, g);
+})();
+
+/* ---------- map machinery: base tiles, hills, labels, place names, present-day borders ---------- */
+const ESRI = "https://server.arcgisonline.com/ArcGIS/rest/services/";
+const ESRI_ATT = 'Tiles &copy; Esri | <a href="https://github.com/aourednik/historical-basemaps">historical-basemaps</a> | Flags: Commons';
+const LYDEF = { base: "plain", hills: true, hillK: 35, labels: false, labelK: 80, names: false, nameLvl: 1, today: false, anames: true, hist: true, histK: 90, approx: true };
+const LY = { ...LYDEF };
+try { Object.assign(LY, JSON.parse(localStorage.getItem("flags_layers") || "{}")); } catch (e) {}
+const saveLY = () => { try { localStorage.setItem("flags_layers", JSON.stringify(LY)); } catch (e) {} };
+const map = L.map("map", { minZoom: 1, maxZoom: 9, maxBounds: [[-70, -220], [86, 220]], zoomSnap: .5, worldCopyJump: false }).setView([30, 15], small() ? 1 : 2);
+["hills:250", "fill:400", "today:430", "labels:450", "icons:600", "names:620"].forEach(s => { const [n, z] = s.split(":"); map.createPane(n); map.getPane(n).style.zIndex = z; });
+["hills", "labels", "names", "icons", "today"].forEach(n => map.getPane(n).style.pointerEvents = "none");
+
+/* A canvas renderer that can fill a polygon with a flag image, clipped to its outline. */
+const FlagCanvas = L.Canvas.extend({
+  _fillStroke(ctx, layer) {
+    const o = layer.options;
+    if (o.fill) {
+      ctx.globalAlpha = o.fillOpacity;
+      const im = o.fimg, b = layer._pxBounds;
+      const bw = b ? b.max.x - b.min.x : 0, bh = b ? b.max.y - b.min.y : 0;
+      if (im && im.complete && im.naturalWidth && bw > 6 && bh > 4) {
+        ctx.fillStyle = o.fillColor; ctx.fill(o.fillRule || "evenodd");
+        ctx.save(); ctx.clip(o.fillRule || "evenodd");
+        const ar = im.naturalWidth / im.naturalHeight;
+        if (o.arms) {
+          const s = Math.min(90, .55 * Math.min(bw, bh * ar)); const w = s, h = s / ar;
+          if (w > 12) ctx.drawImage(im, (b.min.x + b.max.x) / 2 - w / 2, (b.min.y + b.max.y) / 2 - h / 2, w, h);
+        } else {
+          let w = Math.max(bw, bh * ar);
+          const cap = Math.max(100, Math.min(240, .5 * Math.min(this._map.getSize().x, this._map.getSize().y * 1.5)));
+          if (w <= cap) { const h = w / ar; ctx.drawImage(im, (b.min.x + b.max.x) / 2 - w / 2, (b.min.y + b.max.y) / 2 - h / 2, w, h); }
+          else {
+            w = cap; const h = w / ar, gap = 0;
+            const c = this._bounds, x0 = Math.max(b.min.x, c.min.x), x1 = Math.min(b.max.x, c.max.x), y0 = Math.max(b.min.y, c.min.y), y1 = Math.min(b.max.y, c.max.y);
+            const ox = b.min.x + ((x0 - b.min.x) - ((x0 - b.min.x) % (w + gap))), oy = b.min.y + ((y0 - b.min.y) - ((y0 - b.min.y) % (h + gap)));
+            for (let x = ox; x < x1; x += w + gap) for (let y = oy; y < y1; y += h + gap) ctx.drawImage(im, x, y, w, h);
+          }
+        }
+        ctx.restore();
+      } else {
+        ctx.fillStyle = o.pattern || o.fillColor; ctx.fill(o.fillRule || "evenodd");
+      }
+    }
+    if (o.stroke && o.weight !== 0) {
+      if (ctx.setLineDash) ctx.setLineDash(o && o._dashArray || []);
+      ctx.globalAlpha = o.opacity; ctx.lineWidth = o.weight; ctx.strokeStyle = o.color; ctx.lineCap = o.lineCap; ctx.lineJoin = o.lineJoin; ctx.stroke();
+    }
+  }
+});
+const renderer = new FlagCanvas({ pane: "fill", padding: .2, tolerance: 2 });
+function pat(col, bg, kind) {
+  const c = document.createElement("canvas"); c.width = c.height = 8; const x = c.getContext("2d");
+  x.fillStyle = bg; x.fillRect(0, 0, 8, 8); x.strokeStyle = col; x.lineWidth = 1.4;
+  if (kind === "h") { x.beginPath(); x.moveTo(-2, 10); x.lineTo(10, -2); x.moveTo(-2, 2); x.lineTo(2, -2); x.moveTo(6, 10); x.lineTo(10, 6); x.stroke(); }
+  else { x.fillStyle = col; x.beginPath(); x.arc(4, 4, 1.3, 0, 7); x.fill(); }
+  return renderer._ctx ? renderer._ctx.createPattern(c, "repeat") : null;
+}
+let PAT = {};
+function makePatterns() { const land = css("--land"); PAT = { h: pat(isDark() ? "#8C7D5E" : "#A8936A", isDark() ? "#3A3428" : "#E7DCC4", "h"), g: pat(isDark() ? "#9A8C70" : "#A39276", isDark() ? "#353029" : "#E9E1CF", "g") }; }
+
+let base = null, hills = null, labels = null; const names = L.layerGroup(), anames = L.layerGroup(), icons = L.layerGroup();
+let today = null;
+function setTiles() {
+  [base, labels, hills].forEach(l => { if (l) map.removeLayer(l); });
+  const t = isDark() ? "Dark" : "Light";
+  const url = LY.base === "relief" ? ESRI + "World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}" : LY.base === "satellite" ? ESRI + "World_Imagery/MapServer/tile/{z}/{y}/{x}" : `${ESRI}Canvas/World_${t}_Gray_Base/MapServer/tile/{z}/{y}/{x}`;
+  base = L.tileLayer(url, { maxZoom: 16, maxNativeZoom: LY.base === "relief" ? 13 : 16, attribution: ESRI_ATT }).addTo(map);
+  hills = L.tileLayer(ESRI + "Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}", { maxZoom: 16, maxNativeZoom: 16, pane: "hills" });
+  labels = L.tileLayer(`${ESRI}Canvas/World_${t}_Gray_Reference/MapServer/tile/{z}/{y}/{x}`, { maxZoom: 16, pane: "labels" });
+  applyLayers();
+}
+function applyLayers() {
+  if (!base) return;
+  if (LY.hills) { hills.addTo(map); hills.setOpacity(Math.min(1, .15 + LY.hillK / 120)); } else map.removeLayer(hills);
+  if (LY.labels) { labels.addTo(map); labels.setOpacity(LY.labelK / 100); } else map.removeLayer(labels);
+  [[LY.names, names], [LY.anames, anames]].forEach(([on, l]) => on ? l.addTo(map) : map.removeLayer(l));
+  icons.addTo(map);
+  if (today) { if (LY.today) today.addTo(map); else map.removeLayer(today); }
+  if (LY.hist) { if (geo && !map.hasLayer(geo)) geo.addTo(map); } else if (geo) map.removeLayer(geo);
+  restyle(); placeLabels();
+}
+function boxesHit(boxes, bx) { return boxes.some(o => bx[0] < o[2] && bx[2] > o[0] && bx[1] < o[3] && bx[3] > o[1]); }
+function placeLabels() {
+  names.clearLayers(); anames.clearLayers(); icons.clearLayers();
+  if (!CUR) return;
+  const z = map.getZoom(), bb = map.getBounds().pad(.05); const boxes = [];
+  const mode = fillMode();
+  // flag icons at the label point of each large holder (colour mode)
+  if (mode === "colours" && LY.hist) {
+    const seen = new Set();
+    CUR.byArea.forEach(f => {
+      const o = f.properties.o, e = em(o); if (o < 0 || seen.has(o) || !e || (e.k !== "f" && e.k !== "a")) return;
+      const tot = CUR.ownArea[o] || 0; const need = z < 2 ? 2.5e6 : z < 3 ? 8e5 : z < 4 ? 2e5 : 4e4; if (tot < need) return;
+      const ll = [f.properties.ly, f.properties.lx]; if (!bb.contains(ll)) return; seen.add(o);
+      const F = SITE.flags[e.f], w = z < 3 ? 26 : 34, h = Math.round(w * F.h / F.w);
+      const pt = map.latLngToContainerPoint(ll), bx = [pt.x - w / 2 - 2, pt.y - h / 2 - 2, pt.x + w / 2 + 2, pt.y + h / 2 + 2];
+      if (boxesHit(boxes, bx)) return; boxes.push(bx);
+      L.marker(ll, { pane: "icons", interactive: false, keyboard: false, icon: L.divIcon({ className: "flagIco", html: `<img src="${flagSrc(e.f)}" alt="">`, iconSize: [w, h], iconAnchor: [w / 2, h / 2] }) }).addTo(icons);
+    });
+  }
+  if (LY.anames && LY.hist) {
+    const kmpx = 40075 / (256 * Math.pow(2, z)); let n = 0;
+    for (const f of CUR.byArea) {
+      const p = f.properties, ll = [p.ly, p.lx]; if (!bb.contains(ll)) continue;
+      const px = p.a / Math.pow(kmpx * Math.max(.2, Math.cos(p.ly * Math.PI / 180)), 2);
+      if (px < (z < 3 ? 2600 : 1800)) continue;
+      const own = p.o >= 0 ? SITE.owners[p.o].n : ""; const nm = p.n || own; if (!nm) continue;
+      const two = own && own !== nm && z >= 3; const w = Math.min(170, Math.max(nm.length, two ? own.length : 0) * 6.6 + 6), h = two ? 24 : 13;
+      const pt = map.latLngToContainerPoint(ll), bx = [pt.x - w / 2, pt.y - h / 2, pt.x + w / 2, pt.y + h / 2];
+      if (boxesHit(boxes, bx)) continue; boxes.push(bx);
+      L.marker(ll, { pane: "names", interactive: false, keyboard: false, icon: L.divIcon({ className: "areaL", html: esc(nm.length > 26 ? nm.slice(0, 25) + "…" : nm) + (two ? `<small>${esc(own.length > 26 ? own.slice(0, 25) + "…" : own)}</small>` : ""), iconSize: [w, h], iconAnchor: [w / 2, h / 2] }) }).addTo(anames);
+      if (++n >= (small() ? 28 : 60)) break;
+    }
+  }
+  if (LY.names) {
+    const minPop = [[3, 8e6], [4, 3e6], [5, 1.2e6], [6, 5e5], [99, 3e5]].find(([zz]) => z < zz + (LY.nameLvl === 2 ? 1.5 : LY.nameLvl === 0 ? -1 : 0))[1] * (LY.nameLvl === 0 ? 2 : 1);
+    let n = 0;
+    for (const c of CITIES) {
+      if (c.pop < minPop || !bb.contains([c.lat, c.lon])) continue;
+      const pt = map.latLngToContainerPoint([c.lat, c.lon]), bx = [pt.x - 4, pt.y - 8, pt.x + 10 + c.name.length * 6.3, pt.y + 7];
+      if (boxesHit(boxes, bx)) continue; boxes.push(bx);
+      L.marker([c.lat, c.lon], { pane: "names", interactive: false, keyboard: false, icon: L.divIcon({ className: "cityL s", html: `<i></i>${esc(c.name)}`, iconSize: null, iconAnchor: [3, 6] }) }).addTo(names);
+      if (++n >= 80) break;
+    }
+  }
+}
+(function layerControl() {
+  const Ctl = L.Control.extend({ options: { position: "topright" }, onAdd() {
+    const d = L.DomUtil.create("div"); L.DomEvent.disableClickPropagation(d); L.DomEvent.disableScrollPropagation(d);
+    d.innerHTML = `<button class="lyrBtn" aria-expanded="false">Map layers</button>
+<div class="lyrPanel" hidden>
+ <div class="row"><label style="font-weight:600">Base map</label><div class="sub"><select data-k="base" aria-label="Base map"><option value="plain">Plain grey</option><option value="relief">Shaded relief</option><option value="satellite">Satellite</option></select></div></div>
+ <div class="row"><label><input type="checkbox" data-k="hills"> Hills and mountains</label><div class="sub"><span>strength</span><input type="range" data-k="hillK" min="10" max="100" step="5" aria-label="Hill shading strength"></div></div>
+ <div class="row"><label><input type="checkbox" data-k="labels"> Map labels (today)</label><div class="sub"><span>strength</span><input type="range" data-k="labelK" min="20" max="100" step="5" aria-label="Map label strength"></div></div>
+ <div class="row"><label><input type="checkbox" data-k="names"> City names (today)</label><div class="sub"><span>how many</span><select data-k="nameLvl" aria-label="How many city names"><option value="0">Biggest only</option><option value="1">Some</option><option value="2">Lots</option></select></div></div>
+ <div class="row"><label><input type="checkbox" data-k="today"> Borders (today)</label></div>
+ <div class="hd">Who held the map</div>
+ <div class="row"><label><input type="checkbox" data-k="hist"> Holders and their flags</label><div class="sub"><span>strength</span><input type="range" data-k="histK" min="20" max="100" step="5" aria-label="Strength of the historical map"></div></div>
+ <div class="row"><label><input type="checkbox" data-k="anames"> Names of areas</label></div>
+ <div class="row"><label><input type="checkbox" data-k="approx"> Approximate borders dashed</label></div>
+ <button class="reset">Reset layers</button>
+</div>`;
+    return d; } });
+  map.addControl(new Ctl());
+  const box = map.getContainer(), btn = box.querySelector(".lyrBtn"), pan = box.querySelector(".lyrPanel");
+  btn.onclick = () => { const o = pan.hidden; pan.hidden = !o; btn.setAttribute("aria-expanded", o); };
+  const sync = () => pan.querySelectorAll("[data-k]").forEach(i => { const k = i.dataset.k; if (i.type === "checkbox") i.checked = LY[k]; else i.value = LY[k]; });
+  pan.querySelectorAll("[data-k]").forEach(i => i.addEventListener(i.type === "range" ? "input" : "change", () => {
+    const k = i.dataset.k; LY[k] = i.type === "checkbox" ? i.checked : (k === "base" ? i.value : +i.value);
+    if (k === "hillK") LY.hills = true; if (k === "labelK") LY.labels = true; if (k === "nameLvl") LY.names = true; if (k === "histK") LY.hist = true;
+    sync(); saveLY(); if (k === "base") setTiles(); else applyLayers();
+  }));
+  pan.querySelector(".reset").onclick = () => { Object.assign(LY, LYDEF); saveLY(); sync(); setTiles(); };
+  sync();
+})();
+const YearCtl = L.Control.extend({ options: { position: "bottomleft" }, onAdd() { const d = L.DomUtil.create("div", "yearlab"); d.id = "mapyear"; return d; } });
+map.addControl(new YearCtl());
+L.control.scale({ imperial: false, position: "bottomright" }).addTo(map);
+
+/* ---------- snapshots ---------- */
+const CACHE = {};
+let CUR = null, geo = null;
+const em = o => o >= 0 && SITE.emb[YEARS[S.yi]] ? SITE.emb[YEARS[S.yi]][o] : null;
+const fillMode = () => S.fill === "auto" ? (map.getZoom() < 2.5 ? "colours" : "flags") : S.fill;
+function loadYear(y) {
+  if (CACHE[y]) return CACHE[y];
+  CACHE[y] = fetch(`data/maps/${y}.json`).then(r => r.json()).then(t => {
+    const fc = topojson.feature(t, t.objects[Object.keys(t.objects)[0]]);
+    const feats = [];
+    fc.features.forEach(f => { if (!f.geometry) return; const g = f.geometry;
+      const polys = g.type === "MultiPolygon" ? g.coordinates : g.type === "Polygon" ? [g.coordinates] : [];
+      polys.forEach(c => feats.push({ type: "Feature", properties: f.properties, geometry: { type: "Polygon", coordinates: c } })); });
+    const ownArea = {}; fc.features.forEach(f => { const o = f.properties.o; if (o >= 0) ownArea[o] = (ownArea[o] || 0) + f.properties.a; });
+    const byArea = fc.features.filter(f => f.geometry).sort((a, b) => b.properties.a - a.properties.a);
+    return { y, feats, ownArea, byArea, n: fc.features.length };
+  });
+  return CACHE[y];
+}
+function style(f) {
+  const p = f.properties, o = p.o, e = em(o), mode = fillMode(), land = css("--land"), op = LY.histK / 100;
+  const sel = S.sel && S.sel.o === o && o >= 0;
+  const st = { renderer, color: sel ? css("--fg") : (isDark() ? "#11141a" : "#fffdf8"), weight: sel ? 2.4 : .7, opacity: sel ? 1 : .85, fillOpacity: op, dashArray: LY.approx && p.b === 1 && !sel ? "3 3" : null, fimg: null, pattern: null, arms: false };
+  if (o < 0 || !e) { st.fillColor = land; st.fillOpacity = op * .9; return st; }
+  if (e.k === "f" || e.k === "a") {
+    const F = SITE.flags[e.f]; st.fillColor = e.k === "a" ? mix(land, F.col, .45) : F.col;
+    if (mode === "flags") { st.fimg = img(e.f); st.arms = e.k === "a"; }
+  } else if (e.k === "c") st.fillColor = isDark() ? mix(SITE.owners[o].pc, "#20242c", .45) : SITE.owners[o].pc;
+  else { st.fillColor = KC[e.k][1]; st.pattern = PAT[e.k]; }
+  return st;
+}
+function restyle() { if (geo) geo.setStyle(style); }
+let rTimer = null;
+function scheduleRedraw() { clearTimeout(rTimer); rTimer = setTimeout(restyle, 80); }
+function featureClick(f, ll) { S.sel = { o: f.properties.o, n: f.properties.n, ll, a: f.properties.a, b: f.properties.b }; restyle(); side(); }
+async function setYear(i, keepSel = true) {
+  S.yi = Math.max(0, Math.min(YEARS.length - 1, i)); const y = YEARS[S.yi];
+  document.getElementById("yr").value = S.yi; document.getElementById("yrlab").textContent = y; document.getElementById("mapyear").textContent = y;
+  document.querySelectorAll("#jumpRow .btn").forEach(b => b.setAttribute("aria-pressed", +b.dataset.y === y));
+  const d = await loadYear(y);
+  if (YEARS[S.yi] !== y) return;
+  CUR = d;
+  // preload this year's flags and the next snapshot
+  Object.values(SITE.emb[y] || {}).forEach(e => { if (e.f && (e.k === "f" || e.k === "a")) img(e.f); });
+  if (S.yi + 1 < YEARS.length) loadYear(YEARS[S.yi + 1]);
+  const old = geo;
+  geo = L.geoJSON({ type: "FeatureCollection", features: d.feats }, { renderer, style, onEachFeature: (f, l) => {
+    l.on("click", e => featureClick(f, e.latlng));
+    l.on("mousemove", e => { if (small()) return; const r = map.getContainer().getBoundingClientRect(); showTip(tipHtml(f.properties), r.left + e.containerPoint.x, r.top + e.containerPoint.y); });
+    l.on("mouseout", hideTip);
+  } });
+  if (LY.hist) geo.addTo(map);
+  if (old) map.removeLayer(old);
+  if (S.sel && keepSel && S.sel.ll) {
+    const hit = d.feats.find(f => pointIn(S.sel.ll, f.geometry.coordinates));
+    if (hit) S.sel = { o: hit.properties.o, n: hit.properties.n, ll: S.sel.ll, a: hit.properties.a, b: hit.properties.b }; else S.sel = { o: -1, n: "", ll: S.sel.ll, a: 0, b: 1 };
+    restyle();
+  }
+  placeLabels(); side(); legend();
+  try { history.replaceState(null, "", "#" + y); } catch (e) {}
+}
+function pointIn(ll, rings) {
+  const x = ll.lng, y = ll.lat; let ins = false;
+  rings.forEach(r => { for (let i = 0, j = r.length - 1; i < r.length; j = i++) { const [xi, yi] = r[i], [xj, yj] = r[j]; if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) ins = !ins; } });
+  return ins;
+}
+function ownerName(o) { return o >= 0 ? SITE.owners[o].n : "No holder named"; }
+function kindOf(o) { const e = em(o); return o < 0 || !e ? "n" : e.k; }
+function tipHtml(p) {
+  const o = p.o, e = em(o), own = ownerName(o);
+  const im = e && (e.k === "f" || e.k === "a") ? `<img src="${flagSrc(e.f)}" alt="">` : "";
+  return `${im}<b>${esc(own)}</b>${p.n && p.n !== own ? `<br>${esc(p.n)}` : ""}<br>${KC[kindOf(o)][0]}`;
+}
+const BP = { 1: "approximate", 2: "moderately precise", 3: "set by international law" };
+function why(e, o) {
+  if (!e) return "No holder is named for this land in the basemap.";
+  if (e.k === "h") return "A people or cultural region, as the basemap names it. Many such societies governed themselves without states, and none flew a national flag of the European kind; it is shown by name, not by a modern flag.";
+  if (e.k === "g") return "A group of small states that the basemap draws as one area. No single flag would be honest.";
+  if (e.k === "c") return "No flag or coat of arms is recorded in Wikidata for this holder that fits this year, so it is shown in a plain colour. Before about 1700 most states flew no national flag.";
+  const yrs = e.s != null || e.e != null ? `${e.s ?? "?"} to ${e.e ?? "today"}` : null;
+  if (e.k === "a") return `Coat of arms or royal emblem, shown because no flag fits this year${yrs ? `; dates in the file name: ${yrs}` : ""}.`;
+  if (e.b === "d") return `Flag in use ${yrs} (start and end dates in Wikidata).`;
+  if (e.b === "f") return `Flag in use ${yrs} (dates from the image's file name on Wikimedia Commons).`;
+  if (e.b === "k") return "Flag recorded in Wikidata with no dates; its early use is well documented, so it is shown.";
+  return "Flag recorded in Wikidata with no dates. It is shown because this state existed in this year, but it may be a few years early or late.";
+}
+function ownerYears(o) { const ys = []; YEARS.forEach((y, i) => { const e = SITE.emb[y] && SITE.emb[y][o]; if (e) ys.push(i); }); return ys; }
+function side() {
+  const box = document.getElementById("side"), y = YEARS[S.yi];
+  if (!SITE) { box.innerHTML = "Loading..."; return; }
+  if (S.sel) {
+    const o = S.sel.o, e = em(o), own = ownerName(o), Q = e && e.q ? SITE.q[e.q] : null;
+    const F = e && e.f ? SITE.flags[e.f] : null; const tot = CUR && o >= 0 ? CUR.ownArea[o] : 0; const land = R.cover ? null : null;
+    let h = `<button class="back" id="bk">Back to ${y}</button><h4>${y}</h4>`;
+    if (F && (e.k === "f" || e.k === "a")) h += `<img class="flagimg" src="${flagSrc(e.f)}" alt="${esc(F.fn)}">`;
+    else h += `<span class="sw" style="width:46px;height:30px;display:block;margin:6px 0 8px;background:${o >= 0 && e && e.k === "c" ? SITE.owners[o].pc : KC[kindOf(o)][1]}"></span>`;
+    h += `<div class="big">${esc(own)}</div>`;
+    if (S.sel.n && S.sel.n !== own) h += `<div class="sub">Area: ${esc(S.sel.n)}</div>`;
+    h += `<div class="why">${why(e, o)}</div><table>`;
+    if (S.sel.a) h += `<tr><td>Land in this area</td><td class="num">${fmt(S.sel.a)} km²</td></tr>`;
+    if (tot) h += `<tr><td>All land held by ${esc(own.length > 24 ? own.slice(0, 23) + "…" : own)}</td><td class="num">${fmt(tot)} km²<br><small>${f1(100 * tot / LANDT[y])}% of the world</small></td></tr>`;
+    h += `<tr><td>Border precision</td><td class="num">${BP[S.sel.b] || "approximate"}</td></tr></table>`;
+    if (F) h += `<p class="sub">Image: <a href="https://commons.wikimedia.org/wiki/File:${F.u}" target="_blank" rel="noopener">${esc(F.fn)}</a> (${esc(F.lic)})</p>`;
+    if (Q) h += `<p class="sub">Wikidata: <a href="https://www.wikidata.org/wiki/${e.q}" target="_blank" rel="noopener">${esc(Q[0])}</a>${Q[1] != null ? ` (${Q[1]} to ${Q[2] ?? "today"})` : ""} · <a href="https://www.wikidata.org/wiki/Special:GoToLinkedPage/enwiki/${e.q}" target="_blank" rel="noopener">Wikipedia</a></p>`;
+    if (o >= 0) { const ys = ownerYears(o); h += `<h4>${esc(own)} in other snapshots</h4><div class="chips">${ys.map(i => `<button data-i="${i}" aria-current="${i === S.yi}">${YEARS[i]}</button>`).join("")}</div>`; }
+    box.innerHTML = h;
+    box.querySelector("#bk").onclick = () => { S.sel = null; restyle(); side(); };
+    box.querySelectorAll(".chips button").forEach(b => b.onclick = () => { const i = +b.dataset.i; const oo = S.sel.o; setYear(i, false).then(() => selectOwner(oo, false)); });
+    return;
+  }
+  const E = R.entities[S.yi], C = R.cover[S.yi];
+  let h = `<h4>The world in ${y}</h4><div class="big">${y}</div><div class="sub">${fmt(E.states)} states and ${fmt(E.people)} peoples or cultural regions named in this snapshot</div><table>`;
+  [["flag", "f"], ["arms", "a"], ["plain", "c"], ["group", "g"], ["people", "h"], ["none", "n"]].forEach(([k, c]) => { if (C[k] > 0) h += `<tr><td><span class="sw" style="background:${KC[c][1]}"></span>${KC[c][0]}</td><td class="num">${f1(C[k])}%</td></tr>`; });
+  h += `</table><h4>Largest holders of land</h4><table>`;
+  const top = CUR ? Object.entries(CUR.ownArea).filter(([o]) => SITE.owners[o].c === "s").sort((a, b) => b[1] - a[1]).slice(0, 8) : [];
+  top.forEach(([o, a]) => { const e = SITE.emb[y][o]; const im = e && e.f ? `<img src="${flagSrc(e.f)}" alt="">` : `<span class="sw" style="background:${SITE.owners[o].pc}"></span>`;
+    h += `<tr><td style="width:30px">${im}</td><td><span class="go" data-o="${o}">${esc(SITE.owners[o].n)}</span></td><td class="num">${f1(100 * a / LANDT[y])}%</td></tr>`; });
+  h += `</table><p class="sub">Click any area on the map to see who held it, its flag and where the flag comes from.</p>`;
+  box.innerHTML = h;
+  box.querySelectorAll(".go").forEach(s => s.onclick = () => selectOwner(+s.dataset.o, true));
+}
+const LANDT = {}; R.years.forEach(y => LANDT[y] = R.land_by_year[y]);
+function selectOwner(o, zoom) {
+  if (!CUR) return;
+  const fs = CUR.feats.filter(f => f.properties.o === o); if (!fs.length) return;
+  const big = fs.reduce((a, b) => b.properties.a > a.properties.a ? b : a);
+  S.sel = { o, n: big.properties.n, ll: L.latLng(big.properties.ly, big.properties.lx), a: big.properties.a, b: big.properties.b };
+  if (zoom) { const b = L.geoJSON({ type: "FeatureCollection", features: fs }).getBounds(); map.fitBounds(b, { maxZoom: 5, padding: [20, 20] }); }
+  restyle(); side();
+}
+function legend() {
+  const y = YEARS[S.yi], mode = fillMode();
+  const sw = (bg, extra = "") => `<i style="background:${bg};${extra}"></i>`;
+  const sample = SITE && SITE.emb[y] ? Object.entries(SITE.emb[y]).find(([o, e]) => e.k === "f") : null;
+  const fl = sample ? `<i style="background:url(${flagSrc(sample[1].f)}) center/cover"></i>` : sw(KC.f[1]);
+  document.getElementById("legend").innerHTML =
+    `<span>${mode === "flags" ? fl : sw(KC.f[1])}${mode === "flags" ? "Flag in use that year" : "Flag in use (its main colour)"}</span>` +
+    `<span>${sw(mix("#E9E2D2", "#C99A06", .45))}Coat of arms or royal banner</span><span>${sw("#C9A27E")}State, no flag recorded (plain colour)</span>` +
+    `<span>${sw("repeating-linear-gradient(135deg,#A8936A 0 1.5px,#E7DCC4 1.5px 5px)")}People or cultural region</span><span>${sw("radial-gradient(#A39276 1px,#E9E1CF 1.3px) 0 0/5px 5px")}Group of small states</span>` +
+    `<span>${sw(css("--land"))}No holder named</span><span>${sw("transparent", "border:1.5px dashed #777")}Approximate border</span>`;
+}
+
+/* ---------- controls ---------- */
+(function () {
+  const yr = document.getElementById("yr"); yr.max = YEARS.length - 1;
+  yr.addEventListener("input", () => { stop(); setYear(+yr.value); });
+  document.getElementById("prev").onclick = () => { stop(); setYear(S.yi - 1); };
+  document.getElementById("next").onclick = () => { stop(); setYear(S.yi + 1); };
+  const jr = document.getElementById("jumpRow");
+  [1000, 1279, 1492, 1600, 1715, 1783, 1815, 1914, 1945, 2010].forEach(y => { const b = document.createElement("button"); b.className = "btn"; b.dataset.y = y; b.textContent = y; b.setAttribute("aria-pressed", "false"); b.onclick = () => { stop(); setYear(YEARS.indexOf(y)); }; jr.appendChild(b); });
+  document.querySelectorAll("#fillRow .btn").forEach(b => b.onclick = () => { S.fill = b.dataset.f; document.querySelectorAll("#fillRow .btn").forEach(x => x.setAttribute("aria-pressed", x === b)); restyle(); placeLabels(); legend(); });
+  map.on("zoomend", () => { restyle(); legend(); });
+  map.on("moveend", placeLabels);
+})();
+let timer = null;
+function stop() { S.playing = false; clearTimeout(timer); document.getElementById("play").textContent = "▶ Play"; }
+function step() { if (!S.playing) return; if (S.yi >= YEARS.length - 1) { stop(); return; } setYear(S.yi + 1).then(() => { timer = setTimeout(step, 1500); }); }
+document.getElementById("play").onclick = () => { if (S.playing) { stop(); return; } S.playing = true; document.getElementById("play").textContent = "❚❚ Pause"; if (S.yi >= YEARS.length - 1) setYear(0).then(() => { timer = setTimeout(step, 1300); }); else step(); };
+
+/* search: holders in any snapshot, and areas in this snapshot */
+(function () {
+  const q = document.getElementById("q"), sug = document.getElementById("sug"); let opts = [], k = -1;
+  const norm = s => s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  function list() {
+    const v = norm(q.value.trim()); if (v.length < 2 || !SITE) { sug.style.display = "none"; return; }
+    const res = [];
+    SITE.owners.forEach((o, i) => { if (norm(o.n).includes(v)) { const ys = ownerYears(i); if (ys.length) res.push({ t: "o", i, label: o.n, sub: `${YEARS[ys[0]]}${ys.length > 1 ? " to " + YEARS[ys[ys.length - 1]] : ""}`, score: norm(o.n).startsWith(v) ? 0 : 1 }); } });
+    if (CUR) { const seen = new Set(); CUR.byArea.forEach(f => { const n = f.properties.n; if (n && !seen.has(n) && norm(n).includes(v) && (f.properties.o < 0 || SITE.owners[f.properties.o].n !== n)) { seen.add(n); res.push({ t: "a", f, label: n, sub: `area in ${YEARS[S.yi]}`, score: norm(n).startsWith(v) ? .5 : 1.5 }); } }); }
+    CITIES.forEach(c => { if (norm(c.name).startsWith(v)) res.push({ t: "c", c, label: c.name, sub: "city today", score: 2 }); });
+    opts = res.sort((a, b) => a.score - b.score || a.label.length - b.label.length).slice(0, 12); k = -1;
+    sug.innerHTML = opts.map((o, i) => `<li role="option" data-i="${i}">${esc(o.label)} <span>${esc(o.sub)}</span></li>`).join(""); sug.style.display = opts.length ? "block" : "none";
+    sug.querySelectorAll("li").forEach(li => li.onclick = () => pick(opts[+li.dataset.i]));
+  }
+  function pick(o) {
+    sug.style.display = "none"; q.value = o.label; stop();
+    if (o.t === "o") { const ys = ownerYears(o.i); let best = ys.reduce((a, b) => Math.abs(b - S.yi) < Math.abs(a - S.yi) ? b : a, ys[0]); setYear(best, false).then(() => selectOwner(o.i, true)); }
+    else if (o.t === "a") { const p = o.f.properties; map.setView([p.ly, p.lx], Math.max(map.getZoom(), 4)); featureClick(o.f, L.latLng(p.ly, p.lx)); }
+    else { const ll = L.latLng(o.c.lat, o.c.lon); map.setView(ll, 5); const hit = CUR.feats.find(f => pointIn(ll, f.geometry.coordinates)); if (hit) featureClick(hit, ll); }
+  }
+  q.addEventListener("input", list);
+  q.addEventListener("keydown", e => { const li = sug.querySelectorAll("li"); if (e.key === "ArrowDown") { k = Math.min(li.length - 1, k + 1); } else if (e.key === "ArrowUp") { k = Math.max(0, k - 1); } else if (e.key === "Enter") { if (opts[k < 0 ? 0 : k]) pick(opts[k < 0 ? 0 : k]); return; } else return; e.preventDefault(); li.forEach((x, i) => x.setAttribute("aria-selected", i === k)); });
+  document.addEventListener("click", e => { if (!e.target.closest(".searchbox")) sug.style.display = "none"; });
+  window.searchFor = v => { q.value = v; list(); };
+})();
+
+/* ---------- charts ---------- */
+const XS = (w, l, r) => y => l + (w - l - r) * (y - 800) / (2010 - 800);
+function axisYears(svg, x, top, h, ys = [800, 1000, 1200, 1400, 1600, 1800, 2000]) { ys.forEach(y => { el("line", { x1: x(y), x2: x(y), y1: top, y2: top + h, stroke: css("--rule") }, svg); lbl(svg, x(y), top + h + 14, y, "lab m s", "middle"); }); }
+function stacked(box, rows, keys, cols, names, x0 = 800, x1 = 2010, ymax = 100, unit = "%") {
+  resp(box, (w, sm) => {
+    const H = sm ? 220 : 270, l = 34, r = 8, t = 8, ch = H - 30;
+    const svg = el("svg", { viewBox: `0 0 ${w} ${H}`, role: "img" }, box);
+    const x = y => l + (w - l - r) * (y - x0) / (x1 - x0), yv = v => t + ch * (1 - v / ymax);
+    [0, 25, 50, 75, 100].filter(v => v <= ymax).forEach(v => { el("line", { x1: l, x2: w - r, y1: yv(v), y2: yv(v), stroke: css("--rule") }, svg); lbl(svg, l - 5, yv(v) + 4, v + unit, "lab m s", "end"); });
+    const ticks = x0 === 800 ? [800, 1000, 1200, 1400, 1600, 1800, 2000] : [1500, 1600, 1700, 1800, 1900, 2000];
+    ticks.forEach(y => lbl(svg, x(y), H - 6, y, "lab m s", "middle"));
+    let acc = rows.map(() => 0);
+    keys.forEach((k, ki) => {
+      const lo = acc.slice(), hi = rows.map((r0, i) => acc[i] + r0[k]); acc = hi;
+      const d = rows.map((r0, i) => `${i ? "L" : "M"}${x(r0.y)},${yv(hi[i])}`).join("") + rows.slice().reverse().map((r0, j) => { const i = rows.length - 1 - j; return `L${x(r0.y)},${yv(lo[i])}`; }).join("") + "Z";
+      el("path", { d, fill: cols[ki], stroke: css("--card"), "stroke-width": .6 }, svg);
+    });
+    rows.forEach(r0 => el("line", { x1: x(r0.y), x2: x(r0.y), y1: t, y2: t + ch, stroke: css("--fg"), "stroke-opacity": .12, "stroke-dasharray": "1 3" }, svg));
+    const hov = el("rect", { x: l, y: t, width: w - l - r, height: ch, fill: "transparent" }, svg);
+    const mv = e => { const bb = svg.getBoundingClientRect(); const px = ((e.touches ? e.touches[0].clientX : e.clientX) - bb.left) * w / bb.width; let best = rows[0]; rows.forEach(r0 => { if (Math.abs(x(r0.y) - px) < Math.abs(x(best.y) - px)) best = r0; });
+      tipAt(e, `<b>${best.y}</b><br>` + keys.map((k, ki) => `<span class="sw" style="background:${cols[ki]}"></span>${names[ki]}: ${f1(best[k])}%`).reverse().join("<br>")); };
+    hov.addEventListener("mousemove", mv); hov.addEventListener("touchstart", mv, { passive: true }); hov.addEventListener("mouseleave", hideTip);
+    { const lg = document.createElement("div"); lg.className = "legend"; lg.innerHTML = keys.map((k, ki) => `<span><i style="background:${cols[ki]}"></i>${names[ki]}</span>`).reverse().join(""); box.appendChild(lg); }
+  });
+}
+stacked(document.getElementById("coverChart"), R.cover, ["flag", "arms", "plain", "group", "people", "none"], [KC.f[1], KC.a[1], KC.c[1], KC.g[1], KC.h[1], KC.n[1]],
+  ["Flag in use", "Arms or banner", "State, no flag", "Group of states", "People or region", "No holder named"]);
+stacked(document.getElementById("euroChart"), R.euro, ["home", "overseas", "russia"], ["#23408E", "#B3261E", "#8E9AAE"], ["In Europe", "Outside Europe", "Russia and the USSR"], 1492, 2010, 50);
+
+(function bigChart() {
+  const box = document.getElementById("bigChart"), rows = R.largest_by_year, mx = Math.max(...rows.map(r => r.pct));
+  resp(box, (w, sm) => {
+    const rh = 19, l = 42, nameW = sm ? 0 : 200, H = rows.length * rh + 10, bx0 = l + 30 + nameW;
+    const svg = el("svg", { viewBox: `0 0 ${w} ${H}`, role: "img" }, box);
+    rows.forEach((r, i) => {
+      const y = 4 + i * rh, e = SITE_EMB(r.y, r.n);
+      lbl(svg, l - 6, y + 13, r.y, "lab m s", "end");
+      if (e && e.f) el("image", { href: flagSrc(e.f), x: l, y: y + 2, width: 24, height: 15, preserveAspectRatio: "xMidYMid slice" }, svg);
+      else el("rect", { x: l, y: y + 2, width: 24, height: 15, fill: e && e.k === "c" ? "#C9A27E" : "#ddd", stroke: css("--border") }, svg);
+      const bw = (w - bx0 - 50) * r.pct / mx;
+      el("rect", { x: bx0, y: y + 3, width: Math.max(1, bw), height: 13, fill: e && e.k === "f" ? KC.f[1] : KC.c[1], opacity: .85 }, svg);
+      const t = lbl(svg, sm ? bx0 + bw + 4 : l + 30, y + 13, sm ? `${r.n} ${f1(r.pct)}%` : r.n, "lab s");
+      if (!sm) lbl(svg, bx0 + bw + 4, y + 13, f1(r.pct) + "%", "lab m s");
+      const hv = el("rect", { x: 0, y, width: w, height: rh, fill: "transparent" }, svg);
+      const E = R.entities[i]; const m = ev => tipAt(ev, `<b>${r.y}</b><br>` + E.top.map(t => `${esc(t.n)}: ${f1(t.pct)}%`).join("<br>"));
+      hv.addEventListener("mousemove", m); hv.addEventListener("touchstart", m, { passive: true }); hv.addEventListener("mouseleave", hideTip);
+      hv.style.cursor = "pointer"; hv.addEventListener("click", () => { document.getElementById("atlas").scrollIntoView({ behavior: "smooth" }); const oi = SITE.owners.findIndex(o => o.n === r.n); setYear(i, false).then(() => selectOwner(oi, true)); });
+    });
+  });
+})();
+function SITE_EMB(y, name) { if (!SITE) return null; const oi = OIDX[name]; return oi == null ? null : (SITE.emb[y] || {})[oi]; }
+let OIDX = {};
+
+(function statesChart() {
+  const box = document.getElementById("statesChart"), rows = R.entities;
+  resp(box, (w, sm) => {
+    const H = sm ? 220 : 250, l = 40, r = 10, t = 10, ch = H - 34, mx = 220;
+    const svg = el("svg", { viewBox: `0 0 ${w} ${H}`, role: "img" }, box);
+    const x = XS(w, l, r), yv = v => t + ch * (1 - Math.min(v, mx) / mx);
+    [0, 50, 100, 150, 200].forEach(v => { el("line", { x1: l, x2: w - r, y1: yv(v), y2: yv(v), stroke: css("--rule") }, svg); lbl(svg, l - 5, yv(v) + 4, v, "lab m s", "end"); });
+    [800, 1000, 1200, 1400, 1600, 1800, 2000].forEach(y => lbl(svg, x(y), H - 8, y, "lab m s", "middle"));
+    [["states", KC.c[1] === "#8E9AAE" ? "#23408E" : "#23408E"], ["people", KC.h[1]]].forEach(([k, c]) => {
+      el("path", { d: rows.map((r0, i) => `${i ? "L" : "M"}${x(r0.y)},${yv(r0[k])}`).join(""), fill: "none", stroke: c, "stroke-width": 2.2 }, svg);
+      rows.forEach(r0 => el("circle", { cx: x(r0.y), cy: yv(r0[k]), r: 2.6, fill: c }, svg));
+    });
+    const i8 = rows.findIndex(r0 => r0.y === 1492); lbl(svg, x(1492) + 6, t + 10, `1492: ${fmt(rows[i8].people)} peoples (off the scale)`, "lab m s");
+    lbl(svg, w - r, yv(rows[rows.length - 1].states) - 8, "states", "lab s b", "end");
+    const hov = el("rect", { x: l, y: t, width: w - l - r, height: ch, fill: "transparent" }, svg);
+    const mv = e => { const bb = svg.getBoundingClientRect(); const px = ((e.touches ? e.touches[0].clientX : e.clientX) - bb.left) * w / bb.width; let b = rows[0]; rows.forEach(r0 => { if (Math.abs(x(r0.y) - px) < Math.abs(x(b.y) - px)) b = r0; }); tipAt(e, `<b>${b.y}</b><br>${b.states} states<br>${b.people} peoples or regions`); };
+    hov.addEventListener("mousemove", mv); hov.addEventListener("touchstart", mv, { passive: true }); hov.addEventListener("mouseleave", hideTip);
+    const lg = document.createElement("div"); lg.className = "legend"; lg.innerHTML = `<span><i style="background:#23408E"></i>States</span><span><i style="background:${KC.h[1]}"></i>Peoples and cultural regions</span>`; box.appendChild(lg);
+  });
+})();
+
+(function ageChart() {
+  const box = document.getElementById("ageChart"), B = R.flag_age.bins, mx = Math.max(...B.map(b => b.n));
+  fetch("data/flag_age.csv").then(r => r.text()).then(txt => { const lines = txt.trim().split("\n").slice(1).map(l => l.split(",")); box.dataset.ok = 1; window.AGE = lines.filter(l => l[5]).map(l => [l[0], +l[5]]); }).catch(() => {});
+  resp(box, (w, sm) => {
+    const H = 230, l = 30, r = 8, t = 10, ch = H - 34, n = B.length, bw = (w - l - r) / n;
+    const svg = el("svg", { viewBox: `0 0 ${w} ${H}`, role: "img" }, box);
+    [0, 10, 20].forEach(v => { const yy = t + ch * (1 - v / Math.max(mx, 25)); el("line", { x1: l, x2: w - r, y1: yy, y2: yy, stroke: css("--rule") }, svg); lbl(svg, l - 5, yy + 4, v, "lab m s", "end"); });
+    B.forEach((b, i) => {
+      const hh = ch * b.n / Math.max(mx, 25), x = l + i * bw;
+      const rc = el("rect", { x: x + 2, y: t + ch - hh, width: bw - 4, height: hh, fill: b.b >= 1945 ? KC.f[1] : "#23408E", opacity: .9 }, svg);
+      lbl(svg, x + bw / 2, t + ch - hh - 4, b.n, "lab s", "middle");
+      if (!sm || i % 2 === 0) lbl(svg, x + bw / 2, H - 8, b.b + "s", "lab m s", "middle");
+      const m = e => { const cs = (window.AGE || []).filter(a => a[1] >= b.b && a[1] < b.b + 20).map(a => `${a[0]} ${a[1]}`); tipAt(e, `<b>${b.b} to ${b.b + 19}</b>: ${b.n}<br>${esc(cs.slice(0, 14).join(", "))}${cs.length > 14 ? "..." : ""}`); };
+      rc.addEventListener("mousemove", m); rc.addEventListener("touchstart", m, { passive: true }); rc.addEventListener("mouseleave", hideTip);
+    });
+  });
+})();
+
+function cityChart() {
+  const box = document.getElementById("cityChart"), C = R.cities;
+  resp(box, (w, sm) => {
+    const lw = sm ? 78 : 96, cw = Math.max(15, (Math.max(w, 560) - lw - 4) / YEARS.length), ch = Math.round(cw * .66), H = C.length * (ch + 4) + 30, W = lw + cw * YEARS.length + 4;
+    box.style.minWidth = W + "px";
+    const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", width: W }, box);
+    YEARS.forEach((y, i) => { if (i % (sm ? 4 : 3) === 0 || i === YEARS.length - 1) lbl(svg, lw + i * cw + cw / 2, 12, y, "lab m t", "middle"); });
+    C.forEach((c, ci) => {
+      const yy = 20 + ci * (ch + 4); lbl(svg, lw - 6, yy + ch * .75, c.c, "lab s", "end");
+      c.h.forEach((h, i) => {
+        const x = lw + i * cw;
+        if (h.f) el("image", { href: flagSrc(h.f), x: x + .5, y: yy, width: cw - 1, height: ch, preserveAspectRatio: "none" }, svg);
+        else { const k = KEYS[h.k] || "n"; const r0 = el("rect", { x: x + .5, y: yy, width: cw - 1, height: ch, fill: k === "c" && h.o && OIDX[h.o] != null ? SITE.owners[OIDX[h.o]].pc : KC[k][1] }, svg);
+          if (k === "h") el("path", { d: `M${x + 1},${yy + ch} L${x + cw - 1},${yy}`, stroke: "#fff", "stroke-opacity": .6 }, svg); }
+        const hv = el("rect", { x: x + .5, y: yy, width: cw - 1, height: ch, fill: "transparent", stroke: css("--border"), "stroke-width": .4 }, svg);
+        const m = e => tipAt(e, `<b>${esc(c.c)}, ${h.y}</b><br>${esc(h.o || "No holder named")}${h.n && h.n !== h.o ? `<br><small>${esc(h.n)}</small>` : ""}`);
+        hv.addEventListener("mousemove", m); hv.addEventListener("touchstart", m, { passive: true }); hv.addEventListener("mouseleave", hideTip);
+        hv.style.cursor = "pointer"; hv.addEventListener("click", () => { document.getElementById("atlas").scrollIntoView({ behavior: "smooth" }); const ll = L.latLng(c.y, c.x); setYear(i, false).then(() => { map.setView(ll, 5); const hit = CUR.feats.find(f => pointIn(ll, f.geometry.coordinates)); if (hit) featureClick(hit, ll); }); });
+      });
+    });
+  });
+}
+
+/* ---------- start ---------- */
+document.getElementById("theme").onclick = () => { const r = document.documentElement; r.dataset.theme = isDark() ? "light" : "dark"; makePatterns(); setTiles(); redraws.forEach(f => f()); legend(); };
+fetch("data/site.json").then(r => r.json()).then(s => {
+  SITE = s; SITE.owners.forEach((o, i) => OIDX[o.n] = i);
+  redraws.forEach(f => f()); cityChart();
+  makePatterns(); setTiles();
+  fetch("data/borders_today.json").then(r => r.json()).then(t => { today = L.geoJSON(topojson.feature(t, t.objects[Object.keys(t.objects)[0]]), { pane: "today", interactive: false, style: { color: isDark() ? "#ddd" : "#222", weight: .8, opacity: .55, fill: false, dashArray: "4 3" } }); applyLayers(); });
+  const h = +location.hash.slice(1); const i0 = YEARS.indexOf(h);
+  setYear(i0 >= 0 ? i0 : YEARS.indexOf(1783));
+});
+</script>
+/*FULLSCREEN*/
+</body>
+</html>

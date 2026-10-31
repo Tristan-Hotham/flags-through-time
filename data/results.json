@@ -1,0 +1,5398 @@
+{
+ "years": [
+  800,
+  900,
+  1000,
+  1100,
+  1200,
+  1279,
+  1300,
+  1400,
+  1492,
+  1500,
+  1530,
+  1600,
+  1650,
+  1700,
+  1715,
+  1783,
+  1800,
+  1815,
+  1878,
+  1880,
+  1900,
+  1914,
+  1920,
+  1930,
+  1938,
+  1945,
+  1960,
+  1994,
+  2000,
+  2010
+ ],
+ "n_snapshots": 30,
+ "first_year": 800,
+ "last_year": 2010,
+ "cover": [
+  {
+   "y": 800,
+   "flag": 0.0,
+   "arms": 0.0,
+   "plain": 22.5,
+   "people": 59.4,
+   "group": 2.1,
+   "none": 16.0
+  },
+  {
+   "y": 900,
+   "flag": 0.0,
+   "arms": 0.0,
+   "plain": 24.9,
+   "people": 68.4,
+   "group": 0.7,
+   "none": 6.1
+  },
+  {
+   "y": 1000,
+   "flag": 0.0,
+   "arms": 0.0,
+   "plain": 23.6,
+   "people": 47.6,
+   "group": 3.6,
+   "none": 25.2
+  },
+  {
+   "y": 1100,
+   "flag": 0.4,
+   "arms": 0.0,
+   "plain": 28.6,
+   "people": 50.4,
+   "group": 1.5,
+   "none": 19.1
+  },
+  {
+   "y": 1200,
+   "flag": 1.5,
+   "arms": 0.2,
+   "plain": 26.1,
+   "people": 54.1,
+   "group": 6.2,
+   "none": 12.0
+  },
+  {
+   "y": 1279,
+   "flag": 2.1,
+   "arms": 0.0,
+   "plain": 31.7,
+   "people": 46.1,
+   "group": 2.0,
+   "none": 18.2
+  },
+  {
+   "y": 1300,
+   "flag": 5.7,
+   "arms": 0.0,
+   "plain": 28.0,
+   "people": 42.7,
+   "group": 2.0,
+   "none": 21.6
+  },
+  {
+   "y": 1400,
+   "flag": 5.7,
+   "arms": 0.0,
+   "plain": 30.1,
+   "people": 42.9,
+   "group": 1.2,
+   "none": 20.2
+  },
+  {
+   "y": 1492,
+   "flag": 2.8,
+   "arms": 0.0,
+   "plain": 31.5,
+   "people": 50.2,
+   "group": 2.4,
+   "none": 13.0
+  },
+  {
+   "y": 1500,
+   "flag": 3.7,
+   "arms": 0.0,
+   "plain": 33.2,
+   "people": 42.2,
+   "group": 3.1,
+   "none": 17.7
+  },
+  {
+   "y": 1530,
+   "flag": 5.1,
+   "arms": 0.0,
+   "plain": 27.8,
+   "people": 27.8,
+   "group": 2.1,
+   "none": 37.3
+  },
+  {
+   "y": 1600,
+   "flag": 5.9,
+   "arms": 5.2,
+   "plain": 22.4,
+   "people": 28.2,
+   "group": 10.4,
+   "none": 28.0
+  },
+  {
+   "y": 1650,
+   "flag": 12.8,
+   "arms": 10.0,
+   "plain": 20.4,
+   "people": 23.5,
+   "group": 5.2,
+   "none": 28.1
+  },
+  {
+   "y": 1700,
+   "flag": 12.6,
+   "arms": 0.3,
+   "plain": 30.8,
+   "people": 23.7,
+   "group": 4.6,
+   "none": 28.0
+  },
+  {
+   "y": 1715,
+   "flag": 27.3,
+   "arms": 0.3,
+   "plain": 21.6,
+   "people": 22.1,
+   "group": 2.5,
+   "none": 26.3
+  },
+  {
+   "y": 1783,
+   "flag": 39.5,
+   "arms": 0.6,
+   "plain": 29.5,
+   "people": 9.0,
+   "group": 3.3,
+   "none": 18.1
+  },
+  {
+   "y": 1800,
+   "flag": 40.9,
+   "arms": 1.8,
+   "plain": 26.5,
+   "people": 9.5,
+   "group": 2.9,
+   "none": 18.4
+  },
+  {
+   "y": 1815,
+   "flag": 45.7,
+   "arms": 2.0,
+   "plain": 26.2,
+   "people": 6.1,
+   "group": 0.8,
+   "none": 19.2
+  },
+  {
+   "y": 1878,
+   "flag": 71.1,
+   "arms": 1.9,
+   "plain": 10.3,
+   "people": 3.2,
+   "group": 0.1,
+   "none": 13.4
+  },
+  {
+   "y": 1880,
+   "flag": 72.5,
+   "arms": 2.1,
+   "plain": 9.4,
+   "people": 2.4,
+   "group": 0.1,
+   "none": 13.4
+  },
+  {
+   "y": 1900,
+   "flag": 74.8,
+   "arms": 2.2,
+   "plain": 6.5,
+   "people": 2.4,
+   "group": 0.3,
+   "none": 13.8
+  },
+  {
+   "y": 1914,
+   "flag": 88.5,
+   "arms": 0.7,
+   "plain": 10.8,
+   "people": 0.0,
+   "group": 0.0,
+   "none": 0.0
+  },
+  {
+   "y": 1920,
+   "flag": 62.7,
+   "arms": 0.3,
+   "plain": 32.6,
+   "people": 0.0,
+   "group": 4.1,
+   "none": 0.3
+  },
+  {
+   "y": 1930,
+   "flag": 78.9,
+   "arms": 0.1,
+   "plain": 16.7,
+   "people": 0.0,
+   "group": 4.1,
+   "none": 0.2
+  },
+  {
+   "y": 1938,
+   "flag": 86.4,
+   "arms": 0.0,
+   "plain": 9.2,
+   "people": 0.0,
+   "group": 4.1,
+   "none": 0.3
+  },
+  {
+   "y": 1945,
+   "flag": 89.2,
+   "arms": 0.0,
+   "plain": 10.7,
+   "people": 0.0,
+   "group": 0.1,
+   "none": 0.0
+  },
+  {
+   "y": 1960,
+   "flag": 86.9,
+   "arms": 0.0,
+   "plain": 13.0,
+   "people": 0.0,
+   "group": 0.1,
+   "none": 0.0
+  },
+  {
+   "y": 1994,
+   "flag": 99.0,
+   "arms": 0.0,
+   "plain": 0.9,
+   "people": 0.0,
+   "group": 0.1,
+   "none": 0.1
+  },
+  {
+   "y": 2000,
+   "flag": 97.2,
+   "arms": 0.0,
+   "plain": 2.7,
+   "people": 0.0,
+   "group": 0.1,
+   "none": 0.0
+  },
+  {
+   "y": 2010,
+   "flag": 97.3,
+   "arms": 0.0,
+   "plain": 2.5,
+   "people": 0.0,
+   "group": 0.1,
+   "none": 0.0
+  }
+ ],
+ "flag_share_1000": 0.0,
+ "flag_share_1500": 3.7,
+ "flag_share_1800": 40.9,
+ "flag_share_1900": 74.8,
+ "flag_share_2010": 97.3,
+ "people_share_1000": 47.6,
+ "people_share_1492": 50.2,
+ "none_share_1000": 25.2,
+ "land_total_mkm2": 133.0,
+ "first_flag_half": 1878,
+ "entities": [
+  {
+   "y": 800,
+   "states": 58,
+   "all": 116,
+   "people": 51,
+   "top": [
+    {
+     "n": "Abbasid Caliphate",
+     "a": 8414364,
+     "pct": 6.3
+    },
+    {
+     "n": "Tibetan Empire",
+     "a": 4484244,
+     "pct": 3.4
+    },
+    {
+     "n": "Tang Empire",
+     "a": 3223993,
+     "pct": 2.4
+    }
+   ]
+  },
+  {
+   "y": 900,
+   "states": 72,
+   "all": 134,
+   "people": 56,
+   "top": [
+    {
+     "n": "Abbasid Caliphate",
+     "a": 5257128,
+     "pct": 4.0
+    },
+    {
+     "n": "Tibetan Empire",
+     "a": 4484244,
+     "pct": 3.4
+    },
+    {
+     "n": "Tang Empire",
+     "a": 3223993,
+     "pct": 2.4
+    }
+   ]
+  },
+  {
+   "y": 1000,
+   "states": 81,
+   "all": 127,
+   "people": 39,
+   "top": [
+    {
+     "n": "Kimek-Kipchak khaganate",
+     "a": 3061918,
+     "pct": 2.3
+    },
+    {
+     "n": "Song Empire",
+     "a": 3001487,
+     "pct": 2.3
+    },
+    {
+     "n": "Denmark-Norway",
+     "a": 2471013,
+     "pct": 1.9
+    }
+   ]
+  },
+  {
+   "y": 1100,
+   "states": 94,
+   "all": 138,
+   "people": 38,
+   "top": [
+    {
+     "n": "Cuman-Kipchak confederation",
+     "a": 6180371,
+     "pct": 4.7
+    },
+    {
+     "n": "Song Empire",
+     "a": 3001487,
+     "pct": 2.3
+    },
+    {
+     "n": "Almoravid dynasty",
+     "a": 2377786,
+     "pct": 1.8
+    }
+   ]
+  },
+  {
+   "y": 1200,
+   "states": 80,
+   "all": 128,
+   "people": 38,
+   "top": [
+    {
+     "n": "Mongol Empire",
+     "a": 5416021,
+     "pct": 4.1
+    },
+    {
+     "n": "Kara Khitai Khaganate",
+     "a": 4305945,
+     "pct": 3.2
+    },
+    {
+     "n": "Song Empire",
+     "a": 3002862,
+     "pct": 2.3
+    }
+   ]
+  },
+  {
+   "y": 1279,
+   "states": 68,
+   "all": 106,
+   "people": 33,
+   "top": [
+    {
+     "n": "Mongol Empire",
+     "a": 27255889,
+     "pct": 20.5
+    },
+    {
+     "n": "Sultanate of Delhi",
+     "a": 1952931,
+     "pct": 1.5
+    },
+    {
+     "n": "Mali",
+     "a": 1753041,
+     "pct": 1.3
+    }
+   ]
+  },
+  {
+   "y": 1300,
+   "states": 73,
+   "all": 111,
+   "people": 32,
+   "top": [
+    {
+     "n": "Mongol Empire",
+     "a": 19106361,
+     "pct": 14.4
+    },
+    {
+     "n": "Ilkhanate",
+     "a": 3790261,
+     "pct": 2.9
+    },
+    {
+     "n": "Sultanate of Delhi",
+     "a": 1952931,
+     "pct": 1.5
+    }
+   ]
+  },
+  {
+   "y": 1400,
+   "states": 72,
+   "all": 109,
+   "people": 32,
+   "top": [
+    {
+     "n": "Mongol Empire",
+     "a": 20959158,
+     "pct": 15.8
+    },
+    {
+     "n": "Timurid Empire",
+     "a": 5107139,
+     "pct": 3.8
+    },
+    {
+     "n": "Sultanate of Delhi",
+     "a": 2934490,
+     "pct": 2.2
+    }
+   ]
+  },
+  {
+   "y": 1492,
+   "states": 91,
+   "all": 1272,
+   "people": 1177,
+   "top": [
+    {
+     "n": "Chagatai Khanate",
+     "a": 8369230,
+     "pct": 6.3
+    },
+    {
+     "n": "Ming Empire",
+     "a": 4170348,
+     "pct": 3.1
+    },
+    {
+     "n": "White Horde",
+     "a": 2686936,
+     "pct": 2.0
+    }
+   ]
+  },
+  {
+   "y": 1500,
+   "states": 84,
+   "all": 137,
+   "people": 47,
+   "top": [
+    {
+     "n": "Chagatai Khanate",
+     "a": 8369230,
+     "pct": 6.3
+    },
+    {
+     "n": "Ming Empire",
+     "a": 4170348,
+     "pct": 3.1
+    },
+    {
+     "n": "Kalmar Union",
+     "a": 3081931,
+     "pct": 2.3
+    }
+   ]
+  },
+  {
+   "y": 1530,
+   "states": 83,
+   "all": 265,
+   "people": 177,
+   "top": [
+    {
+     "n": "Ming Empire",
+     "a": 5997481,
+     "pct": 4.5
+    },
+    {
+     "n": "Ottoman Empire",
+     "a": 5455894,
+     "pct": 4.1
+    },
+    {
+     "n": "Quazaq Khanate",
+     "a": 2177510,
+     "pct": 1.6
+    }
+   ]
+  },
+  {
+   "y": 1600,
+   "states": 79,
+   "all": 629,
+   "people": 545,
+   "top": [
+    {
+     "n": "Tsardom of Muscovy",
+     "a": 6879124,
+     "pct": 5.2
+    },
+    {
+     "n": "Ming Empire",
+     "a": 5997481,
+     "pct": 4.5
+    },
+    {
+     "n": "Ottoman Empire",
+     "a": 5455894,
+     "pct": 4.1
+    }
+   ]
+  },
+  {
+   "y": 1650,
+   "states": 88,
+   "all": 567,
+   "people": 475,
+   "top": [
+    {
+     "n": "Tsardom of Muscovy",
+     "a": 12871363,
+     "pct": 9.7
+    },
+    {
+     "n": "Spain",
+     "a": 7709983,
+     "pct": 5.8
+    },
+    {
+     "n": "Ottoman Empire",
+     "a": 5500207,
+     "pct": 4.1
+    }
+   ]
+  },
+  {
+   "y": 1700,
+   "states": 83,
+   "all": 562,
+   "people": 475,
+   "top": [
+    {
+     "n": "Tsardom of Muscovy",
+     "a": 13479966,
+     "pct": 10.1
+    },
+    {
+     "n": "Spain",
+     "a": 7590534,
+     "pct": 5.7
+    },
+    {
+     "n": "Qing Empire",
+     "a": 5172734,
+     "pct": 3.9
+    }
+   ]
+  },
+  {
+   "y": 1715,
+   "states": 113,
+   "all": 572,
+   "people": 456,
+   "top": [
+    {
+     "n": "Tsardom of Muscovy",
+     "a": 15409373,
+     "pct": 11.6
+    },
+    {
+     "n": "Spain",
+     "a": 8723835,
+     "pct": 6.6
+    },
+    {
+     "n": "Qing Empire",
+     "a": 7271587,
+     "pct": 5.5
+    }
+   ]
+  },
+  {
+   "y": 1783,
+   "states": 129,
+   "all": 523,
+   "people": 390,
+   "top": [
+    {
+     "n": "Russian Empire",
+     "a": 16083511,
+     "pct": 12.1
+    },
+    {
+     "n": "Spain",
+     "a": 13318685,
+     "pct": 10.0
+    },
+    {
+     "n": "Qing Empire",
+     "a": 12184049,
+     "pct": 9.2
+    }
+   ]
+  },
+  {
+   "y": 1800,
+   "states": 127,
+   "all": 520,
+   "people": 390,
+   "top": [
+    {
+     "n": "Russian Empire",
+     "a": 16382320,
+     "pct": 12.3
+    },
+    {
+     "n": "Qing Empire",
+     "a": 12230226,
+     "pct": 9.2
+    },
+    {
+     "n": "Spain",
+     "a": 10957632,
+     "pct": 8.3
+    }
+   ]
+  },
+  {
+   "y": 1815,
+   "states": 136,
+   "all": 300,
+   "people": 163,
+   "top": [
+    {
+     "n": "Russian Empire",
+     "a": 20021939,
+     "pct": 15.1
+    },
+    {
+     "n": "Spain",
+     "a": 13505739,
+     "pct": 10.2
+    },
+    {
+     "n": "Qing Empire",
+     "a": 11036541,
+     "pct": 8.3
+    }
+   ]
+  },
+  {
+   "y": 1878,
+   "states": 139,
+   "all": 153,
+   "people": 11,
+   "top": [
+    {
+     "n": "Russian Empire",
+     "a": 21509225,
+     "pct": 16.2
+    },
+    {
+     "n": "United Kingdom",
+     "a": 12660104,
+     "pct": 9.5
+    },
+    {
+     "n": "Qing Empire",
+     "a": 11036541,
+     "pct": 8.3
+    }
+   ]
+  },
+  {
+   "y": 1880,
+   "states": 138,
+   "all": 150,
+   "people": 9,
+   "top": [
+    {
+     "n": "Russian Empire",
+     "a": 21509225,
+     "pct": 16.2
+    },
+    {
+     "n": "United Kingdom",
+     "a": 12660104,
+     "pct": 9.5
+    },
+    {
+     "n": "Qing Empire",
+     "a": 11036541,
+     "pct": 8.3
+    }
+   ]
+  },
+  {
+   "y": 1900,
+   "states": 141,
+   "all": 152,
+   "people": 8,
+   "top": [
+    {
+     "n": "Russian Empire",
+     "a": 21592949,
+     "pct": 16.2
+    },
+    {
+     "n": "United Kingdom",
+     "a": 12660104,
+     "pct": 9.5
+    },
+    {
+     "n": "Qing Empire",
+     "a": 11036541,
+     "pct": 8.3
+    }
+   ]
+  },
+  {
+   "y": 1914,
+   "states": 111,
+   "all": 112,
+   "people": 0,
+   "top": [
+    {
+     "n": "Russia",
+     "a": 21567232,
+     "pct": 16.2
+    },
+    {
+     "n": "United Kingdom",
+     "a": 14603440,
+     "pct": 11.0
+    },
+    {
+     "n": "France",
+     "a": 11167240,
+     "pct": 8.4
+    }
+   ]
+  },
+  {
+   "y": 1920,
+   "states": 136,
+   "all": 138,
+   "people": 0,
+   "top": [
+    {
+     "n": "USSR",
+     "a": 19459493,
+     "pct": 14.6
+    },
+    {
+     "n": "United States",
+     "a": 9281355,
+     "pct": 7.0
+    },
+    {
+     "n": "Canada",
+     "a": 9135727,
+     "pct": 6.9
+    }
+   ]
+  },
+  {
+   "y": 1930,
+   "states": 134,
+   "all": 136,
+   "people": 0,
+   "top": [
+    {
+     "n": "USSR",
+     "a": 21490098,
+     "pct": 16.2
+    },
+    {
+     "n": "United States",
+     "a": 9281355,
+     "pct": 7.0
+    },
+    {
+     "n": "Canada",
+     "a": 9135727,
+     "pct": 6.9
+    }
+   ]
+  },
+  {
+   "y": 1938,
+   "states": 111,
+   "all": 113,
+   "people": 0,
+   "top": [
+    {
+     "n": "USSR",
+     "a": 21338444,
+     "pct": 16.0
+    },
+    {
+     "n": "France",
+     "a": 12058070,
+     "pct": 9.1
+    },
+    {
+     "n": "United Kingdom",
+     "a": 11347248,
+     "pct": 8.5
+    }
+   ]
+  },
+  {
+   "y": 1945,
+   "states": 123,
+   "all": 124,
+   "people": 0,
+   "top": [
+    {
+     "n": "USSR",
+     "a": 22052264,
+     "pct": 16.6
+    },
+    {
+     "n": "France",
+     "a": 10835983,
+     "pct": 8.1
+    },
+    {
+     "n": "United Kingdom",
+     "a": 10693462,
+     "pct": 8.0
+    }
+   ]
+  },
+  {
+   "y": 1960,
+   "states": 153,
+   "all": 154,
+   "people": 0,
+   "top": [
+    {
+     "n": "USSR",
+     "a": 21791714,
+     "pct": 16.4
+    },
+    {
+     "n": "Canada",
+     "a": 9523649,
+     "pct": 7.2
+    },
+    {
+     "n": "United States",
+     "a": 9281355,
+     "pct": 7.0
+    }
+   ]
+  },
+  {
+   "y": 1994,
+   "states": 187,
+   "all": 189,
+   "people": 0,
+   "top": [
+    {
+     "n": "Russia",
+     "a": 16605588,
+     "pct": 12.5
+    },
+    {
+     "n": "Canada",
+     "a": 9523649,
+     "pct": 7.2
+    },
+    {
+     "n": "China",
+     "a": 9354543,
+     "pct": 7.0
+    }
+   ]
+  },
+  {
+   "y": 2000,
+   "states": 187,
+   "all": 189,
+   "people": 0,
+   "top": [
+    {
+     "n": "Russia",
+     "a": 16605588,
+     "pct": 12.5
+    },
+    {
+     "n": "Canada",
+     "a": 9523649,
+     "pct": 7.2
+    },
+    {
+     "n": "China",
+     "a": 9354543,
+     "pct": 7.0
+    }
+   ]
+  },
+  {
+   "y": 2010,
+   "states": 187,
+   "all": 189,
+   "people": 0,
+   "top": [
+    {
+     "n": "Russia",
+     "a": 16605588,
+     "pct": 12.5
+    },
+    {
+     "n": "Canada",
+     "a": 9523649,
+     "pct": 7.2
+    },
+    {
+     "n": "China",
+     "a": 9355918,
+     "pct": 7.0
+    }
+   ]
+  }
+ ],
+ "states_min": {
+  "y": 800,
+  "states": 58,
+  "all": 116,
+  "people": 51,
+  "top": [
+   {
+    "n": "Abbasid Caliphate",
+    "a": 8414364,
+    "pct": 6.3
+   },
+   {
+    "n": "Tibetan Empire",
+    "a": 4484244,
+    "pct": 3.4
+   },
+   {
+    "n": "Tang Empire",
+    "a": 3223993,
+    "pct": 2.4
+   }
+  ]
+ },
+ "states_max": {
+  "y": 1994,
+  "states": 187,
+  "all": 189,
+  "people": 0,
+  "top": [
+   {
+    "n": "Russia",
+    "a": 16605588,
+    "pct": 12.5
+   },
+   {
+    "n": "Canada",
+    "a": 9523649,
+    "pct": 7.2
+   },
+   {
+    "n": "China",
+    "a": 9354543,
+    "pct": 7.0
+   }
+  ]
+ },
+ "states_2010": 187,
+ "states_1000": 81,
+ "states_1900": 141,
+ "states_1800": 127,
+ "largest_ever": {
+  "y": 1279,
+  "n": "Mongol Empire",
+  "a": 27255889,
+  "pct": 20.5
+ },
+ "largest_by_year": [
+  {
+   "y": 800,
+   "n": "Abbasid Caliphate",
+   "a": 8414364,
+   "pct": 6.3
+  },
+  {
+   "y": 900,
+   "n": "Abbasid Caliphate",
+   "a": 5257128,
+   "pct": 4.0
+  },
+  {
+   "y": 1000,
+   "n": "Kimek-Kipchak khaganate",
+   "a": 3061918,
+   "pct": 2.3
+  },
+  {
+   "y": 1100,
+   "n": "Cuman-Kipchak confederation",
+   "a": 6180371,
+   "pct": 4.7
+  },
+  {
+   "y": 1200,
+   "n": "Mongol Empire",
+   "a": 5416021,
+   "pct": 4.1
+  },
+  {
+   "y": 1279,
+   "n": "Mongol Empire",
+   "a": 27255889,
+   "pct": 20.5
+  },
+  {
+   "y": 1300,
+   "n": "Mongol Empire",
+   "a": 19106361,
+   "pct": 14.4
+  },
+  {
+   "y": 1400,
+   "n": "Mongol Empire",
+   "a": 20959158,
+   "pct": 15.8
+  },
+  {
+   "y": 1492,
+   "n": "Chagatai Khanate",
+   "a": 8369230,
+   "pct": 6.3
+  },
+  {
+   "y": 1500,
+   "n": "Chagatai Khanate",
+   "a": 8369230,
+   "pct": 6.3
+  },
+  {
+   "y": 1530,
+   "n": "Ming Empire",
+   "a": 5997481,
+   "pct": 4.5
+  },
+  {
+   "y": 1600,
+   "n": "Tsardom of Muscovy",
+   "a": 6879124,
+   "pct": 5.2
+  },
+  {
+   "y": 1650,
+   "n": "Tsardom of Muscovy",
+   "a": 12871363,
+   "pct": 9.7
+  },
+  {
+   "y": 1700,
+   "n": "Tsardom of Muscovy",
+   "a": 13479966,
+   "pct": 10.1
+  },
+  {
+   "y": 1715,
+   "n": "Tsardom of Muscovy",
+   "a": 15409373,
+   "pct": 11.6
+  },
+  {
+   "y": 1783,
+   "n": "Russian Empire",
+   "a": 16083511,
+   "pct": 12.1
+  },
+  {
+   "y": 1800,
+   "n": "Russian Empire",
+   "a": 16382320,
+   "pct": 12.3
+  },
+  {
+   "y": 1815,
+   "n": "Russian Empire",
+   "a": 20021939,
+   "pct": 15.1
+  },
+  {
+   "y": 1878,
+   "n": "Russian Empire",
+   "a": 21509225,
+   "pct": 16.2
+  },
+  {
+   "y": 1880,
+   "n": "Russian Empire",
+   "a": 21509225,
+   "pct": 16.2
+  },
+  {
+   "y": 1900,
+   "n": "Russian Empire",
+   "a": 21592949,
+   "pct": 16.2
+  },
+  {
+   "y": 1914,
+   "n": "Russia",
+   "a": 21567232,
+   "pct": 16.2
+  },
+  {
+   "y": 1920,
+   "n": "USSR",
+   "a": 19459493,
+   "pct": 14.6
+  },
+  {
+   "y": 1930,
+   "n": "USSR",
+   "a": 21490098,
+   "pct": 16.2
+  },
+  {
+   "y": 1938,
+   "n": "USSR",
+   "a": 21338444,
+   "pct": 16.0
+  },
+  {
+   "y": 1945,
+   "n": "USSR",
+   "a": 22052264,
+   "pct": 16.6
+  },
+  {
+   "y": 1960,
+   "n": "USSR",
+   "a": 21791714,
+   "pct": 16.4
+  },
+  {
+   "y": 1994,
+   "n": "Russia",
+   "a": 16605588,
+   "pct": 12.5
+  },
+  {
+   "y": 2000,
+   "n": "Russia",
+   "a": 16605588,
+   "pct": 12.5
+  },
+  {
+   "y": 2010,
+   "n": "Russia",
+   "a": 16605588,
+   "pct": 12.5
+  }
+ ],
+ "uk_peak": {
+  "y": 1914,
+  "a": 14603440,
+  "pct": 11.0
+ },
+ "uk_dom_peak": {
+  "y": 1914,
+  "a": 32054179,
+  "pct": 24.1
+ },
+ "people_1492_americas": 1165,
+ "land_by_year": {
+  "800": 132838068,
+  "900": 132718690,
+  "1000": 132816691,
+  "1100": 132808821,
+  "1200": 132789815,
+  "1279": 132881359,
+  "1300": 132733229,
+  "1400": 132763592,
+  "1492": 132802419,
+  "1500": 132804523,
+  "1530": 132683989,
+  "1600": 132818818,
+  "1650": 132807709,
+  "1700": 132830327,
+  "1715": 132847024,
+  "1783": 132689918,
+  "1800": 132740996,
+  "1815": 132783950,
+  "1878": 132801278,
+  "1880": 132786536,
+  "1900": 132885082,
+  "1914": 132903774,
+  "1920": 133109981,
+  "1930": 133009507,
+  "1938": 132964509,
+  "1945": 133011810,
+  "1960": 132998522,
+  "1994": 132991094,
+  "2000": 132987558,
+  "2010": 132987558
+ },
+ "mongol_peak": {
+  "y": 1279,
+  "a": 27255889,
+  "pct": 20.5
+ },
+ "qing_peak": {
+  "y": 1800,
+  "a": 12230226,
+  "pct": 9.2
+ },
+ "russia_peak": {
+  "y": 1945,
+  "a": 22052264,
+  "n": "USSR"
+ },
+ "euro": [
+  {
+   "y": 1492,
+   "home": 3.4,
+   "russia": 1.5,
+   "overseas": 0.0,
+   "all": 4.9
+  },
+  {
+   "y": 1500,
+   "home": 2.5,
+   "russia": 2.1,
+   "overseas": 2.4,
+   "all": 7.0
+  },
+  {
+   "y": 1530,
+   "home": 3.1,
+   "russia": 1.6,
+   "overseas": 1.2,
+   "all": 5.9
+  },
+  {
+   "y": 1600,
+   "home": 2.8,
+   "russia": 5.2,
+   "overseas": 1.6,
+   "all": 9.6
+  },
+  {
+   "y": 1650,
+   "home": 2.6,
+   "russia": 9.7,
+   "overseas": 8.2,
+   "all": 20.5
+  },
+  {
+   "y": 1700,
+   "home": 3.2,
+   "russia": 10.1,
+   "overseas": 7.8,
+   "all": 21.2
+  },
+  {
+   "y": 1715,
+   "home": 3.1,
+   "russia": 11.6,
+   "overseas": 10.8,
+   "all": 25.4
+  },
+  {
+   "y": 1783,
+   "home": 2.3,
+   "russia": 12.1,
+   "overseas": 22.6,
+   "all": 37.1
+  },
+  {
+   "y": 1800,
+   "home": 2.6,
+   "russia": 12.3,
+   "overseas": 22.3,
+   "all": 37.2
+  },
+  {
+   "y": 1815,
+   "home": 2.4,
+   "russia": 15.1,
+   "overseas": 22.2,
+   "all": 39.6
+  },
+  {
+   "y": 1878,
+   "home": 2.9,
+   "russia": 16.2,
+   "overseas": 13.2,
+   "all": 32.3
+  },
+  {
+   "y": 1880,
+   "home": 2.9,
+   "russia": 16.2,
+   "overseas": 13.2,
+   "all": 32.3
+  },
+  {
+   "y": 1900,
+   "home": 2.8,
+   "russia": 16.2,
+   "overseas": 17.3,
+   "all": 36.3
+  },
+  {
+   "y": 1914,
+   "home": 2.6,
+   "russia": 16.2,
+   "overseas": 27.3,
+   "all": 46.1
+  },
+  {
+   "y": 1920,
+   "home": 2.0,
+   "russia": 14.6,
+   "overseas": 18.6,
+   "all": 35.2
+  },
+  {
+   "y": 1930,
+   "home": 2.0,
+   "russia": 16.2,
+   "overseas": 18.5,
+   "all": 36.6
+  },
+  {
+   "y": 1938,
+   "home": 2.1,
+   "russia": 16.0,
+   "overseas": 25.1,
+   "all": 43.2
+  },
+  {
+   "y": 1945,
+   "home": 1.7,
+   "russia": 16.6,
+   "overseas": 19.3,
+   "all": 37.7
+  },
+  {
+   "y": 1960,
+   "home": 1.7,
+   "russia": 16.4,
+   "overseas": 0.3,
+   "all": 18.3
+  },
+  {
+   "y": 1994,
+   "home": 1.9,
+   "russia": 12.5,
+   "overseas": 0.3,
+   "all": 14.7
+  },
+  {
+   "y": 2000,
+   "home": 1.9,
+   "russia": 12.5,
+   "overseas": 0.3,
+   "all": 14.7
+  },
+  {
+   "y": 2010,
+   "home": 1.9,
+   "russia": 12.5,
+   "overseas": 0.3,
+   "all": 14.7
+  }
+ ],
+ "euro_peak": {
+  "y": 1914,
+  "home": 2.6,
+  "russia": 16.2,
+  "overseas": 27.3,
+  "all": 46.1
+ },
+ "euro_overseas_peak": {
+  "y": 1914,
+  "home": 2.6,
+  "russia": 16.2,
+  "overseas": 27.3,
+  "all": 46.1
+ },
+ "euro_1492": {
+  "y": 1492,
+  "home": 3.4,
+  "russia": 1.5,
+  "overseas": 0.0,
+  "all": 4.9
+ },
+ "euro_2010": {
+  "y": 2010,
+  "home": 1.9,
+  "russia": 12.5,
+  "overseas": 0.3,
+  "all": 14.7
+ },
+ "euro_label_gap": {
+  "1920": 1.2,
+  "1930": 1.2
+ },
+ "euro_peak_ex_russia": {
+  "y": 1914,
+  "v": 29.9
+ },
+ "flag_age": {
+  "n_countries": 194,
+  "n_in_data": 167,
+  "n_dated": 93,
+  "coverage_pct": 48,
+  "bins": [
+   {
+    "b": 1800,
+    "n": 2
+   },
+   {
+    "b": 1820,
+    "n": 2
+   },
+   {
+    "b": 1840,
+    "n": 1
+   },
+   {
+    "b": 1880,
+    "n": 1
+   },
+   {
+    "b": 1900,
+    "n": 3
+   },
+   {
+    "b": 1920,
+    "n": 4
+   },
+   {
+    "b": 1940,
+    "n": 6
+   },
+   {
+    "b": 1960,
+    "n": 21
+   },
+   {
+    "b": 1980,
+    "n": 26
+   },
+   {
+    "b": 2000,
+    "n": 22
+   },
+   {
+    "b": 2020,
+    "n": 5
+   }
+  ],
+  "median": 1986,
+  "oldest": [
+   {
+    "country": "United Kingdom",
+    "iso_a3": "GBR",
+    "wikidata": "Q145",
+    "in_data": true,
+    "current_flag": "Flag of the United Kingdom (3-5).svg",
+    "adopted": 1801
+   },
+   {
+    "country": "Netherlands",
+    "iso_a3": "NLD",
+    "wikidata": "Q55",
+    "in_data": true,
+    "current_flag": "Flag of the Netherlands.svg",
+    "adopted": 1806
+   },
+   {
+    "country": "Norway",
+    "iso_a3": "NOR",
+    "wikidata": "Q20",
+    "in_data": true,
+    "current_flag": "Flag of Norway.svg",
+    "adopted": 1821
+   },
+   {
+    "country": "Belgium",
+    "iso_a3": "BEL",
+    "wikidata": "Q31",
+    "in_data": true,
+    "current_flag": "Flag of Belgium.svg",
+    "adopted": 1831
+   },
+   {
+    "country": "Bolivia",
+    "iso_a3": "BOL",
+    "wikidata": "Q750",
+    "in_data": true,
+    "current_flag": "Bandera de Bolivia (Estado).svg",
+    "adopted": 1851
+   }
+  ],
+  "since_1945": 79,
+  "since_1990": 45,
+  "since_1945_pct": 85,
+  "since_1990_pct": 48,
+  "top_bin": {
+   "b": 1980,
+   "n": 26,
+   "e": 1999
+  }
+ },
+ "cities": [
+  {
+   "c": "Boston",
+   "x": -71.06,
+   "y": 42.36,
+   "h": [
+    {
+     "y": 800,
+     "n": "Eastern North American hunter-gatherers",
+     "o": "Eastern North American hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 900,
+     "n": "Eastern North American hunter-gatherers",
+     "o": "Eastern North American hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1000,
+     "n": "Eastern North American hunter-gatherers",
+     "o": "Eastern North American hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1100,
+     "n": "Eastern North American hunter-gatherers",
+     "o": "Eastern North American hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1200,
+     "n": "Eastern North American hunter-gatherers",
+     "o": "Eastern North American hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1279,
+     "n": "Eastern North American hunter-gatherers",
+     "o": "Eastern North American hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1300,
+     "n": "Eastern North American hunter-gatherers",
+     "o": "Eastern North American hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1400,
+     "n": "Eastern North American hunter-gatherers",
+     "o": "Eastern North American hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1492,
+     "n": "Massa-adchu-es-et (Massachusett)",
+     "o": "Massa-adchu-es-et (Massachusett)",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1500,
+     "n": "Iroquois",
+     "o": "Iroquois",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1530,
+     "n": "Massachusett",
+     "o": "Massachusett",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1600,
+     "n": "Massachusett",
+     "o": "Massachusett",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1650,
+     "n": "Massachusetts Bay",
+     "o": "England",
+     "k": "flag",
+     "f": "f107"
+    },
+    {
+     "y": 1700,
+     "n": "Massachusetts Bay",
+     "o": "England",
+     "k": "flag",
+     "f": "f107"
+    },
+    {
+     "y": 1715,
+     "n": "British American colonies",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f129"
+    },
+    {
+     "y": 1783,
+     "n": "United States of America",
+     "o": "United States",
+     "k": "flag",
+     "f": "f364"
+    },
+    {
+     "y": 1800,
+     "n": "United States of America",
+     "o": "United States",
+     "k": "flag",
+     "f": "f365"
+    },
+    {
+     "y": 1815,
+     "n": "United States",
+     "o": "United States",
+     "k": "flag",
+     "f": "f365"
+    },
+    {
+     "y": 1878,
+     "n": "United States of America",
+     "o": "United States",
+     "k": "flag",
+     "f": "f366"
+    },
+    {
+     "y": 1880,
+     "n": "United States of America",
+     "o": "United States",
+     "k": "flag",
+     "f": "f366"
+    },
+    {
+     "y": 1900,
+     "n": "United States of America",
+     "o": "United States",
+     "k": "flag",
+     "f": "f367"
+    },
+    {
+     "y": 1914,
+     "n": "United States",
+     "o": "United States",
+     "k": "flag",
+     "f": "f368"
+    },
+    {
+     "y": 1920,
+     "n": "United States",
+     "o": "United States",
+     "k": "flag",
+     "f": "f368"
+    },
+    {
+     "y": 1930,
+     "n": "United States",
+     "o": "United States",
+     "k": "flag",
+     "f": "f368"
+    },
+    {
+     "y": 1938,
+     "n": "United States",
+     "o": "United States",
+     "k": "flag",
+     "f": "f368"
+    },
+    {
+     "y": 1945,
+     "n": "United States",
+     "o": "United States",
+     "k": "flag",
+     "f": "f368"
+    },
+    {
+     "y": 1960,
+     "n": "United States",
+     "o": "United States",
+     "k": "flag",
+     "f": "f369"
+    },
+    {
+     "y": 1994,
+     "n": "United States",
+     "o": "United States",
+     "k": "flag",
+     "f": "f369"
+    },
+    {
+     "y": 2000,
+     "n": "United States",
+     "o": "United States",
+     "k": "flag",
+     "f": "f369"
+    },
+    {
+     "y": 2010,
+     "n": "United States",
+     "o": "United States",
+     "k": "flag",
+     "f": "f369"
+    }
+   ],
+   "n_owners": 7,
+   "n_flags": 8
+  },
+  {
+   "c": "Beijing",
+   "x": 116.4,
+   "y": 39.9,
+   "h": [
+    {
+     "y": 800,
+     "n": "Tang Empire",
+     "o": "Tang Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 900,
+     "n": "Tang Empire",
+     "o": "Tang Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1000,
+     "n": "Liao",
+     "o": "Liao",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1100,
+     "n": "Liao",
+     "o": "Liao",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1200,
+     "n": "Liao",
+     "o": "Liao",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1279,
+     "n": "Great Khanate",
+     "o": "Mongol Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1300,
+     "n": "Great Khanate",
+     "o": "Mongol Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1400,
+     "n": "Great Khanate",
+     "o": "Mongol Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1492,
+     "n": "Ming Empire",
+     "o": "Ming Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1500,
+     "n": "Ming Chinese Empire",
+     "o": "Ming Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1530,
+     "n": "Ming Chinese Empire",
+     "o": "Ming Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1600,
+     "n": "Ming Chinese Empire",
+     "o": "Ming Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1650,
+     "n": "Manchu Empire",
+     "o": "Qing Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1700,
+     "n": "Manchu Empire",
+     "o": "Qing Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1715,
+     "n": "Manchu Empire",
+     "o": "Qing Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1783,
+     "n": "Qing Empire",
+     "o": "Qing Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1800,
+     "n": "Qing Empire",
+     "o": "Qing Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1815,
+     "n": "Manchu Empire",
+     "o": "Qing Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1878,
+     "n": "Manchu Empire",
+     "o": "Qing Empire",
+     "k": "flag",
+     "f": "f083"
+    },
+    {
+     "y": 1880,
+     "n": "Manchu Empire",
+     "o": "Qing Empire",
+     "k": "flag",
+     "f": "f083"
+    },
+    {
+     "y": 1900,
+     "n": "Manchu Empire",
+     "o": "Qing Empire",
+     "k": "flag",
+     "f": "f084"
+    },
+    {
+     "y": 1914,
+     "n": "Manchu Empire",
+     "o": "Qing Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1920,
+     "n": "Chinese Warlords",
+     "o": "Chinese Warlords",
+     "k": "group",
+     "f": null
+    },
+    {
+     "y": 1930,
+     "n": "Chinese Warlords",
+     "o": "Chinese Warlords",
+     "k": "group",
+     "f": null
+    },
+    {
+     "y": 1938,
+     "n": "Chinese warlords",
+     "o": "Chinese Warlords",
+     "k": "group",
+     "f": null
+    },
+    {
+     "y": 1945,
+     "n": "China",
+     "o": "China",
+     "k": "flag",
+     "f": "f351"
+    },
+    {
+     "y": 1960,
+     "n": "China",
+     "o": "China",
+     "k": "flag",
+     "f": "f348"
+    },
+    {
+     "y": 1994,
+     "n": "China",
+     "o": "China",
+     "k": "flag",
+     "f": "f348"
+    },
+    {
+     "y": 2000,
+     "n": "China",
+     "o": "China",
+     "k": "flag",
+     "f": "f348"
+    },
+    {
+     "y": 2010,
+     "n": "China",
+     "o": "China",
+     "k": "flag",
+     "f": "f348"
+    }
+   ],
+   "n_owners": 7,
+   "n_flags": 4
+  },
+  {
+   "c": "Venice",
+   "x": 12.33,
+   "y": 45.44,
+   "h": [
+    {
+     "y": 800,
+     "n": "Carolingian Empire",
+     "o": "Carolingian Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 900,
+     "n": "Carolingian Empire",
+     "o": "Carolingian Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1000,
+     "n": "Venice",
+     "o": "Venice",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1100,
+     "n": "Venice",
+     "o": "Venice",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1200,
+     "n": "Venice",
+     "o": "Venice",
+     "k": "flag",
+     "f": "f354"
+    },
+    {
+     "y": 1279,
+     "n": "Venice",
+     "o": "Venice",
+     "k": "flag",
+     "f": "f354"
+    },
+    {
+     "y": 1300,
+     "n": "Venice",
+     "o": "Venice",
+     "k": "flag",
+     "f": "f354"
+    },
+    {
+     "y": 1400,
+     "n": "Venice",
+     "o": "Venice",
+     "k": "flag",
+     "f": "f354"
+    },
+    {
+     "y": 1492,
+     "n": "Venice",
+     "o": "Venice",
+     "k": "flag",
+     "f": "f354"
+    },
+    {
+     "y": 1500,
+     "n": "Venice",
+     "o": "Venice",
+     "k": "flag",
+     "f": "f354"
+    },
+    {
+     "y": 1530,
+     "n": "Venice",
+     "o": "Venice",
+     "k": "flag",
+     "f": "f354"
+    },
+    {
+     "y": 1600,
+     "n": "Venice",
+     "o": "Venice",
+     "k": "flag",
+     "f": "f354"
+    },
+    {
+     "y": 1650,
+     "n": "Venice",
+     "o": "Venice",
+     "k": "flag",
+     "f": "f354"
+    },
+    {
+     "y": 1700,
+     "n": "Venice",
+     "o": "Venice",
+     "k": "flag",
+     "f": "f354"
+    },
+    {
+     "y": 1715,
+     "n": "Venice",
+     "o": "Venice",
+     "k": "flag",
+     "f": "f354"
+    },
+    {
+     "y": 1783,
+     "n": "Venetia",
+     "o": "Venetia",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1800,
+     "n": "Venetia",
+     "o": "Venetia",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1815,
+     "n": "Venetia",
+     "o": "Austrian Empire",
+     "k": "flag",
+     "f": "f333"
+    },
+    {
+     "y": 1878,
+     "n": "Italy",
+     "o": "Italy",
+     "k": "flag",
+     "f": "f162"
+    },
+    {
+     "y": 1880,
+     "n": "Italy",
+     "o": "Italy",
+     "k": "flag",
+     "f": "f162"
+    },
+    {
+     "y": 1900,
+     "n": "Italy",
+     "o": "Italy",
+     "k": "flag",
+     "f": "f162"
+    },
+    {
+     "y": 1914,
+     "n": "Kingdom of Italy",
+     "o": "Italy",
+     "k": "flag",
+     "f": "f162"
+    },
+    {
+     "y": 1920,
+     "n": "Italy",
+     "o": "Italy",
+     "k": "flag",
+     "f": "f162"
+    },
+    {
+     "y": 1930,
+     "n": "Italy",
+     "o": "Italy",
+     "k": "flag",
+     "f": "f162"
+    },
+    {
+     "y": 1938,
+     "n": "Italy",
+     "o": "Italy",
+     "k": "flag",
+     "f": "f162"
+    },
+    {
+     "y": 1945,
+     "n": "Italy",
+     "o": "Italy",
+     "k": "flag",
+     "f": "f162"
+    },
+    {
+     "y": 1960,
+     "n": "Italy",
+     "o": "Italy",
+     "k": "flag",
+     "f": "f163"
+    },
+    {
+     "y": 1994,
+     "n": "Italy",
+     "o": "Italy",
+     "k": "flag",
+     "f": "f163"
+    },
+    {
+     "y": 2000,
+     "n": "Italy",
+     "o": "Italy",
+     "k": "flag",
+     "f": "f163"
+    },
+    {
+     "y": 2010,
+     "n": "Italy",
+     "o": "Italy",
+     "k": "flag",
+     "f": "f164"
+    }
+   ],
+   "n_owners": 5,
+   "n_flags": 5
+  },
+  {
+   "c": "Delhi",
+   "x": 77.21,
+   "y": 28.61,
+   "h": [
+    {
+     "y": 800,
+     "n": "Chauhans",
+     "o": "Chauhans",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 900,
+     "n": "Chauhans",
+     "o": "Chauhans",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1000,
+     "n": "Chauhans",
+     "o": "Chauhans",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1100,
+     "n": "Chauhans",
+     "o": "Chauhans",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1200,
+     "n": "Sultanate of Delhi",
+     "o": "Sultanate of Delhi",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1279,
+     "n": "Sultanate of Delhi",
+     "o": "Sultanate of Delhi",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1300,
+     "n": "Sultanate of Delhi",
+     "o": "Sultanate of Delhi",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1400,
+     "n": "Sultanate of Delhi",
+     "o": "Sultanate of Delhi",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1492,
+     "n": "Sultanate of Delhi",
+     "o": "Sultanate of Delhi",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1500,
+     "n": "Sultanate of Delhi",
+     "o": "Sultanate of Delhi",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1530,
+     "n": "Mughal Empire",
+     "o": "Mughal Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1600,
+     "n": "Mughal Empire",
+     "o": "Mughal Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1650,
+     "n": "Mughal Empire",
+     "o": "Mughal Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1700,
+     "n": "Mughal Empire",
+     "o": "Mughal Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1715,
+     "n": "Mughal Empire",
+     "o": "Mughal Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1783,
+     "n": "Mahratta states",
+     "o": "Mahratta states",
+     "k": "group",
+     "f": null
+    },
+    {
+     "y": 1800,
+     "n": "Bundelkhand",
+     "o": "Bundelkhand",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1815,
+     "n": "British East India Company",
+     "o": "British East India Company",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1878,
+     "n": "British Raj",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1880,
+     "n": "British Raj",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1900,
+     "n": "British Raj",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1914,
+     "n": "British Raj",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1920,
+     "n": "British Raj",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1930,
+     "n": "British Raj",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1938,
+     "n": "British Raj",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1945,
+     "n": "India",
+     "o": "India",
+     "k": "flag",
+     "f": "f011"
+    },
+    {
+     "y": 1960,
+     "n": "India",
+     "o": "India",
+     "k": "flag",
+     "f": "f153"
+    },
+    {
+     "y": 1994,
+     "n": "India",
+     "o": "India",
+     "k": "flag",
+     "f": "f153"
+    },
+    {
+     "y": 2000,
+     "n": "India",
+     "o": "India",
+     "k": "flag",
+     "f": "f153"
+    },
+    {
+     "y": 2010,
+     "n": "India",
+     "o": "India",
+     "k": "flag",
+     "f": "f153"
+    }
+   ],
+   "n_owners": 8,
+   "n_flags": 3
+  },
+  {
+   "c": "Istanbul",
+   "x": 28.98,
+   "y": 41.01,
+   "h": [
+    {
+     "y": 800,
+     "n": "Byzantine Empire",
+     "o": "Byzantine Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 900,
+     "n": "Byzantine Empire",
+     "o": "Byzantine Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1000,
+     "n": "Byzantine Empire",
+     "o": "Byzantine Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1100,
+     "n": "Byzantine Empire",
+     "o": "Byzantine Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1200,
+     "n": "Byzantine Empire",
+     "o": "Byzantine Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1279,
+     "n": "Byzantine Empire",
+     "o": "Byzantine Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1300,
+     "n": "Byzantine Empire",
+     "o": "Byzantine Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1400,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1492,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1500,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1530,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1600,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1650,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1700,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1715,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1783,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1800,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1815,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1878,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "flag",
+     "f": "f345"
+    },
+    {
+     "y": 1880,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "flag",
+     "f": "f345"
+    },
+    {
+     "y": 1900,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "flag",
+     "f": "f345"
+    },
+    {
+     "y": 1914,
+     "n": "Bulgaria",
+     "o": "Bulgaria",
+     "k": "flag",
+     "f": "f070"
+    },
+    {
+     "y": 1920,
+     "n": null,
+     "o": null,
+     "k": "none",
+     "f": null
+    },
+    {
+     "y": 1930,
+     "n": "Republic of Turkey",
+     "o": "Republic of Turkey",
+     "k": "flag",
+     "f": "f299"
+    },
+    {
+     "y": 1938,
+     "n": "Turkey",
+     "o": "Turkey",
+     "k": "flag",
+     "f": "f299"
+    },
+    {
+     "y": 1945,
+     "n": "Turkey",
+     "o": "Turkey",
+     "k": "flag",
+     "f": "f299"
+    },
+    {
+     "y": 1960,
+     "n": "Turkey",
+     "o": "Turkey",
+     "k": "flag",
+     "f": "f299"
+    },
+    {
+     "y": 1994,
+     "n": "Turkey",
+     "o": "Turkey",
+     "k": "flag",
+     "f": "f299"
+    },
+    {
+     "y": 2000,
+     "n": "Turkey",
+     "o": "Turkey",
+     "k": "flag",
+     "f": "f299"
+    },
+    {
+     "y": 2010,
+     "n": "Turkey",
+     "o": "Turkey",
+     "k": "flag",
+     "f": "f299"
+    }
+   ],
+   "n_owners": 5,
+   "n_flags": 3
+  },
+  {
+   "c": "Vienna",
+   "x": 16.37,
+   "y": 48.21,
+   "h": [
+    {
+     "y": 800,
+     "n": "Slavonic tribes",
+     "o": "Slavonic tribes",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 900,
+     "n": "East Francia",
+     "o": "East Francia",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1000,
+     "n": "Holy Roman Empire",
+     "o": "Holy Roman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1100,
+     "n": "Holy Roman Empire",
+     "o": "Holy Roman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1200,
+     "n": "Holy Roman Empire",
+     "o": "Holy Roman Empire",
+     "k": "flag",
+     "f": "f382"
+    },
+    {
+     "y": 1279,
+     "n": "Holy Roman Empire",
+     "o": "Holy Roman Empire",
+     "k": "flag",
+     "f": "f382"
+    },
+    {
+     "y": 1300,
+     "n": "Holy Roman Empire",
+     "o": "Holy Roman Empire",
+     "k": "flag",
+     "f": "f385"
+    },
+    {
+     "y": 1400,
+     "n": "Holy Roman Empire",
+     "o": "Holy Roman Empire",
+     "k": "flag",
+     "f": "f382"
+    },
+    {
+     "y": 1492,
+     "n": "Holy Roman Empire",
+     "o": "Holy Roman Empire",
+     "k": "flag",
+     "f": "f006"
+    },
+    {
+     "y": 1500,
+     "n": "Holy Roman Empire",
+     "o": "Holy Roman Empire",
+     "k": "flag",
+     "f": "f006"
+    },
+    {
+     "y": 1530,
+     "n": "Holy Roman Empire",
+     "o": "Holy Roman Empire",
+     "k": "flag",
+     "f": "f006"
+    },
+    {
+     "y": 1600,
+     "n": "Holy Roman Empire",
+     "o": "Holy Roman Empire",
+     "k": "flag",
+     "f": "f006"
+    },
+    {
+     "y": 1650,
+     "n": "Holy Roman Empire",
+     "o": "Holy Roman Empire",
+     "k": "flag",
+     "f": "f006"
+    },
+    {
+     "y": 1700,
+     "n": "Holy Roman Empire",
+     "o": "Holy Roman Empire",
+     "k": "flag",
+     "f": "f006"
+    },
+    {
+     "y": 1715,
+     "n": "Austrian Empire",
+     "o": "Austrian Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1783,
+     "n": "Austrian Empire",
+     "o": "Austrian Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1800,
+     "n": "Austrian Empire",
+     "o": "Austrian Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1815,
+     "n": "Austrian Empire",
+     "o": "Austrian Empire",
+     "k": "flag",
+     "f": "f333"
+    },
+    {
+     "y": 1878,
+     "n": "Austria Hungary",
+     "o": "Austria-Hungary",
+     "k": "arms",
+     "f": "f383"
+    },
+    {
+     "y": 1880,
+     "n": "Austria Hungary",
+     "o": "Austria-Hungary",
+     "k": "arms",
+     "f": "f383"
+    },
+    {
+     "y": 1900,
+     "n": "Austria Hungary",
+     "o": "Austria-Hungary",
+     "k": "arms",
+     "f": "f383"
+    },
+    {
+     "y": 1914,
+     "n": "Austro-Hungarian Empire",
+     "o": "Austria-Hungary",
+     "k": "arms",
+     "f": "f019"
+    },
+    {
+     "y": 1920,
+     "n": "Austria",
+     "o": "Austria",
+     "k": "flag",
+     "f": "f045"
+    },
+    {
+     "y": 1930,
+     "n": "Austria",
+     "o": "Austria",
+     "k": "flag",
+     "f": "f045"
+    },
+    {
+     "y": 1938,
+     "n": "Germany",
+     "o": "Germany",
+     "k": "flag",
+     "f": "f125"
+    },
+    {
+     "y": 1945,
+     "n": "Austria",
+     "o": "Austria",
+     "k": "flag",
+     "f": "f045"
+    },
+    {
+     "y": 1960,
+     "n": "Austria",
+     "o": "Austria",
+     "k": "flag",
+     "f": "f045"
+    },
+    {
+     "y": 1994,
+     "n": "Austria",
+     "o": "Austria",
+     "k": "flag",
+     "f": "f045"
+    },
+    {
+     "y": 2000,
+     "n": "Austria",
+     "o": "Austria",
+     "k": "flag",
+     "f": "f045"
+    },
+    {
+     "y": 2010,
+     "n": "Austria",
+     "o": "Austria",
+     "k": "flag",
+     "f": "f045"
+    }
+   ],
+   "n_owners": 7,
+   "n_flags": 8
+  },
+  {
+   "c": "Moscow",
+   "x": 37.62,
+   "y": 55.75,
+   "h": [
+    {
+     "y": 800,
+     "n": "Slavonic tribes",
+     "o": "Slavonic tribes",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 900,
+     "n": "Kyivan Rus",
+     "o": "Kievan Rus",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1000,
+     "n": "Kyivan Rus",
+     "o": "Kievan Rus",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1100,
+     "n": "Kievan Rus",
+     "o": "Kievan Rus",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1200,
+     "n": "Other Rus Principalities",
+     "o": "Other Rus Principalities",
+     "k": "group",
+     "f": null
+    },
+    {
+     "y": 1279,
+     "n": "Ryazan",
+     "o": "Mongol Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1300,
+     "n": "Grand Duchy of Moscow",
+     "o": "Grand Duchy of Moscow",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1400,
+     "n": "Blue Horde",
+     "o": "Mongol Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1492,
+     "n": "Grand Duchy of Moscow",
+     "o": "Grand Duchy of Moscow",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1500,
+     "n": "Grand Duchy of Moscow",
+     "o": "Grand Duchy of Moscow",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1530,
+     "n": "Tsardom of Muscovy",
+     "o": "Tsardom of Muscovy",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1600,
+     "n": "Tsardom of Muscovy",
+     "o": "Tsardom of Muscovy",
+     "k": "arms",
+     "f": "f395"
+    },
+    {
+     "y": 1650,
+     "n": "Tsardom of Muscovy",
+     "o": "Tsardom of Muscovy",
+     "k": "arms",
+     "f": "f395"
+    },
+    {
+     "y": 1700,
+     "n": "Tsardom of Muscovy",
+     "o": "Tsardom of Muscovy",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1715,
+     "n": "Tsardom of Muscovy",
+     "o": "Tsardom of Muscovy",
+     "k": "flag",
+     "f": "f224"
+    },
+    {
+     "y": 1783,
+     "n": "Russian Empire",
+     "o": "Russian Empire",
+     "k": "flag",
+     "f": "f250"
+    },
+    {
+     "y": 1800,
+     "n": "Russian Empire",
+     "o": "Russian Empire",
+     "k": "flag",
+     "f": "f250"
+    },
+    {
+     "y": 1815,
+     "n": "Russian Empire",
+     "o": "Russian Empire",
+     "k": "flag",
+     "f": "f250"
+    },
+    {
+     "y": 1878,
+     "n": "Russian Empire",
+     "o": "Russian Empire",
+     "k": "flag",
+     "f": "f249"
+    },
+    {
+     "y": 1880,
+     "n": "Russian Empire",
+     "o": "Russian Empire",
+     "k": "flag",
+     "f": "f249"
+    },
+    {
+     "y": 1900,
+     "n": "Russian Empire",
+     "o": "Russian Empire",
+     "k": "flag",
+     "f": "f250"
+    },
+    {
+     "y": 1914,
+     "n": "Russian Empire",
+     "o": "Russia",
+     "k": "flag",
+     "f": "f250"
+    },
+    {
+     "y": 1920,
+     "n": "USSR",
+     "o": "USSR",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1930,
+     "n": "USSR",
+     "o": "USSR",
+     "k": "flag",
+     "f": "f355"
+    },
+    {
+     "y": 1938,
+     "n": "USSR",
+     "o": "USSR",
+     "k": "flag",
+     "f": "f356"
+    },
+    {
+     "y": 1945,
+     "n": "USSR",
+     "o": "USSR",
+     "k": "flag",
+     "f": "f356"
+    },
+    {
+     "y": 1960,
+     "n": "USSR",
+     "o": "USSR",
+     "k": "flag",
+     "f": "f357"
+    },
+    {
+     "y": 1994,
+     "n": "Russia",
+     "o": "Russia",
+     "k": "flag",
+     "f": "f250"
+    },
+    {
+     "y": 2000,
+     "n": "Russia",
+     "o": "Russia",
+     "k": "flag",
+     "f": "f250"
+    },
+    {
+     "y": 2010,
+     "n": "Russia",
+     "o": "Russia",
+     "k": "flag",
+     "f": "f250"
+    }
+   ],
+   "n_owners": 9,
+   "n_flags": 7
+  },
+  {
+   "c": "Mexico City",
+   "x": -99.13,
+   "y": 19.43,
+   "h": [
+    {
+     "y": 800,
+     "n": "Toltec Empire",
+     "o": "Toltec Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 900,
+     "n": "Toltec Empire",
+     "o": "Toltec Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1000,
+     "n": "Toltec Empire",
+     "o": "Toltec Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1100,
+     "n": "Toltec Empire",
+     "o": "Toltec Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1200,
+     "n": "Toltec Empire",
+     "o": "Toltec Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1279,
+     "n": null,
+     "o": null,
+     "k": "none",
+     "f": null
+    },
+    {
+     "y": 1300,
+     "n": null,
+     "o": null,
+     "k": "none",
+     "f": null
+    },
+    {
+     "y": 1400,
+     "n": null,
+     "o": null,
+     "k": "none",
+     "f": null
+    },
+    {
+     "y": 1492,
+     "n": "Mexihcah (Triple Alliance)",
+     "o": "Mexihcah (Triple Alliance)",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1500,
+     "n": "Aztec Empire",
+     "o": "Aztec Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1530,
+     "n": "Viceroyalty of New Spain",
+     "o": "Viceroyalty of New Spain",
+     "k": "flag",
+     "f": "f089"
+    },
+    {
+     "y": 1600,
+     "n": "Viceroyalty of New Spain",
+     "o": "Viceroyalty of New Spain",
+     "k": "flag",
+     "f": "f089"
+    },
+    {
+     "y": 1650,
+     "n": "Viceroyalty of New Spain",
+     "o": "Spain",
+     "k": "flag",
+     "f": "f089"
+    },
+    {
+     "y": 1700,
+     "n": "Viceroyalty of New Spain",
+     "o": "Spain",
+     "k": "flag",
+     "f": "f089"
+    },
+    {
+     "y": 1715,
+     "n": "Viceroyalty of New Spain",
+     "o": "Spain",
+     "k": "flag",
+     "f": "f279"
+    },
+    {
+     "y": 1783,
+     "n": "Viceroyalty of New Spain",
+     "o": "Spain",
+     "k": "flag",
+     "f": "f280"
+    },
+    {
+     "y": 1800,
+     "n": "Viceroyalty of New Spain",
+     "o": "Spain",
+     "k": "flag",
+     "f": "f280"
+    },
+    {
+     "y": 1815,
+     "n": "Viceroyalty of New Spain",
+     "o": "Spain",
+     "k": "flag",
+     "f": "f280"
+    },
+    {
+     "y": 1878,
+     "n": "Mexico",
+     "o": "Mexico",
+     "k": "flag",
+     "f": "f002"
+    },
+    {
+     "y": 1880,
+     "n": "Mexico",
+     "o": "Mexico",
+     "k": "flag",
+     "f": "f002"
+    },
+    {
+     "y": 1900,
+     "n": "Mexico",
+     "o": "Mexico",
+     "k": "flag",
+     "f": "f197"
+    },
+    {
+     "y": 1914,
+     "n": "Mexico",
+     "o": "Mexico",
+     "k": "flag",
+     "f": "f197"
+    },
+    {
+     "y": 1920,
+     "n": "Mexico",
+     "o": "Mexico",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1930,
+     "n": "Mexico",
+     "o": "Mexico",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1938,
+     "n": "Mexico",
+     "o": "Mexico",
+     "k": "flag",
+     "f": "f198"
+    },
+    {
+     "y": 1945,
+     "n": "Mexico",
+     "o": "Mexico",
+     "k": "flag",
+     "f": "f198"
+    },
+    {
+     "y": 1960,
+     "n": "Mexico",
+     "o": "Mexico",
+     "k": "flag",
+     "f": "f198"
+    },
+    {
+     "y": 1994,
+     "n": "Mexico",
+     "o": "Mexico",
+     "k": "flag",
+     "f": "f199"
+    },
+    {
+     "y": 2000,
+     "n": "Mexico",
+     "o": "Mexico",
+     "k": "flag",
+     "f": "f199"
+    },
+    {
+     "y": 2010,
+     "n": "Mexico",
+     "o": "Mexico",
+     "k": "flag",
+     "f": "f199"
+    }
+   ],
+   "n_owners": 6,
+   "n_flags": 7
+  },
+  {
+   "c": "Cairo",
+   "x": 31.24,
+   "y": 30.04,
+   "h": [
+    {
+     "y": 800,
+     "n": "Abbasid Caliphate",
+     "o": "Abbasid Caliphate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 900,
+     "n": "Abbasid Caliphate",
+     "o": "Abbasid Caliphate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1000,
+     "n": "Fatimid Caliphate",
+     "o": "Fatimid Caliphate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1100,
+     "n": "Fatimid Caliphate",
+     "o": "Fatimid Caliphate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1200,
+     "n": "Fatimid Caliphate",
+     "o": "Fatimid Caliphate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1279,
+     "n": "Mamluke Sultanate",
+     "o": "Mamluke Sultanate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1300,
+     "n": "Mamluke Sultanate",
+     "o": "Mamluke Sultanate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1400,
+     "n": "Mamluke Sultanate",
+     "o": "Mamluke Sultanate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1492,
+     "n": "Mamluke Sultanate",
+     "o": "Mamluke Sultanate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1500,
+     "n": "Mamluke Sultanate",
+     "o": "Mamluke Sultanate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1530,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1600,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1650,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1700,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1715,
+     "n": "Egypt",
+     "o": "Egypt",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1783,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1800,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1815,
+     "n": "Egypt",
+     "o": "Egypt",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1878,
+     "n": "Egypt",
+     "o": "Ottoman Empire",
+     "k": "flag",
+     "f": "f345"
+    },
+    {
+     "y": 1880,
+     "n": "Egypt",
+     "o": "Ottoman Empire",
+     "k": "flag",
+     "f": "f345"
+    },
+    {
+     "y": 1900,
+     "n": "Egypt",
+     "o": "Egypt",
+     "k": "flag",
+     "f": "f102"
+    },
+    {
+     "y": 1914,
+     "n": "Egypt",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1920,
+     "n": "Egypt",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1930,
+     "n": "Egypt",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1938,
+     "n": "Egypt",
+     "o": "Egypt",
+     "k": "flag",
+     "f": "f103"
+    },
+    {
+     "y": 1945,
+     "n": "Egypt",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1960,
+     "n": "Egypt",
+     "o": "Egypt",
+     "k": "flag",
+     "f": "f362"
+    },
+    {
+     "y": 1994,
+     "n": "Egypt",
+     "o": "Egypt",
+     "k": "flag",
+     "f": "f104"
+    },
+    {
+     "y": 2000,
+     "n": "Egypt",
+     "o": "Egypt",
+     "k": "flag",
+     "f": "f104"
+    },
+    {
+     "y": 2010,
+     "n": "Egypt",
+     "o": "Egypt",
+     "k": "flag",
+     "f": "f104"
+    }
+   ],
+   "n_owners": 6,
+   "n_flags": 6
+  },
+  {
+   "c": "London",
+   "x": -0.13,
+   "y": 51.51,
+   "h": [
+    {
+     "y": 800,
+     "n": "Essex",
+     "o": "Essex",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 900,
+     "n": "Essex",
+     "o": "Essex",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1000,
+     "n": "England",
+     "o": "England",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1100,
+     "n": "England",
+     "o": "England",
+     "k": "flag",
+     "f": "f392"
+    },
+    {
+     "y": 1200,
+     "n": "Angevin Empire",
+     "o": "Angevin Empire",
+     "k": "flag",
+     "f": "f392"
+    },
+    {
+     "y": 1279,
+     "n": "English territory",
+     "o": "England",
+     "k": "flag",
+     "f": "f392"
+    },
+    {
+     "y": 1300,
+     "n": "English territory",
+     "o": "English territory",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1400,
+     "n": "English territory",
+     "o": "English territory",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1492,
+     "n": "England",
+     "o": "England",
+     "k": "flag",
+     "f": "f392"
+    },
+    {
+     "y": 1500,
+     "n": "England",
+     "o": "England",
+     "k": "flag",
+     "f": "f392"
+    },
+    {
+     "y": 1530,
+     "n": "England and Ireland",
+     "o": "England and Ireland",
+     "k": "flag",
+     "f": "f392"
+    },
+    {
+     "y": 1600,
+     "n": "England and Ireland",
+     "o": "England and Ireland",
+     "k": "flag",
+     "f": "f107"
+    },
+    {
+     "y": 1650,
+     "n": "England and Ireland",
+     "o": "England and Ireland",
+     "k": "flag",
+     "f": "f107"
+    },
+    {
+     "y": 1700,
+     "n": "England and Ireland",
+     "o": "England and Ireland",
+     "k": "flag",
+     "f": "f107"
+    },
+    {
+     "y": 1715,
+     "n": "United Kingdom",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f129"
+    },
+    {
+     "y": 1783,
+     "n": "United Kingdom",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f129"
+    },
+    {
+     "y": 1800,
+     "n": "United Kingdom",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f129"
+    },
+    {
+     "y": 1815,
+     "n": "United Kingdom of Great Britain and Ireland",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1878,
+     "n": "United Kingdom of Great Britain and Ireland",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1880,
+     "n": "United Kingdom of Great Britain and Ireland",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1900,
+     "n": "United Kingdom of Great Britain and Ireland",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1914,
+     "n": "United Kingdom of Great Britain and Ireland",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1920,
+     "n": "United Kingdom of Great Britain and Ireland",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1930,
+     "n": "United Kingdom of Great Britain and Ireland",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1938,
+     "n": "United Kingdom",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1945,
+     "n": "United Kingdom",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1960,
+     "n": "United Kingdom",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1994,
+     "n": "United Kingdom",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 2000,
+     "n": "United Kingdom",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 2010,
+     "n": "United Kingdom",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    }
+   ],
+   "n_owners": 6,
+   "n_flags": 4
+  },
+  {
+   "c": "Jerusalem",
+   "x": 35.21,
+   "y": 31.77,
+   "h": [
+    {
+     "y": 800,
+     "n": "Abbasid Caliphate",
+     "o": "Abbasid Caliphate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 900,
+     "n": "Abbasid Caliphate",
+     "o": "Abbasid Caliphate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1000,
+     "n": "Fatimid Caliphate",
+     "o": "Fatimid Caliphate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1100,
+     "n": "Fatimid Caliphate",
+     "o": "Fatimid Caliphate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1200,
+     "n": "Fatimid Caliphate",
+     "o": "Fatimid Caliphate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1279,
+     "n": "Mamluke Sultanate",
+     "o": "Mamluke Sultanate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1300,
+     "n": "Mamluke Sultanate",
+     "o": "Mamluke Sultanate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1400,
+     "n": "Mamluke Sultanate",
+     "o": "Mamluke Sultanate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1492,
+     "n": "Mamluke Sultanate",
+     "o": "Mamluke Sultanate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1500,
+     "n": "Mamluke Sultanate",
+     "o": "Mamluke Sultanate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1530,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1600,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1650,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1700,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1715,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1783,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1800,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1815,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1878,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "flag",
+     "f": "f345"
+    },
+    {
+     "y": 1880,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "flag",
+     "f": "f345"
+    },
+    {
+     "y": 1900,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "flag",
+     "f": "f345"
+    },
+    {
+     "y": 1914,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "flag",
+     "f": "f345"
+    },
+    {
+     "y": 1920,
+     "n": "Mandatory Palestine (GB)",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1930,
+     "n": "Mandatory Palestine (GB)",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1938,
+     "n": "Israel",
+     "o": "Israel",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1945,
+     "n": "Israel",
+     "o": "Israel",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1960,
+     "n": "Israel",
+     "o": "Israel",
+     "k": "flag",
+     "f": "f161"
+    },
+    {
+     "y": 1994,
+     "n": "Israel",
+     "o": "Israel",
+     "k": "flag",
+     "f": "f161"
+    },
+    {
+     "y": 2000,
+     "n": "Israel",
+     "o": "Israel",
+     "k": "flag",
+     "f": "f161"
+    },
+    {
+     "y": 2010,
+     "n": "Israel",
+     "o": "Israel",
+     "k": "flag",
+     "f": "f161"
+    }
+   ],
+   "n_owners": 6,
+   "n_flags": 3
+  },
+  {
+   "c": "Sydney",
+   "x": 151.21,
+   "y": -33.87,
+   "h": [
+    {
+     "y": 800,
+     "n": "Australian aboriginal hunter-gatherers",
+     "o": "Australian aboriginal hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 900,
+     "n": "Australian aboriginal hunter-gatherers",
+     "o": "Australian aboriginal hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1000,
+     "n": "Australian aboriginal hunter-gatherers",
+     "o": "Australian aboriginal hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1100,
+     "n": "Australian aboriginal hunter-gatherers",
+     "o": "Australian aboriginal hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1200,
+     "n": "Australian aboriginal hunter-gatherers",
+     "o": "Australian aboriginal hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1279,
+     "n": "Australian aboriginal hunter-gatherers",
+     "o": "Australian aboriginal hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1300,
+     "n": "Australian aboriginal hunter-gatherers",
+     "o": "Australian aboriginal hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1400,
+     "n": "Australian aboriginal hunter-gatherers",
+     "o": "Australian aboriginal hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1492,
+     "n": "Australian aboriginal hunter-gatherers",
+     "o": "Australian aboriginal hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1500,
+     "n": "Australian aboriginal hunter-gatherers",
+     "o": "Australian aboriginal hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1530,
+     "n": "Australian aboriginal hunter-gatherers",
+     "o": "Australian aboriginal hunter-gatherers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1600,
+     "n": "Eora",
+     "o": "Eora",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1650,
+     "n": "Eora",
+     "o": "Eora",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1700,
+     "n": "Eora",
+     "o": "Eora",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1715,
+     "n": "Eora",
+     "o": "Eora",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1783,
+     "n": "Eora",
+     "o": "Eora",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1800,
+     "n": "Eora",
+     "o": "Eora",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1815,
+     "n": "New South Wales",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1878,
+     "n": "New South Wales (UK)",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1880,
+     "n": "New South Wales (UK)",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1900,
+     "n": "New South Wales (UK)",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1914,
+     "n": "Australia",
+     "o": "Australia",
+     "k": "flag",
+     "f": "f044"
+    },
+    {
+     "y": 1920,
+     "n": "Australia",
+     "o": "Australia",
+     "k": "flag",
+     "f": "f044"
+    },
+    {
+     "y": 1930,
+     "n": "Australia",
+     "o": "Australia",
+     "k": "flag",
+     "f": "f044"
+    },
+    {
+     "y": 1938,
+     "n": "Australia",
+     "o": "Australia",
+     "k": "flag",
+     "f": "f044"
+    },
+    {
+     "y": 1945,
+     "n": "Australia",
+     "o": "Australia",
+     "k": "flag",
+     "f": "f044"
+    },
+    {
+     "y": 1960,
+     "n": "Australia",
+     "o": "Australia",
+     "k": "flag",
+     "f": "f044"
+    },
+    {
+     "y": 1994,
+     "n": "Australia",
+     "o": "Australia",
+     "k": "flag",
+     "f": "f044"
+    },
+    {
+     "y": 2000,
+     "n": "Australia",
+     "o": "Australia",
+     "k": "flag",
+     "f": "f044"
+    },
+    {
+     "y": 2010,
+     "n": "Australia",
+     "o": "Australia",
+     "k": "flag",
+     "f": "f044"
+    }
+   ],
+   "n_owners": 4,
+   "n_flags": 2
+  },
+  {
+   "c": "Lagos",
+   "x": 3.39,
+   "y": 6.45,
+   "h": [
+    {
+     "y": 800,
+     "n": "West African cereal farmers",
+     "o": "West African cereal farmers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 900,
+     "n": "Mandes",
+     "o": "Mandes",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1000,
+     "n": "West African cereal farmers",
+     "o": "West African cereal farmers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1100,
+     "n": "West African cereal farmers",
+     "o": "West African cereal farmers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1200,
+     "n": "West African cereal farmers",
+     "o": "West African cereal farmers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1279,
+     "n": "West African cereal farmers",
+     "o": "West African cereal farmers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1300,
+     "n": "West African cereal farmers",
+     "o": "West African cereal farmers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1400,
+     "n": "West African cereal farmers",
+     "o": "West African cereal farmers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1492,
+     "n": "West African cereal farmers",
+     "o": "West African cereal farmers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1500,
+     "n": "West African cereal farmers",
+     "o": "West African cereal farmers",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1530,
+     "n": null,
+     "o": null,
+     "k": "none",
+     "f": null
+    },
+    {
+     "y": 1600,
+     "n": null,
+     "o": null,
+     "k": "none",
+     "f": null
+    },
+    {
+     "y": 1650,
+     "n": "Oyo",
+     "o": "Oyo",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1700,
+     "n": "Oyo",
+     "o": "Oyo",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1715,
+     "n": "Oyo",
+     "o": "Oyo",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1783,
+     "n": "Dahomey",
+     "o": "Dahomey",
+     "k": "flag",
+     "f": "f021"
+    },
+    {
+     "y": 1800,
+     "n": "Dahomey",
+     "o": "Dahomey",
+     "k": "flag",
+     "f": "f021"
+    },
+    {
+     "y": 1815,
+     "n": null,
+     "o": null,
+     "k": "none",
+     "f": null
+    },
+    {
+     "y": 1878,
+     "n": "Lagos",
+     "o": "Lagos",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1880,
+     "n": "Lagos",
+     "o": "Lagos",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1900,
+     "n": "Lagos",
+     "o": "Lagos",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1914,
+     "n": "Nigeria",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1920,
+     "n": "Nigeria",
+     "o": "Nigeria",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1930,
+     "n": "Nigeria",
+     "o": "Nigeria",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1938,
+     "n": "Nigeria",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1945,
+     "n": "Nigeria",
+     "o": "United Kingdom",
+     "k": "flag",
+     "f": "f363"
+    },
+    {
+     "y": 1960,
+     "n": "Nigeria",
+     "o": "Nigeria",
+     "k": "flag",
+     "f": "f217"
+    },
+    {
+     "y": 1994,
+     "n": "Nigeria",
+     "o": "Nigeria",
+     "k": "flag",
+     "f": "f217"
+    },
+    {
+     "y": 2000,
+     "n": "Nigeria",
+     "o": "Nigeria",
+     "k": "flag",
+     "f": "f217"
+    },
+    {
+     "y": 2010,
+     "n": "Nigeria",
+     "o": "Nigeria",
+     "k": "flag",
+     "f": "f217"
+    }
+   ],
+   "n_owners": 7,
+   "n_flags": 3
+  },
+  {
+   "c": "Lima",
+   "x": -77.04,
+   "y": -12.05,
+   "h": [
+    {
+     "y": 800,
+     "n": "Huari Empire",
+     "o": "Huari Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 900,
+     "n": "Huari Empire",
+     "o": "Huari Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1000,
+     "n": "Huari Empire",
+     "o": "Huari Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1100,
+     "n": "Huari Empire",
+     "o": "Huari Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1200,
+     "n": "Huari Empire",
+     "o": "Huari Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1279,
+     "n": "Chimú Empire",
+     "o": "Chimú Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1300,
+     "n": "Chimú Empire",
+     "o": "Chimú Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1400,
+     "n": "Chimú Empire",
+     "o": "Chimú Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1492,
+     "n": "Wari",
+     "o": "Wari",
+     "k": "people",
+     "f": null
+    },
+    {
+     "y": 1500,
+     "n": "Inca Empire",
+     "o": "Inca Empire",
+     "k": "flag",
+     "f": "f007"
+    },
+    {
+     "y": 1530,
+     "n": "Inca Empire",
+     "o": "Inca Empire",
+     "k": "flag",
+     "f": "f007"
+    },
+    {
+     "y": 1600,
+     "n": "Inca Empire",
+     "o": "Inca Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1650,
+     "n": "Viceroyalty of Peru",
+     "o": "Spain",
+     "k": "flag",
+     "f": "f089"
+    },
+    {
+     "y": 1700,
+     "n": "Viceroyalty of Peru",
+     "o": "Spain",
+     "k": "flag",
+     "f": "f089"
+    },
+    {
+     "y": 1715,
+     "n": "Viceroyalty of Peru",
+     "o": "Spain",
+     "k": "flag",
+     "f": "f279"
+    },
+    {
+     "y": 1783,
+     "n": "Viceroyalty of Peru",
+     "o": "Spain",
+     "k": "flag",
+     "f": "f280"
+    },
+    {
+     "y": 1800,
+     "n": "Viceroyalty of Peru",
+     "o": "Spain",
+     "k": "flag",
+     "f": "f280"
+    },
+    {
+     "y": 1815,
+     "n": "Viceroyalty of Peru",
+     "o": "Spain",
+     "k": "flag",
+     "f": "f280"
+    },
+    {
+     "y": 1878,
+     "n": "Peru",
+     "o": "Peru",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1880,
+     "n": "Peru",
+     "o": "Peru",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1900,
+     "n": "Peru",
+     "o": "Peru",
+     "k": "flag",
+     "f": "f232"
+    },
+    {
+     "y": 1914,
+     "n": "Peru",
+     "o": "Peru",
+     "k": "flag",
+     "f": "f232"
+    },
+    {
+     "y": 1920,
+     "n": "Peru",
+     "o": "Peru",
+     "k": "flag",
+     "f": "f232"
+    },
+    {
+     "y": 1930,
+     "n": "Peru",
+     "o": "Peru",
+     "k": "flag",
+     "f": "f232"
+    },
+    {
+     "y": 1938,
+     "n": "Peru",
+     "o": "Peru",
+     "k": "flag",
+     "f": "f232"
+    },
+    {
+     "y": 1945,
+     "n": "Peru",
+     "o": "Peru",
+     "k": "flag",
+     "f": "f232"
+    },
+    {
+     "y": 1960,
+     "n": "Peru",
+     "o": "Peru",
+     "k": "flag",
+     "f": "f232"
+    },
+    {
+     "y": 1994,
+     "n": "Peru",
+     "o": "Peru",
+     "k": "flag",
+     "f": "f232"
+    },
+    {
+     "y": 2000,
+     "n": "Peru",
+     "o": "Peru",
+     "k": "flag",
+     "f": "f232"
+    },
+    {
+     "y": 2010,
+     "n": "Peru",
+     "o": "Peru",
+     "k": "flag",
+     "f": "f232"
+    }
+   ],
+   "n_owners": 6,
+   "n_flags": 5
+  },
+  {
+   "c": "Algiers",
+   "x": 3.06,
+   "y": 36.75,
+   "h": [
+    {
+     "y": 800,
+     "n": "Aghlabid Emirate",
+     "o": "Aghlabid Emirate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 900,
+     "n": "Aghlabid Emirate",
+     "o": "Aghlabid Emirate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1000,
+     "n": "Fatimid Caliphate",
+     "o": "Fatimid Caliphate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1100,
+     "n": "Fatimid Caliphate",
+     "o": "Fatimid Caliphate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1200,
+     "n": "Fatimid Caliphate",
+     "o": "Fatimid Caliphate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1279,
+     "n": "Hafsid Caliphate",
+     "o": "Hafsid Caliphate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1300,
+     "n": "Hafsid Caliphate",
+     "o": "Hafsid Caliphate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1400,
+     "n": "Hafsid Caliphate",
+     "o": "Hafsid Caliphate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1492,
+     "n": "Zayyanid Caliphate",
+     "o": "Zayyanid Caliphate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1500,
+     "n": "Zayyanid Caliphate",
+     "o": "Zayyanid Caliphate",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1530,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1600,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1650,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1700,
+     "n": "Ottoman Empire",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1715,
+     "n": "Algiers",
+     "o": "Algiers",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1783,
+     "n": "Algiers",
+     "o": "Algiers",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1800,
+     "n": "Algiers",
+     "o": "Ottoman Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1815,
+     "n": "Algiers",
+     "o": "Algiers",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1878,
+     "n": "Algeria (FR)",
+     "o": "France",
+     "k": "flag",
+     "f": "f120"
+    },
+    {
+     "y": 1880,
+     "n": "Algeria (FR)",
+     "o": "France",
+     "k": "flag",
+     "f": "f120"
+    },
+    {
+     "y": 1900,
+     "n": "Algeria",
+     "o": "Algeria",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1914,
+     "n": "Algeria",
+     "o": "France",
+     "k": "flag",
+     "f": "f120"
+    },
+    {
+     "y": 1920,
+     "n": "Algeria",
+     "o": "Algeria",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1930,
+     "n": "Algeria",
+     "o": "Algeria",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1938,
+     "n": "Algeria (France)",
+     "o": "France",
+     "k": "flag",
+     "f": "f120"
+    },
+    {
+     "y": 1945,
+     "n": "Algeria",
+     "o": "France",
+     "k": "flag",
+     "f": "f120"
+    },
+    {
+     "y": 1960,
+     "n": "Algeria",
+     "o": "Algeria",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1994,
+     "n": "Algeria",
+     "o": "Algeria",
+     "k": "flag",
+     "f": "f035"
+    },
+    {
+     "y": 2000,
+     "n": "Algeria",
+     "o": "Algeria",
+     "k": "flag",
+     "f": "f035"
+    },
+    {
+     "y": 2010,
+     "n": "Algeria",
+     "o": "Algeria",
+     "k": "flag",
+     "f": "f035"
+    }
+   ],
+   "n_owners": 8,
+   "n_flags": 2
+  },
+  {
+   "c": "Hanoi",
+   "x": 105.85,
+   "y": 21.03,
+   "h": [
+    {
+     "y": 800,
+     "n": "Tang Empire",
+     "o": "Tang Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 900,
+     "n": "Tang Empire",
+     "o": "Tang Empire",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1000,
+     "n": "Annam",
+     "o": "Annam",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1100,
+     "n": "Đại Việt",
+     "o": "Đại Việt",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1200,
+     "n": "Đại Việt",
+     "o": "Đại Việt",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1279,
+     "n": "Đại Việt",
+     "o": "Đại Việt",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1300,
+     "n": "Đại Việt",
+     "o": "Đại Việt",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1400,
+     "n": "Đại Việt",
+     "o": "Đại Việt",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1492,
+     "n": "Đại Việt",
+     "o": "Đại Việt",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1500,
+     "n": "Đại Việt",
+     "o": "Đại Việt",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1530,
+     "n": "Đại Việt",
+     "o": "Đại Việt",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1600,
+     "n": "Đại Việt",
+     "o": "Đại Việt",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1650,
+     "n": "Đại Việt",
+     "o": "Đại Việt",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1700,
+     "n": "Đại Việt",
+     "o": "Đại Việt",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1715,
+     "n": "Đại Việt",
+     "o": "Đại Việt",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1783,
+     "n": "Đại Việt",
+     "o": "Đại Việt",
+     "k": "arms",
+     "f": "f410"
+    },
+    {
+     "y": 1800,
+     "n": "Đại Việt",
+     "o": "Đại Việt",
+     "k": "arms",
+     "f": "f410"
+    },
+    {
+     "y": 1815,
+     "n": "Annam",
+     "o": "Annam",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1878,
+     "n": "Annam",
+     "o": "Annam",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1880,
+     "n": "Annam",
+     "o": "Annam",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1900,
+     "n": "French Indochina",
+     "o": "France",
+     "k": "flag",
+     "f": "f120"
+    },
+    {
+     "y": 1914,
+     "n": "French Indochina",
+     "o": "France",
+     "k": "flag",
+     "f": "f120"
+    },
+    {
+     "y": 1920,
+     "n": "Annam",
+     "o": "Annam",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1930,
+     "n": "Annam",
+     "o": "Annam",
+     "k": "plain",
+     "f": null
+    },
+    {
+     "y": 1938,
+     "n": "French Indo-China",
+     "o": "France",
+     "k": "flag",
+     "f": "f120"
+    },
+    {
+     "y": 1945,
+     "n": "Tonkin",
+     "o": "France",
+     "k": "flag",
+     "f": "f120"
+    },
+    {
+     "y": 1960,
+     "n": "Vietnam",
+     "o": "Vietnam",
+     "k": "flag",
+     "f": "f312"
+    },
+    {
+     "y": 1994,
+     "n": "Vietnam",
+     "o": "Vietnam",
+     "k": "flag",
+     "f": "f312"
+    },
+    {
+     "y": 2000,
+     "n": "Vietnam",
+     "o": "Vietnam",
+     "k": "flag",
+     "f": "f312"
+    },
+    {
+     "y": 2010,
+     "n": "Vietnam",
+     "o": "Vietnam",
+     "k": "flag",
+     "f": "f312"
+    }
+   ],
+   "n_owners": 5,
+   "n_flags": 3
+  }
+ ],
+ "boston_seq": [
+  "Eastern North American hunter-gatherers",
+  "Eastern North American hunter-gatherers",
+  "Eastern North American hunter-gatherers",
+  "Eastern North American hunter-gatherers",
+  "Eastern North American hunter-gatherers",
+  "Eastern North American hunter-gatherers",
+  "Eastern North American hunter-gatherers",
+  "Eastern North American hunter-gatherers",
+  "Massa-adchu-es-et (Massachusett)",
+  "Iroquois",
+  "Massachusett",
+  "Massachusett",
+  "England",
+  "England",
+  "United Kingdom",
+  "United States",
+  "United States",
+  "United States",
+  "United States",
+  "United States",
+  "United States",
+  "United States",
+  "United States",
+  "United States",
+  "United States",
+  "United States",
+  "United States",
+  "United States",
+  "United States",
+  "United States"
+ ],
+ "most_owners_city": {
+  "c": "Moscow",
+  "x": 37.62,
+  "y": 55.75,
+  "h": [
+   {
+    "y": 800,
+    "n": "Slavonic tribes",
+    "o": "Slavonic tribes",
+    "k": "people",
+    "f": null
+   },
+   {
+    "y": 900,
+    "n": "Kyivan Rus",
+    "o": "Kievan Rus",
+    "k": "plain",
+    "f": null
+   },
+   {
+    "y": 1000,
+    "n": "Kyivan Rus",
+    "o": "Kievan Rus",
+    "k": "plain",
+    "f": null
+   },
+   {
+    "y": 1100,
+    "n": "Kievan Rus",
+    "o": "Kievan Rus",
+    "k": "plain",
+    "f": null
+   },
+   {
+    "y": 1200,
+    "n": "Other Rus Principalities",
+    "o": "Other Rus Principalities",
+    "k": "group",
+    "f": null
+   },
+   {
+    "y": 1279,
+    "n": "Ryazan",
+    "o": "Mongol Empire",
+    "k": "plain",
+    "f": null
+   },
+   {
+    "y": 1300,
+    "n": "Grand Duchy of Moscow",
+    "o": "Grand Duchy of Moscow",
+    "k": "plain",
+    "f": null
+   },
+   {
+    "y": 1400,
+    "n": "Blue Horde",
+    "o": "Mongol Empire",
+    "k": "plain",
+    "f": null
+   },
+   {
+    "y": 1492,
+    "n": "Grand Duchy of Moscow",
+    "o": "Grand Duchy of Moscow",
+    "k": "plain",
+    "f": null
+   },
+   {
+    "y": 1500,
+    "n": "Grand Duchy of Moscow",
+    "o": "Grand Duchy of Moscow",
+    "k": "plain",
+    "f": null
+   },
+   {
+    "y": 1530,
+    "n": "Tsardom of Muscovy",
+    "o": "Tsardom of Muscovy",
+    "k": "plain",
+    "f": null
+   },
+   {
+    "y": 1600,
+    "n": "Tsardom of Muscovy",
+    "o": "Tsardom of Muscovy",
+    "k": "arms",
+    "f": "f395"
+   },
+   {
+    "y": 1650,
+    "n": "Tsardom of Muscovy",
+    "o": "Tsardom of Muscovy",
+    "k": "arms",
+    "f": "f395"
+   },
+   {
+    "y": 1700,
+    "n": "Tsardom of Muscovy",
+    "o": "Tsardom of Muscovy",
+    "k": "plain",
+    "f": null
+   },
+   {
+    "y": 1715,
+    "n": "Tsardom of Muscovy",
+    "o": "Tsardom of Muscovy",
+    "k": "flag",
+    "f": "f224"
+   },
+   {
+    "y": 1783,
+    "n": "Russian Empire",
+    "o": "Russian Empire",
+    "k": "flag",
+    "f": "f250"
+   },
+   {
+    "y": 1800,
+    "n": "Russian Empire",
+    "o": "Russian Empire",
+    "k": "flag",
+    "f": "f250"
+   },
+   {
+    "y": 1815,
+    "n": "Russian Empire",
+    "o": "Russian Empire",
+    "k": "flag",
+    "f": "f250"
+   },
+   {
+    "y": 1878,
+    "n": "Russian Empire",
+    "o": "Russian Empire",
+    "k": "flag",
+    "f": "f249"
+   },
+   {
+    "y": 1880,
+    "n": "Russian Empire",
+    "o": "Russian Empire",
+    "k": "flag",
+    "f": "f249"
+   },
+   {
+    "y": 1900,
+    "n": "Russian Empire",
+    "o": "Russian Empire",
+    "k": "flag",
+    "f": "f250"
+   },
+   {
+    "y": 1914,
+    "n": "Russian Empire",
+    "o": "Russia",
+    "k": "flag",
+    "f": "f250"
+   },
+   {
+    "y": 1920,
+    "n": "USSR",
+    "o": "USSR",
+    "k": "plain",
+    "f": null
+   },
+   {
+    "y": 1930,
+    "n": "USSR",
+    "o": "USSR",
+    "k": "flag",
+    "f": "f355"
+   },
+   {
+    "y": 1938,
+    "n": "USSR",
+    "o": "USSR",
+    "k": "flag",
+    "f": "f356"
+   },
+   {
+    "y": 1945,
+    "n": "USSR",
+    "o": "USSR",
+    "k": "flag",
+    "f": "f356"
+   },
+   {
+    "y": 1960,
+    "n": "USSR",
+    "o": "USSR",
+    "k": "flag",
+    "f": "f357"
+   },
+   {
+    "y": 1994,
+    "n": "Russia",
+    "o": "Russia",
+    "k": "flag",
+    "f": "f250"
+   },
+   {
+    "y": 2000,
+    "n": "Russia",
+    "o": "Russia",
+    "k": "flag",
+    "f": "f250"
+   },
+   {
+    "y": 2010,
+    "n": "Russia",
+    "o": "Russia",
+    "k": "flag",
+    "f": "f250"
+   }
+  ],
+  "n_owners": 9,
+  "n_flags": 7
+ },
+ "match": {
+  "n_owners": 2523,
+  "n_state": 680,
+  "n_people": 1809,
+  "n_group": 34,
+  "n_state_matched": 535,
+  "rate": 78.7,
+  "rate_area": 94.2,
+  "n_overrides": 76,
+  "n_extra": 2,
+  "n_known": 2
+ },
+ "emblems": {
+  "state_years": 3386,
+  "flag": 1412,
+  "arms": 40,
+  "plain": 1934,
+  "basis": {
+   "dated": 739,
+   "undated": 599,
+   "file": 59,
+   "known": 15
+  },
+  "flag_pct": 42,
+  "undated_pct_of_flags": 42
+ },
+ "images": {
+  "n": 413,
+  "flags": 398,
+  "arms": 15,
+  "pd": 357,
+  "by_sa": 52,
+  "other": 4
+ },
+ "n_flags_used_2010": 182,
+ "owners_with_flag": 269,
+ "fixes": 2,
+ "retrieved": "2026"
+}
