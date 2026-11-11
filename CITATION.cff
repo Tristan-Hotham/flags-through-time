@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite it as below."
+title: "Who Held the Map? Twelve Centuries of the World in Flags, 800 to 2010, from Historical Basemaps and Wikidata"
+type: dataset
+authors:
+  - family-names: Hotham
+    given-names: Tristan
+    orcid: "https://orcid.org/0000-0003-4931-9349"
+    affiliation: "Independent researcher"
+doi: "10.5281/zenodo.23845995"
+url: "https://maps.tristanhotham.com/flags-through-time/"
+repository-code: "https://github.com/Tristan-Hotham/flags-through-time"
+license: CC-BY-SA-4.0
+keywords:
+  - "flags"
+  - "vexillology"
+  - "historical maps"
+  - "empires"
+  - "colonialism"
+  - "Wikidata"
+  - "historical GIS"
+  - "maps"
+  - "open data"
